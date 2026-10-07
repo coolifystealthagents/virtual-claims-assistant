@@ -1,0 +1,13 @@
+{
+  "site": "Virtual Claims Assistant",
+  "status": "local_verified",
+  "launchArticle": "claims-operations-manager-vs-claims-va",
+  "preference": "fractional_vs_va",
+  "topics": [
+    {
+      "slug": "claims-operations-manager-vs-claims-va",
+      "title": "Claims operations manager vs claims VA",
+      "state": "local_verified"
+    }
+  ]
+}
