@@ -1,0 +1,119 @@
+{
+  "site": "VirtualClaimsAssistant",
+  "domain": "virtualclaimsassistant.com",
+  "canonicalOrigin": "https://virtualclaimsassistant.com",
+  "repository": "coolifystealthagents/virtual-claims-assistant",
+  "branch": "main",
+  "publicationDate": "2026-10-12",
+  "blog": [
+    {
+      "slug": "fnol-required-field-exception-queue",
+      "title": "Build an FNOL Required-Field Exception Queue",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/fnol-required-field-exception-queue.webp"
+    },
+    {
+      "slug": "claim-document-index-naming-rules",
+      "title": "Create Naming Rules for Claim Document Indexes",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/claim-document-index-naming-rules.webp"
+    },
+    {
+      "slug": "policyholder-contact-attempt-register",
+      "title": "Maintain a Policyholder Contact Attempt Register",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/policyholder-contact-attempt-register.webp"
+    },
+    {
+      "slug": "adjuster-queue-ownership-handoffs",
+      "title": "Control Ownership Handoffs in Adjuster Queues",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/adjuster-queue-ownership-handoffs.webp"
+    },
+    {
+      "slug": "claim-status-definition-dictionary",
+      "title": "Define Claim Statuses With Evidence-Based Criteria",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/claim-status-definition-dictionary.webp"
+    },
+    {
+      "slug": "claim-evidence-receipt-custody",
+      "title": "Preserve Custody for Received Claim Evidence",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/claim-evidence-receipt-custody.webp"
+    },
+    {
+      "slug": "duplicate-claim-candidate-review",
+      "title": "Route Duplicate Claim Candidates for Authorized Review",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/duplicate-claim-candidate-review.webp"
+    },
+    {
+      "slug": "claims-financial-decision-boundaries",
+      "title": "Keep Claims Financial Decisions Outside Administrative Support",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/claims-financial-decision-boundaries.webp"
+    },
+    {
+      "slug": "subrogation-party-record-reconciliation",
+      "title": "Reconcile Party Records in Subrogation Administration",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/subrogation-party-record-reconciliation.webp"
+    },
+    {
+      "slug": "claim-diary-follow-up-controls",
+      "title": "Build Controls for Claim Diary Follow-Up",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/claim-diary-follow-up-controls.webp"
+    },
+    {
+      "slug": "catastrophe-claim-surge-handoffs",
+      "title": "Design Handoffs for Catastrophe Claim Surges",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/catastrophe-claim-surge-handoffs.webp"
+    },
+    {
+      "slug": "claim-system-outage-reconciliation",
+      "title": "Reconcile Claim Activity After a System Outage",
+      "sourcePath": "lib/october12-blog.ts",
+      "thumbnailPath": "public/thumbnails/october-12/claim-system-outage-reconciliation.webp"
+    }
+  ],
+  "research": [
+    {
+      "slug": "fnol-data-completeness-measurement",
+      "title": "Methods for Measuring FNOL Data Completeness",
+      "sourcePath": "lib/october12-research.ts",
+      "thumbnailPath": "public/thumbnails/october-12/fnol-data-completeness-measurement.webp",
+      "sourceCount": 10
+    },
+    {
+      "slug": "claim-file-document-provenance",
+      "title": "Evidence Controls for Claim File Document Provenance",
+      "sourcePath": "lib/october12-research.ts",
+      "thumbnailPath": "public/thumbnails/october-12/claim-file-document-provenance.webp",
+      "sourceCount": 10
+    },
+    {
+      "slug": "claim-status-communication-measures",
+      "title": "Measuring Claim Status Communication Workflows",
+      "sourcePath": "lib/october12-research.ts",
+      "thumbnailPath": "public/thumbnails/october-12/claim-status-communication-measures.webp",
+      "sourceCount": 10
+    },
+    {
+      "slug": "claims-work-queue-aging-analysis",
+      "title": "Methods for Analyzing Claims Work Queue Aging",
+      "sourcePath": "lib/october12-research.ts",
+      "thumbnailPath": "public/thumbnails/october-12/claims-work-queue-aging-analysis.webp",
+      "sourceCount": 10
+    },
+    {
+      "slug": "claim-quality-review-sample-design",
+      "title": "Designing Samples for Claim Administrative Quality Review",
+      "sourcePath": "lib/october12-research.ts",
+      "thumbnailPath": "public/thumbnails/october-12/claim-quality-review-sample-design.webp",
+      "sourceCount": 10
+    }
+  ]
+}

@@ -1,7 +1,9 @@
 import { site } from './site';
 import type { BlogPost, ResearchPost } from './types';
+import { october12BlogPosts } from './october12-blog';
+import { october12ResearchPosts } from './october12-research';
 
-export const blogPosts: BlogPost[] = [
+const legacyBlogPosts: BlogPost[] = [
   {
     "slug": "claims-operations-manager-vs-claims-va",
     "title": "Claims operations manager vs claims VA",
@@ -468,7 +470,7 @@ export const blogPosts: BlogPost[] = [
     }
   }
 ];
-export const researchPosts: ResearchPost[] = [
+const legacyResearchPosts: ResearchPost[] = [
   {
     "slug": "fnol-intake-support-workflow-boundary-review-1",
     "title": "FNOL intake support: workflow boundary review",
@@ -910,6 +912,9 @@ export const researchPosts: ResearchPost[] = [
     ]
   }
 ];
+
+export const blogPosts: BlogPost[] = [...october12BlogPosts, ...legacyBlogPosts];
+export const researchPosts: ResearchPost[] = [...october12ResearchPosts, ...legacyResearchPosts];
 
 export const nav = [
   { href: '/services', label: 'Services' },

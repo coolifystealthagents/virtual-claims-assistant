@@ -1,0 +1,74 @@
+{
+  "blogs": [
+    {
+      "slug": "fnol-required-field-exception-queue",
+      "title": "Build an FNOL Required-Field Exception Queue"
+    },
+    {
+      "slug": "claim-document-index-naming-rules",
+      "title": "Create Naming Rules for Claim Document Indexes"
+    },
+    {
+      "slug": "policyholder-contact-attempt-register",
+      "title": "Maintain a Policyholder Contact Attempt Register"
+    },
+    {
+      "slug": "adjuster-queue-ownership-handoffs",
+      "title": "Control Ownership Handoffs in Adjuster Queues"
+    },
+    {
+      "slug": "claim-status-definition-dictionary",
+      "title": "Define Claim Statuses With Evidence-Based Criteria"
+    },
+    {
+      "slug": "claim-evidence-receipt-custody",
+      "title": "Preserve Custody for Received Claim Evidence"
+    },
+    {
+      "slug": "duplicate-claim-candidate-review",
+      "title": "Route Duplicate Claim Candidates for Authorized Review"
+    },
+    {
+      "slug": "claims-financial-decision-boundaries",
+      "title": "Keep Claims Financial Decisions Outside Administrative Support"
+    },
+    {
+      "slug": "subrogation-party-record-reconciliation",
+      "title": "Reconcile Party Records in Subrogation Administration"
+    },
+    {
+      "slug": "claim-diary-follow-up-controls",
+      "title": "Build Controls for Claim Diary Follow-Up"
+    },
+    {
+      "slug": "catastrophe-claim-surge-handoffs",
+      "title": "Design Handoffs for Catastrophe Claim Surges"
+    },
+    {
+      "slug": "claim-system-outage-reconciliation",
+      "title": "Reconcile Claim Activity After a System Outage"
+    }
+  ],
+  "research": [
+    {
+      "slug": "fnol-data-completeness-measurement",
+      "title": "Methods for Measuring FNOL Data Completeness"
+    },
+    {
+      "slug": "claim-file-document-provenance",
+      "title": "Evidence Controls for Claim File Document Provenance"
+    },
+    {
+      "slug": "claim-status-communication-measures",
+      "title": "Measuring Claim Status Communication Workflows"
+    },
+    {
+      "slug": "claims-work-queue-aging-analysis",
+      "title": "Methods for Analyzing Claims Work Queue Aging"
+    },
+    {
+      "slug": "claim-quality-review-sample-design",
+      "title": "Designing Samples for Claim Administrative Quality Review"
+    }
+  ]
+}

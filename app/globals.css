@@ -8,6 +8,7 @@
 .design-conversation .hero-visual img{object-position:30% center}
 .design-commerce .hero-visual img{object-position:70% center}
 .design-clinical .hero-visual img{object-position:75% center}
+.content-thumbnail{width:100%;aspect-ratio:1200/630;border-radius:12px;margin-bottom:1.2rem}.detail-thumbnail{display:block;width:min(900px,100%);aspect-ratio:1200/630;border-radius:20px;margin-top:2rem}
 .design-evidence .hero{background:linear-gradient(115deg,var(--canvas) 0 54%,color-mix(in srgb,var(--primary) 10%,white) 54%)}.design-evidence .hero-visual{clip-path:polygon(4% 0,100% 0,96% 100%,0 94%);border:2px solid var(--primary)}.design-evidence .service-grid{transform:rotate(-.35deg)}
 .design-kinetic .hero{background:var(--ink);color:white}.design-kinetic .hero-copy{order:2}.design-kinetic .hero-visual{order:1;border-radius:0;transform:skewY(-2deg);box-shadow:-18px 18px 0 var(--primary)}.design-kinetic .service-card:nth-child(even){transform:translateY(20px)}
 .design-chambers .hero{grid-template-columns:1.15fr .85fr;background:linear-gradient(90deg,var(--canvas) 0 72%,var(--accent) 72%)}.design-chambers .hero-visual{border-radius:3px;border:12px double var(--ink);transform:rotate(1deg)}.design-chambers .service-card{border-top:5px solid var(--primary)}
