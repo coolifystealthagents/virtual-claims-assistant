@@ -2,7 +2,6 @@
 import { FormEvent, useState } from 'react';
 import { useRouter } from 'next/navigation';
 
-declare global { interface Window { acrTracker?: { trackLead: (payload: Record<string, FormDataEntryValue | string>) => void } } }
 
 const personalDomains = new Set(['gmail.com','yahoo.com','hotmail.com','outlook.com','icloud.com','aol.com','proton.me','protonmail.com']);
 
