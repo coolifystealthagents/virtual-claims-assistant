@@ -2,22 +2,79 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { LeadForm } from '@/components/LeadForm';
+import reviews from '@/app/review-provenance.json';
 import { site } from '@/lib/site';
 import './contact.css';
 
-export const metadata:Metadata={title:'Contact Us | Insurance Claims Staffing Consultation',description:'Talk with Virtual Claims Assistant about remote administrative support for claim intake, evidence records, policyholder updates, adjuster queues, and quality review.',alternates:{canonical:'/contact-us'}};
-const steps=[['Workflow discovery','Map the recurring claims work, accountable owner, systems, evidence, and escalation points.'],['Role design','Define a focused support role with clear inputs, outputs, access, and coverage boundaries.'],['Candidate matching','Review remote professionals whose strengths fit the approved workflow and communication needs.'],['Controlled launch','Start with documented tasks, minimum access, sampled work, and accountable claims oversight.']];
-const faqs=[['What can a virtual claims assistant support?','An assistant can prepare intake records, index documents, track approved requests, draft status updates, maintain adjuster queues, and assemble review samples.'],['Can an assistant decide coverage or claim value?','No. Coverage, liability, reserves, valuation, settlement, denial, fraud conclusions, legal interpretation, and payment approval stay with licensed or authorized claims professionals.'],['Can we start with one claims workflow?','Yes. A narrow first workflow makes evidence requirements, access, ownership, review, and escalation easier to test before the role expands.'],['How do you approach nonpublic claim information?','The consultation covers approved systems, least privilege access, secure handling, documented authorization, retention, and incident escalation. Your organization remains responsible for privacy, security, and insurance obligations.']];
+export const metadata: Metadata = {
+  title: 'Contact Us | Insurance Claims Staffing Consultation',
+  description: 'Talk with Virtual Claims Assistant about remote administrative support for claims operations.',
+  alternates: { canonical: '/contact-us' },
+};
 
-export default function ContactPage(){const schema={'@context':'https://schema.org','@type':'ContactPage',name:`Contact ${site.name}`,url:`https://${site.domain}/contact-us`,description:'Insurance claims staffing consultation.',breadcrumb:{'@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:'Home',item:`https://${site.domain}`},{'@type':'ListItem',position:2,name:'Contact Us',item:`https://${site.domain}/contact-us`}]}};return <main className="contact-page">
-  <section className="contact-hero"><Image src={site.heroImage} alt={site.heroAlt} fill priority sizes="100vw"/><div className="contact-hero-overlay"/><div className="contact-container contact-hero-copy"><p className="eyebrow">Contact Us</p><h1>Get In Touch</h1><p>Build dependable administrative capacity around claim intake, evidence records, policyholder communication, adjuster queues, and quality review while authorized professionals keep every claims decision.</p></div></section>
-  <section className="contact-section"><div className="contact-container consultation-grid"><div className="consultation-copy"><p className="eyebrow">Claims operations consultation</p><h2>Turn a pressured claims workflow into a clear support role.</h2><p>Bring the process that repeatedly pulls adjusters or claims leaders away from accountable review. We will help define what can be delegated, what stays with authorized professionals, and how to launch with evidence and control.</p><h3>What to Expect</h3><ul><li>A practical conversation about the workflow and current owner.</li><li>Clear evidence, access, authority, and review boundaries.</li><li>A candidate matching path based on the actual work.</li><li>A controlled next step for your claims operation.</li></ul><p className="contact-note"><strong>Contact:</strong> Use the secure consultation form. A verified public site email is not currently configured.</p></div><div className="contact-form-card"><h2>Book a Free Consultation</h2><p>Describe the workflow only. Do not include claim numbers, policyholder names, medical details, or other nonpublic claim information.</p><LeadForm source="contact-page-consultation"/></div></div></section>
-  <section className="contact-section credibility"><div className="contact-container credibility-grid"><div className="credibility-image"><Image src={site.heroImage} alt="Claims evidence workflow prepared for a staffing consultation" fill sizes="(max-width: 900px) 100vw, 45vw"/></div><div><p className="eyebrow">Powered by Stealth Agents</p><h2>Claims expertise. Stealth Agents support.</h2><p>Stealth Agents helps organizations build remote roles around documented workflows, selective candidate matching, minimum access, and accountable handoffs. The goal is durable administrative capacity without blurring coverage or settlement authority.</p><p><strong>{site.name} is a subsidiary of Stealth Agents.</strong></p><Link className="button primary" href="#consultation-calendar">Plan your consultation</Link></div></div></section>
-  <section id="consultation-calendar" className="contact-section booking"><div className="contact-container booking-copy"><p className="eyebrow">Choose a time directly</p><h2>Or Skip the Wait: Book a Call Now</h2><p>Choose a time to discuss the claims workflow, accountable owner, evidence requirements, and support capacity your team needs.</p><iframe className="booking-frame" title="Book an insurance claims staffing consultation" src="https://go.oncehub.com/StealthAgentsTeam?brdr=1pxd8d8d8&dt=&em=1&Si=1" loading="lazy"/></div></section>
-  <section className="contact-section"><div className="contact-container"><p className="eyebrow">A controlled path forward</p><h2>After you reach out</h2><div className="step-grid">{steps.map(([title,copy],index)=><article key={title} className="step-card"><span>0{index+1}</span><h3>{title}</h3><p>{copy}</p></article>)}</div></div></section>
-  <section className="contact-section prep"><div className="contact-container"><p className="eyebrow">Make the conversation specific</p><h2>Prepare for a useful call</h2><div className="prep-grid"><article><h3>Recurring work</h3><p>Identify recurring intake, evidence, status, queue, recovery, and quality tasks.</p></article><article><h3>Current ownership</h3><p>Note who prepares, reviews, decides, approves, and escalates each step today.</p></article><article><h3>Systems and access</h3><p>List approved claims systems and the minimum access a support role would need.</p></article><article><h3>Service standard</h3><p>Define what timely, accurate, evidenced, and safely escalated completion looks like.</p></article></div></div></section>
-  <section className="contact-section boundaries"><div className="contact-container narrow"><p className="eyebrow">Accountability stays clear</p><h2>Responsibility and boundaries</h2><p>Remote assistants can prepare intake records, index evidence, maintain approved status records, draft approved communication, organize queues, and flag exceptions. They do not interpret coverage, determine liability, set reserves, value damage, negotiate settlements, deny claims, conclude fraud, give legal or medical advice, authorize payment, or replace licensed adjusters and claims professionals.</p><p>Your organization retains responsibility for supervision, licensing, privacy, security, medical and financial information, regulatory deadlines, policy interpretation, coverage, liability, reserves, settlement, denials, fraud referral, litigation, payment, and every legal, compliance, financial, and executive decision.</p></div></section>
-  <section className="contact-section"><div className="contact-container"><p className="eyebrow">Explore focused roles</p><h2>Common starting points</h2><div className="path-grid"><Link href="/services/fnol-intake-support"><h3>FNOL intake support</h3><p>Organize first notice records and route incomplete details.</p></Link><Link href="/services/claims-document-coordination"><h3>Claims document coordination</h3><p>Maintain a clear index of evidence, correspondence, and requests.</p></Link><Link href="/services/policyholder-status-support"><h3>Policyholder status support</h3><p>Prepare approved updates and complete communication records.</p></Link><Link href="/services/adjuster-work-queue-support"><h3>Adjuster work queue support</h3><p>Keep review queues visible and connected to source records.</p></Link></div><Link className="text-link all-services" href="/services">View the full services collection</Link></div></section>
-  <section className="contact-section faq"><div className="contact-container narrow"><p className="eyebrow">Claims staffing questions</p><h2>Frequently asked questions</h2>{faqs.map(([q,a])=><details key={q}><summary>{q}</summary><p>{a}</p></details>)}</div></section>
-  <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema)}}/>
-</main>}
+const steps = [
+  ['Workflow discovery', 'Map the recurring claims work, accountable owner, systems, evidence, and escalation points.'],
+  ['Role design', 'Define a focused support role with clear inputs, outputs, access, and coverage boundaries.'],
+  ['Candidate matching', 'Review remote professionals whose strengths fit the approved workflow and communication needs.'],
+  ['Controlled launch', 'Start with documented tasks, minimum access, sampled work, and accountable claims oversight.'],
+];
+
+const faqs = [
+  ['What can a virtual claims assistant support?', 'An assistant can prepare intake records, index documents, track approved requests, draft status updates, maintain adjuster queues, and assemble review samples.'],
+  ['Can an assistant decide coverage or claim value?', 'No. Coverage, liability, reserves, valuation, settlement, denial, fraud conclusions, legal interpretation, and payment approval stay with licensed or authorized claims professionals.'],
+  ['Can we start with one claims workflow?', 'Yes. A narrow first workflow makes evidence requirements, access, ownership, review, and escalation easier to test before the role expands.'],
+];
+
+export default function ContactPage() {
+  const schema = { '@context': 'https://schema.org', '@type': 'ContactPage', name: `Contact ${site.name}`, url: `https://${site.domain}/contact-us` };
+  return <main id="main-content" tabIndex={-1} className="contact-page">
+    <section className="contact-first-fold" aria-labelledby="contact-title">
+      <div className="contact-intro">
+        <p className="evidence-tab">Contact Us</p>
+        <h1 id="contact-title">Put claims workflow pressure on the record.</h1>
+        <p className="contact-deck">Tell us where intake, document control, policyholder updates, or adjuster queues need dependable administrative capacity.</p>
+        <div className="review-heading">
+          <span>Verified parent brand evidence</span>
+          <strong>StealthAgents reviews</strong>
+        </div>
+        <div className="review-window" aria-label="StealthAgents reviews">
+          <div className="review-rail">
+            {reviews.records.map((review) => <article className="review-card" key={review.name} tabIndex={0}>
+              <div className="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <h2>{review.headline}</h2>
+              <p>“{review.body}”</p>
+              <div className="review-attribution"><strong>{review.name}</strong><span>{review.detail}</span></div>
+            </article>)}
+          </div>
+        </div>
+        <p className="review-source">Ten first party reviews published by StealthAgents. Review evidence verified October 19, 2026.</p>
+      </div>
+      <div className="contact-form-card">
+        <p className="evidence-tab">Consultation intake</p>
+        <h2>Book a Free Consultation</h2>
+        <p>Describe the workflow only. Do not include claim numbers, policyholder names, medical details, or other nonpublic claim information.</p>
+        <LeadForm source="contact-page-consultation" />
+      </div>
+    </section>
+
+    <section className="parent-proof" aria-labelledby="parent-proof-title">
+      <div className="team-photo"><Image src="/brand/stealth-agents-team.webp" alt="The official StealthAgents team in Bacolod" fill sizes="(max-width: 900px) 100vw, 56vw" priority /></div>
+      <div className="parent-proof-copy">
+        <p className="evidence-tab">Parent brand evidence</p>
+        <Image className="parent-logo" src="/brand/stealth-agents-logo-black.png" alt="StealthAgents" width={310} height={92} />
+        <h2 id="parent-proof-title">Claims focus backed by an established staffing team.</h2>
+        <p>Virtual Claims Assistant is supported by the StealthAgents team, with role design, candidate matching, onboarding support, and accountable service operations behind each engagement.</p>
+        <p className="official-plate">Official team, Bacolod</p>
+      </div>
+    </section>
+
+    <section className="contact-section"><div className="contact-container">
+      <p className="eyebrow">A controlled path forward</p><h2>After you reach out</h2>
+      <div className="step-grid">{steps.map(([title, copy]) => <article key={title} className="step-card"><h3>{title}</h3><p>{copy}</p></article>)}</div>
+    </div></section>
+    <section className="contact-section boundaries"><div className="contact-container narrow"><p className="eyebrow">Accountability stays clear</p><h2>Responsibility and boundaries</h2><p>Remote assistants can prepare intake records, index evidence, maintain approved status records, draft approved communication, organize queues, and flag exceptions. They do not interpret coverage, determine liability, set reserves, value damage, negotiate settlements, deny claims, conclude fraud, give legal or medical advice, authorize payment, or replace licensed adjusters and claims professionals.</p></div></section>
+    <section className="contact-section"><div className="contact-container"><p className="eyebrow">Explore focused roles</p><h2>Common starting points</h2><div className="path-grid"><Link href="/services/fnol-intake-support"><h3>FNOL intake support</h3><p>Organize first notice records and route incomplete details.</p></Link><Link href="/services/claims-document-coordination"><h3>Claims document coordination</h3><p>Maintain a clear index of evidence, correspondence, and requests.</p></Link><Link href="/services/policyholder-status-support"><h3>Policyholder status support</h3><p>Prepare approved updates and complete communication records.</p></Link><Link href="/services/adjuster-work-queue-support"><h3>Adjuster work queue support</h3><p>Keep review queues visible and connected to source records.</p></Link></div></div></section>
+    <section className="contact-section faq"><div className="contact-container narrow"><p className="eyebrow">Claims staffing questions</p><h2>Frequently asked questions</h2>{faqs.map(([question, answer]) => <details key={question}><summary>{question}</summary><p>{answer}</p></details>)}</div></section>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+  </main>;
+}

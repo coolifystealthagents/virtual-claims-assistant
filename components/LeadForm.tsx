@@ -28,7 +28,7 @@ export function LeadForm({ source = 'contact-page' }: { source?: string }) {
       const result = await response.json();
       if (!response.ok || !result.ok) { setError(result.message || 'Please check your details and try again.'); setBusy(false); return; }
       const payload = Object.fromEntries(data.entries()); delete payload.website_url;
-      window.acrTracker?.trackLead({ ...payload, source });
+      try { window.acrTracker?.trackLead({ ...payload, source }); } catch { /* accepted lead navigation must continue */ }
       router.push('/thank-you');
     } catch { setError('We could not send your request. Please try again.'); setBusy(false); }
   }
