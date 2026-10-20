@@ -1,8 +1,54 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { researchPosts,researchBySlug } from '@/lib/content';
+import ArticleLayout, { slugifyHeading } from '@/components/ArticleLayout';
+import { researchPosts, researchBySlug } from '@/lib/content';
 import { site } from '@/lib/site';
-export function generateStaticParams(){return researchPosts.map(({slug})=>({slug}))}
-export async function generateMetadata({params}:{params:Promise<{slug:string}>}):Promise<Metadata>{const {slug}=await params;const post=researchBySlug(slug);return post?{title:post.title,description:post.summary,alternates:{canonical:`/research/${post.slug}`}}:{} }
-export default async function ResearchPostPage({params}:{params:Promise<{slug:string}>}){const {slug}=await params;const post=researchBySlug(slug);if(!post)notFound();const related=researchPosts.filter((item)=>item.slug!==post.slug).slice(0,3);return <main><header className="page-hero"><p className="eyebrow">Home / Research / {post.cluster}</p><h1>{post.title}</h1><p>{post.summary}</p><p className="meta">{site.name} Editorial Team · Published {post.publishedAt}</p>{post.thumbnail&&<img className="detail-thumbnail" src={post.thumbnail} alt={`${post.title} research thumbnail`} />}</header><section className="content-wrap article-layout"><article className="prose"><p className="research-finding">{post.finding}</p>{post.sections?.map((section)=><section key={section.heading}><h2>{section.heading}</h2>{section.paragraphs.map((paragraph)=><p key={paragraph}>{paragraph}</p>)}</section>)||<><h2>What this brief examines</h2><p>This brief connects public guidance with operating questions for role design and review.</p></>}<h2>Method note</h2><p>{post.methodology||'We reviewed the public sources below and translated recurring operational ideas into role design questions.'}</p><div className="sources"><h2>Sources</h2><ol>{post.sources.map((source)=><li key={source.url}><a href={source.url} rel="noopener noreferrer">{source.label}</a></li>)}</ol></div>{post.faq&&<><h2>Common questions answered</h2>{post.faq.map((item)=><div key={item.q}><h3>{item.q}</h3><p>{item.a}</p></div>)}</>}<Link id="cta-research-final-bookcall" className="button primary" href="/contact-us">Discuss your workflow in a free call</Link></article><aside className="sidebar"><p className="eyebrow">Related research</p>{related.map((item)=><p key={item.slug}><Link href={`/research/${item.slug}`}>{item.title}</Link></p>)}</aside></section></main>}
+
+export function generateStaticParams() { return researchPosts.map(({ slug }) => ({ slug })); }
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const post = researchBySlug(slug);
+  if (!post) return {};
+  const url = `/research/${post.slug}`;
+  return {
+    title: post.title, description: post.summary, alternates: { canonical: url },
+    openGraph: { type: 'article', title: post.title, description: post.summary, url, publishedTime: post.publishedAt, images: [{ url: post.thumbnail!, alt: `${post.title} research illustration` }] },
+    twitter: { card: 'summary_large_image', title: post.title, description: post.summary, images: [post.thumbnail!] }
+  };
+}
+
+export default async function ResearchPostPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const post = researchBySlug(slug);
+  if (!post) notFound();
+  const sections = post.sections || [];
+  const faq = post.faq || [];
+  const related = [...researchPosts.filter((item) => item.slug !== post.slug && item.cluster === post.cluster), ...researchPosts.filter((item) => item.slug !== post.slug && item.cluster !== post.cluster)].slice(0, 3);
+  const toc = [
+    ...sections.map((section) => ({ id: slugifyHeading(section.heading), label: section.heading, level: 2 as const })),
+    { id: 'method-note', label: 'Method note', level: 2 as const }, { id: 'sources', label: 'Sources', level: 2 as const },
+    ...(faq.length ? [{ id: 'common-questions', label: 'Common questions', level: 2 as const }, ...faq.map((item) => ({ id: slugifyHeading(`question-${item.q}`), label: item.q, level: 3 as const }))] : []),
+    { id: 'next-step', label: 'Apply the research', level: 2 as const }
+  ];
+  const canonical = `https://${site.domain}/research/${post.slug}`;
+  const jsonLd = {
+    '@context': 'https://schema.org', '@type': 'Article', headline: post.title, description: post.summary,
+    datePublished: post.publishedAt, dateModified: post.publishedAt, mainEntityOfPage: canonical,
+    image: `https://${site.domain}${post.thumbnail}`, author: { '@type': 'Organization', name: `${site.name} Research Desk` },
+    publisher: { '@type': 'Organization', name: site.name, url: `https://${site.domain}` }, citation: post.sources.map((source) => source.url)
+  };
+  return <main className="editorial-detail">
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c') }} />
+    <header className="article-hero"><div className="article-hero-copy"><p className="article-kicker"><Link href="/research">Research file</Link> / {post.cluster}</p><h1>{post.title}</h1><p className="article-deck">{post.summary}</p><div className="article-byline"><span>{site.name} Research Desk</span><span><time dateTime={post.publishedAt}>{post.publishedAt}</time></span><span>{post.readTime}</span><span>{post.sources.length} sources</span></div></div><div className="article-hero-media"><img src={post.thumbnail} alt={`${post.title} research file illustration`} /></div></header>
+    <ArticleLayout kind="research" toc={toc} publishedAt={post.publishedAt} readTime={post.readTime || '8 min read'} category={post.cluster} related={related.map((item) => ({ href: `/research/${item.slug}`, title: item.title }))} sources={post.sources}>
+      <p className="evidence-finding">{post.finding}</p>
+      {sections.map((section) => <section key={section.heading} id={slugifyHeading(section.heading)}><h2>{section.heading}</h2>{section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</section>)}
+      <section id="method-note"><h2>Method note</h2><p>{post.methodology || 'We reviewed the public sources listed below in their original scope and translated recurring operational ideas into review questions. No claim outcome study was conducted.'}</p></section>
+      <section className="source-file" id="sources"><h2>Sources</h2><ol>{post.sources.map((source) => <li key={source.url}><a href={source.url} rel="noopener noreferrer">{source.label}</a></li>)}</ol></section>
+      {faq.length > 0 && <section className="faq-block" id="common-questions"><h2>Common questions</h2>{faq.map((item) => <div key={item.q}><h3 id={slugifyHeading(`question-${item.q}`)}>{item.q}</h3><p>{item.a}</p></div>)}</section>}
+      <section className="article-final" id="next-step"><h2>Apply the research to a real queue</h2><p>Bring the source records, current procedure, and known exceptions. We will help turn the evidence questions into a bounded support role and review plan.</p><Link id="cta-research-final-bookcall" className="button" href="/contact-us">Discuss your workflow</Link></section>
+    </ArticleLayout>
+  </main>;
+}

@@ -913,8 +913,96 @@ const legacyResearchPosts: ResearchPost[] = [
   }
 ];
 
-export const blogPosts: BlogPost[] = [...october12BlogPosts, ...legacyBlogPosts];
-export const researchPosts: ResearchPost[] = [...october12ResearchPosts, ...legacyResearchPosts];
+const workflowImage = (slug: string) => {
+  if (slug.includes('fnol')) return '/editorial/fnol-evidence.svg';
+  if (slug.includes('document')) return '/editorial/document-provenance.svg';
+  if (slug.includes('policyholder') || slug.includes('status')) return '/editorial/communication-register.svg';
+  if (slug.includes('queue') || slug.includes('adjuster')) return '/editorial/queue-control.svg';
+  if (slug.includes('subrogation')) return '/editorial/subrogation-record.svg';
+  if (slug.includes('quality') || slug.includes('exception')) return '/editorial/quality-review.svg';
+  return '/editorial/operations-boundary.svg';
+};
+
+const focusFromTitle = (title: string) => title.split(':')[1]?.trim().replace(/\.$/, '') || 'operational control review';
+const subjectFromTitle = (title: string) => title.split(':')[0].trim();
+
+function enrichLegacyResearch(post: ResearchPost): ResearchPost {
+  const subject = subjectFromTitle(post.title);
+  const focus = focusFromTitle(post.title);
+  const sourceNames = post.sources.map((source) => source.label).join(', ');
+  const sections = [
+    {
+      heading: `Scope of the ${focus}`,
+      paragraphs: [
+        `This brief examines ${subject.toLowerCase()} through the specific lens of ${focus}. It asks what an operations leader can verify from records, where uncertainty should remain visible, and which decisions must transfer to an authorized owner.`,
+        `The review is intentionally administrative. It does not infer coverage, liability, fraud, valuation, reserve, payment, settlement, recovery rights, or legal compliance from the presence or speed of routine work.`
+      ]
+    },
+    {
+      heading: 'Evidence questions to ask',
+      paragraphs: [
+        `For each ${subject.toLowerCase()} record, ask which source supports the current state, when it was captured, who performed the check, and what evidence is still unavailable. A useful review preserves conflicting facts rather than silently selecting one.`,
+        `Test whether another reviewer could reconstruct the sequence from the source record, request history, status definition, and escalation note. If not, the gap is a workflow finding rather than permission to fill the record with an assumption.`
+      ]
+    },
+    {
+      heading: 'Apply the finding to the workflow',
+      paragraphs: [
+        `Translate the stated finding into a short acceptance checklist for ${subject.toLowerCase()}. Name the eligible queue, required source fields, permitted administrative actions, completion evidence, and the event that returns work to the accountable team.`,
+        `Start with a bounded sample that includes routine records and known exceptions. Record exclusions and unavailable evidence so the review describes the population honestly instead of presenting a selected group as the whole workflow.`
+      ]
+    },
+    {
+      heading: 'Owner and decision boundaries',
+      paragraphs: [
+        `An administrative specialist may gather, classify, compare, route, and document approved follow up. The designated claims professional retains judgment about claim meaning and outcome, while legal, compliance, privacy, and security owners retain questions in their disciplines.`,
+        `Write escalation triggers in observable terms. A conflicting source, missing required item, failed communication, access concern, disputed fact, or request for a protected decision should identify the receiving owner and the evidence transferred.`
+      ]
+    },
+    {
+      heading: `Practical review for ${post.cluster.toLowerCase()}`,
+      paragraphs: [
+        `Reviewers should compare the record with its authoritative source, test the documented status criteria, inspect the transfer trail, and note whether corrections preserve prior values. Findings should distinguish an isolated record issue from a repeated process weakness.`,
+        `Assign each confirmed weakness an owner, a due date, an affected record decision, and a verification method. Retest with a fresh sample after the repair takes effect, and label any change to the population or definition.`
+      ]
+    },
+    {
+      heading: 'Source interpretation',
+      paragraphs: [
+        `The source set for this brief includes ${sourceNames}. These public materials provide context for record quality, work boundaries, and information handling, but each keeps its original purpose and scope.`,
+        `A local procedure should identify which requirements actually apply to the product, jurisdiction, contract, system, and organization. This synthesis is a set of operating questions, not a substitute for qualified professional advice.`
+      ]
+    },
+    {
+      heading: 'Limitations and responsible use',
+      paragraphs: [
+        `The cited sources do not establish a universal staffing ratio, response target, accuracy percentage, or causal claim for ${subject.toLowerCase()}. Volume, event conditions, source availability, systems, and definitions can all change the observed pattern.`,
+        `Use the brief to design and inspect a controlled process. Do not treat administrative completion as proof of claim quality or use a descriptive change as proof that one staffing or workflow choice caused an outcome.`
+      ]
+    }
+  ];
+  return {
+    ...post,
+    thumbnail: workflowImage(post.slug),
+    readTime: '8 min read',
+    methodology: `We reviewed the listed public sources in their stated scope, then translated the ${focus} question into administrative evidence checks. No claim files or outcome data were used.`,
+    sections,
+    faq: [
+      { q: `What does this ${focus} establish?`, a: `It establishes a practical way to inspect administrative evidence for ${subject.toLowerCase()}. It does not establish the merits or outcome of a claim.` },
+      { q: 'Who owns exceptions?', a: 'The procedure should name the qualified owner for each exception type. Administrative staff document and route the issue without making the protected decision.' },
+      { q: 'How should the team use the sources?', a: 'Use each source within its original scope, document local applicability, and obtain professional guidance for insurance, legal, privacy, security, and regulatory questions.' }
+    ]
+  };
+}
+
+export const blogPosts: BlogPost[] = [...october12BlogPosts, ...legacyBlogPosts].map((post) => ({
+  ...post,
+  thumbnail: post.thumbnail || workflowImage(post.slug)
+}));
+export const researchPosts: ResearchPost[] = [
+  ...october12ResearchPosts.map((post) => ({ ...post, readTime: post.readTime || '12 min read' })),
+  ...legacyResearchPosts.map(enrichLegacyResearch)
+];
 
 export const nav = [
   { href: '/services', label: 'Services' },
