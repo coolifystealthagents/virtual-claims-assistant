@@ -64,6 +64,21 @@ test('legacy research is expanded with useful record-specific sections and limit
   assert.match(content, /focusFromTitle/);
   assert.match(content, /subjectFromTitle/);
   assert.match(content, /No claim files or outcome data were used/);
+  assert.match(content, /'exception pattern study': 'exception handling brief'/);
+  assert.match(content, /'review consistency report': 'review consistency guide'/);
+  assert.match(content, /without claiming observed outcomes/);
+  assert.match(read('app/research/[slug]/page.tsx'), /Source synthesis, not an empirical claim-file study/);
+});
+
+test('editorial modification dates and sitemap reflect the release review', () => {
+  const content = read('lib/content.ts');
+  assert.match(content, /LAST_CONTENT_REVIEW = '2026-10-20'/);
+  for (const path of ['app/blog/[slug]/page.tsx', 'app/research/[slug]/page.tsx']) {
+    const source = read(path);
+    assert.match(source, /dateModified: LAST_CONTENT_REVIEW/);
+    assert.match(source, /Updated <time dateTime=\{LAST_CONTENT_REVIEW\}/);
+  }
+  assert.match(read('app/sitemap.ts'), /lastModified:reviewed/);
 });
 
 test('sticky desktop and accessible mobile navigation are styled', () => {

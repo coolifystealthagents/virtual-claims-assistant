@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import ArticleLayout, { slugifyHeading } from '@/components/ArticleLayout';
-import { blogPosts, blogBySlug } from '@/lib/content';
+import { blogPosts, blogBySlug, LAST_CONTENT_REVIEW } from '@/lib/content';
 import { site } from '@/lib/site';
 
 export function generateStaticParams() { return blogPosts.map(({ slug }) => ({ slug })); }
@@ -32,17 +32,17 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   const canonical = `https://${site.domain}/blog/${post.slug}`;
   const jsonLd = {
     '@context': 'https://schema.org', '@type': 'Article', headline: post.title, description: post.description,
-    datePublished: post.publishedAt, dateModified: post.publishedAt, mainEntityOfPage: canonical,
+    datePublished: post.publishedAt, dateModified: LAST_CONTENT_REVIEW, mainEntityOfPage: canonical,
     image: `https://${site.domain}${post.thumbnail}`, author: { '@type': 'Organization', name: `${site.name} Editorial Team` }, publisher: { '@type': 'Organization', name: site.name, url: `https://${site.domain}` }
   };
-  return <main className="editorial-detail">
+  return <main id="main-content" tabIndex={-1} className="editorial-detail">
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c') }} />
     <header className="article-hero">
       <div className="article-hero-copy">
         <p className="article-kicker"><Link href="/blog">Field notes</Link> / {post.category}</p>
         <h1>{post.title}</h1>
         <p className="article-deck">{post.description}</p>
-        <div className="article-byline"><span>{site.name} Editorial Team</span><span><time dateTime={post.publishedAt}>{post.publishedAt}</time></span><span>{post.readTime}</span></div>
+        <div className="article-byline"><span>{site.name} Editorial Team</span><span>Published <time dateTime={post.publishedAt}>{post.publishedAt}</time></span><span>Updated <time dateTime={LAST_CONTENT_REVIEW}>{LAST_CONTENT_REVIEW}</time></span><span>{post.readTime}</span></div>
       </div>
       <div className="article-hero-media"><img src={post.thumbnail} alt={`${post.title} evidence workflow illustration`} /></div>
     </header>

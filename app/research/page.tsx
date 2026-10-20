@@ -15,7 +15,7 @@ const clusters = [...new Set(researchPosts.map((post) => post.cluster))];
 const anchor = (value: string) => value.toLowerCase().replace(/[^a-z0-9]+/g, '-');
 
 export default function ResearchPage() {
-  return <main className="editorial-index research-index">
+  return <main id="main-content" tabIndex={-1} className="editorial-index research-index">
     <header className="editorial-index-hero">
       <div><p className="eyebrow">Claims research file</p><h1>Evidence before inference.</h1><p className="lede">Source-led briefs for leaders building measurable claims support workflows. The library separates observable administrative records from protected judgment, states what a method can support, and keeps uncertainty and limitations visible.</p></div>
       <img src="/editorial/research-library.svg" alt="Ruled research file with source tabs, evidence points, and review annotations" />

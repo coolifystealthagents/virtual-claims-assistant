@@ -3,6 +3,8 @@ import type { BlogPost, ResearchPost } from './types';
 import { october12BlogPosts } from './october12-blog';
 import { october12ResearchPosts } from './october12-research';
 
+export const LAST_CONTENT_REVIEW = '2026-10-20';
+
 const legacyBlogPosts: BlogPost[] = [
   {
     "slug": "claims-operations-manager-vs-claims-va",
@@ -928,7 +930,13 @@ const subjectFromTitle = (title: string) => title.split(':')[0].trim();
 
 function enrichLegacyResearch(post: ResearchPost): ResearchPost {
   const subject = subjectFromTitle(post.title);
-  const focus = focusFromTitle(post.title);
+  const originalFocus = focusFromTitle(post.title);
+  const focus = ({
+    'workflow boundary review': 'workflow boundary guide',
+    'source quality audit': 'source quality checklist',
+    'exception pattern study': 'exception handling brief',
+    'review consistency report': 'review consistency guide'
+  } as Record<string, string>)[originalFocus] || originalFocus;
   const sourceNames = post.sources.map((source) => source.label).join(', ');
   const sections = [
     {
@@ -983,6 +991,9 @@ function enrichLegacyResearch(post: ResearchPost): ResearchPost {
   ];
   return {
     ...post,
+    title: `${subject}: ${focus}`,
+    summary: `A public-source operational brief for defining, inspecting, and improving ${subject.toLowerCase()} workflows without claiming observed outcomes.`,
+    finding: `This source synthesis proposes a visible boundary between routine preparation and accountable judgment for ${subject.toLowerCase()}. It does not report observed claim outcomes.`,
     thumbnail: workflowImage(post.slug),
     readTime: '8 min read',
     methodology: `We reviewed the listed public sources in their stated scope, then translated the ${focus} question into administrative evidence checks. No claim files or outcome data were used.`,

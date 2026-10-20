@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server';
+import { sendLeadFallbackToMattermost } from '../../../lib/lead-fallback-mattermost';
 
 export const runtime = 'nodejs';
 
@@ -105,26 +106,30 @@ export async function POST(request: Request) {
     try { const parsed = new URL(companyWebsite); if (!['http:', 'https:'].includes(parsed.protocol)) throw new Error(); } catch { return reply('Please enter a valid company website.', 400); }
   }
 
-  const payload = { first_name: firstName, last_name: lastName, name: legacyName, email, phone_country: phoneCountry, phone, company, company_website: companyWebsite, company_size: companySize, positions_to_fill: positions, referral_source: referral, message, source };
+  const name = [firstName, lastName].filter(Boolean).join(' ') || legacyName || '';
+  const payload = { first_name: firstName, last_name: lastName, name, email, phone_country: phoneCountry, phone, company, company_website: companyWebsite, company_size: companySize, positions_to_fill: positions, referral_source: referral, message, source };
   const acrEndpoint = process.env.ACR_LEAD_ENDPOINT;
-  const fallbackWebhook = process.env.SITE_MATTERMOST_FALLBACK_WEBHOOK_URL;
-  if (!acrEndpoint && !fallbackWebhook) return reply('Lead service is not configured.', 503);
 
   try {
     if (acrEndpoint) {
       const target = new URL(acrEndpoint);
       if (target.protocol !== 'https:') return reply('Lead service is not configured.', 503);
       const response = await fetch(target, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(payload), cache: 'no-store', signal: AbortSignal.timeout(6_000) });
-      if (response.ok) return NextResponse.json({ ok: true }, { headers: { 'Cache-Control': 'no-store' } });
+      if (!response.ok) return reply('We could not send your request.', 502);
     }
-    if (fallbackWebhook) {
-      const target = new URL(fallbackWebhook);
-      if (target.protocol !== 'https:') return reply('Lead service is not configured.', 503);
-      const text = [`New Virtual Claims Assistant lead`, `Name: ${[firstName, lastName].filter(Boolean).join(' ') || legacyName}`, `Email: ${email}`, `Company: ${company}`, `Phone: ${phoneCountry} ${phone}`, `Message: ${message}`].join('\n');
-      const response = await fetch(target, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ text }), cache: 'no-store', signal: AbortSignal.timeout(6_000) });
-      if (response.ok) return NextResponse.json({ ok: true }, { headers: { 'Cache-Control': 'no-store' } });
-    }
-    return reply('We could not send your request.', 502);
+    void sendLeadFallbackToMattermost({
+      name,
+      email,
+      phone: [phoneCountry, phone].filter(Boolean).join(' '),
+      business: company || undefined,
+      message: message || undefined,
+      companySize: companySize || undefined,
+      positions: positions || undefined,
+      referral: referral || undefined,
+      pageUrl: request.headers.get('referer') || '',
+      userAgent: request.headers.get('user-agent') || '',
+    });
+    return NextResponse.json({ ok: true }, { headers: { 'Cache-Control': 'no-store' } });
   } catch {
     return reply('We could not send your request.', 502);
   }

@@ -33,6 +33,14 @@ export default function ContactPage() {
         <p className="evidence-tab">Contact Us</p>
         <h1 id="contact-title">Put claims workflow pressure on the record.</h1>
         <p className="contact-deck">Tell us where intake, document control, policyholder updates, or adjuster queues need dependable administrative capacity.</p>
+      </div>
+      <div className="contact-form-card">
+        <p className="evidence-tab">Consultation intake</p>
+        <h2>Book a Free Consultation</h2>
+        <p>Describe the workflow only. Do not include claim numbers, policyholder names, medical details, or other nonpublic claim information.</p>
+        <LeadForm source="contact-page-consultation" />
+      </div>
+      <div className="review-evidence">
         <div className="review-heading">
           <span>Verified parent brand evidence</span>
           <strong>StealthAgents reviews</strong>
@@ -48,12 +56,6 @@ export default function ContactPage() {
           </div>
         </div>
         <p className="review-source">Ten first party reviews published by StealthAgents. Review evidence verified October 19, 2026.</p>
-      </div>
-      <div className="contact-form-card">
-        <p className="evidence-tab">Consultation intake</p>
-        <h2>Book a Free Consultation</h2>
-        <p>Describe the workflow only. Do not include claim numbers, policyholder names, medical details, or other nonpublic claim information.</p>
-        <LeadForm source="contact-page-consultation" />
       </div>
     </section>
 

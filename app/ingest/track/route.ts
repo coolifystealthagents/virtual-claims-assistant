@@ -4,7 +4,15 @@ const TRACKING_API = 'https://acrtracking.stealthagents.us/api/track';
 const SITE_ID = 'virtual-claims-assistant';
 const MAX_BODY_BYTES = 128 * 1024;
 const MAX_EVENTS = 25;
-const allowedEvents = new Set(['pageview', 'scroll_depth', 'cwv', 'click', 'cta_click', 'outbound_click', 'form_start', 'form_submit', 'lead_submit', 'empty_form_submit', 'funnel_booking_confirmed', 'engagement', 'banner_impression', 'banner_click']);
+const allowedEvents = new Set([
+  'pageview', 'scroll_depth', 'cwv', 'click', 'cta_click', 'cta_view', 'outbound_click',
+  'download_click', 'mailto_click', 'tel_click', 'form_start', 'form_view', 'form_submit',
+  'empty_form_submit', 'lead_submit', 'lead_submit_blocked_blank', 'lead_submit_error',
+  'funnel_form_page', 'funnel_form_submitted', 'funnel_booking_confirmed',
+  'funnel_booking_booking_form_open', 'funnel_booking_booking_initiated',
+  'funnel_booking_booking_confirmed', 'engagement', 'banner_impression', 'banner_click',
+  'js_error', 'unhandled_rejection'
+]);
 
 export const runtime = 'nodejs';
 class PayloadTooLargeError extends Error {}

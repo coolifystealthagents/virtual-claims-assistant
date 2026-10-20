@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import ArticleLayout, { slugifyHeading } from '@/components/ArticleLayout';
-import { researchPosts, researchBySlug } from '@/lib/content';
+import { researchPosts, researchBySlug, LAST_CONTENT_REVIEW } from '@/lib/content';
 import { site } from '@/lib/site';
 
 export function generateStaticParams() { return researchPosts.map(({ slug }) => ({ slug })); }
@@ -35,20 +35,20 @@ export default async function ResearchPostPage({ params }: { params: Promise<{ s
   const canonical = `https://${site.domain}/research/${post.slug}`;
   const jsonLd = {
     '@context': 'https://schema.org', '@type': 'Article', headline: post.title, description: post.summary,
-    datePublished: post.publishedAt, dateModified: post.publishedAt, mainEntityOfPage: canonical,
+    datePublished: post.publishedAt, dateModified: LAST_CONTENT_REVIEW, mainEntityOfPage: canonical,
     image: `https://${site.domain}${post.thumbnail}`, author: { '@type': 'Organization', name: `${site.name} Research Desk` },
     publisher: { '@type': 'Organization', name: site.name, url: `https://${site.domain}` }, citation: post.sources.map((source) => source.url)
   };
-  return <main className="editorial-detail">
+  return <main id="main-content" tabIndex={-1} className="editorial-detail">
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c') }} />
-    <header className="article-hero"><div className="article-hero-copy"><p className="article-kicker"><Link href="/research">Research file</Link> / {post.cluster}</p><h1>{post.title}</h1><p className="article-deck">{post.summary}</p><div className="article-byline"><span>{site.name} Research Desk</span><span><time dateTime={post.publishedAt}>{post.publishedAt}</time></span><span>{post.readTime}</span><span>{post.sources.length} sources</span></div></div><div className="article-hero-media"><img src={post.thumbnail} alt={`${post.title} research file illustration`} /></div></header>
+    <header className="article-hero"><div className="article-hero-copy"><p className="article-kicker"><Link href="/research">Source brief</Link> / {post.cluster}</p><h1>{post.title}</h1><p className="article-deck">{post.summary}</p><div className="article-byline"><span>{site.name} Research Desk</span><span>Published <time dateTime={post.publishedAt}>{post.publishedAt}</time></span><span>Updated <time dateTime={LAST_CONTENT_REVIEW}>{LAST_CONTENT_REVIEW}</time></span><span>{post.readTime}</span><span>{post.sources.length} sources</span></div></div><div className="article-hero-media"><img src={post.thumbnail} alt={`${post.title} research file illustration`} /></div></header>
     <ArticleLayout kind="research" toc={toc} publishedAt={post.publishedAt} readTime={post.readTime || '8 min read'} category={post.cluster} related={related.map((item) => ({ href: `/research/${item.slug}`, title: item.title }))} sources={post.sources}>
-      <p className="evidence-finding">{post.finding}</p>
+      <p className="evidence-finding"><strong>Source synthesis, not an empirical claim-file study.</strong> {post.finding}</p>
       {sections.map((section) => <section key={section.heading} id={slugifyHeading(section.heading)}><h2>{section.heading}</h2>{section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</section>)}
       <section id="method-note"><h2>Method note</h2><p>{post.methodology || 'We reviewed the public sources listed below in their original scope and translated recurring operational ideas into review questions. No claim outcome study was conducted.'}</p></section>
       <section className="source-file" id="sources"><h2>Sources</h2><ol>{post.sources.map((source) => <li key={source.url}><a href={source.url} rel="noopener noreferrer">{source.label}</a></li>)}</ol></section>
       {faq.length > 0 && <section className="faq-block" id="common-questions"><h2>Common questions</h2>{faq.map((item) => <div key={item.q}><h3 id={slugifyHeading(`question-${item.q}`)}>{item.q}</h3><p>{item.a}</p></div>)}</section>}
-      <section className="article-final" id="next-step"><h2>Apply the research to a real queue</h2><p>Bring the source records, current procedure, and known exceptions. We will help turn the evidence questions into a bounded support role and review plan.</p><Link id="cta-research-final-bookcall" className="button" href="/contact-us">Discuss your workflow</Link></section>
+      <section className="article-final" id="next-step"><h2>Apply the brief to a real queue</h2><p>Bring the source records, current procedure, and known exceptions. We will help turn the evidence questions into a bounded support role and review plan.</p><Link id="cta-research-final-bookcall" className="button" href="/contact-us">Discuss your workflow</Link></section>
     </ArticleLayout>
   </main>;
 }

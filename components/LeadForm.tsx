@@ -27,8 +27,6 @@ export function LeadForm({ source = 'contact-page' }: { source?: string }) {
       const response = await fetch('/api/submit-lead', { method: 'POST', body: data });
       const result = await response.json();
       if (!response.ok || !result.ok) { setError(result.message || 'Please check your details and try again.'); setBusy(false); return; }
-      const payload = Object.fromEntries(data.entries()); delete payload.website_url;
-      try { window.acrTracker?.trackLead({ ...payload, source }); } catch { /* accepted lead navigation must continue */ }
       router.push('/thank-you');
     } catch { setError('We could not send your request. Please try again.'); setBusy(false); }
   }
@@ -37,8 +35,7 @@ export function LeadForm({ source = 'contact-page' }: { source?: string }) {
     {full ? <>
       <label>First Name <span aria-hidden="true">*</span><input name="first_name" autoComplete="given-name" required /></label>
       <label>Last Name <span aria-hidden="true">*</span><input name="last_name" autoComplete="family-name" required /></label>
-      <label className="form-wide">Business Email <span aria-hidden="true">*</span><input name="email" type="email" autoComplete="email" required /></label>
-      <p className="form-help form-wide">Use your insurance or claims organization email. Personal email providers are not accepted.</p>
+      <label className="form-wide">Business Email <span aria-hidden="true">*</span><input name="email" type="email" autoComplete="email" required /><small className="form-help">Business email required. Personal email providers are not accepted.</small></label>
       <label>Country code<select name="phone_country" defaultValue="+1" aria-label="Phone country code"><option value="+1">US/CA +1</option><option value="+44">UK +44</option><option value="+61">AU +61</option><option value="+63">PH +63</option><option value="other">Other</option></select></label>
       <label>Phone Number<input name="phone" type="tel" autoComplete="tel-national" inputMode="tel" /></label>
       <label className="form-wide">Company Name <span aria-hidden="true">*</span><input name="company" autoComplete="organization" required /></label>

@@ -15,7 +15,7 @@ const categories = [...new Set(blogPosts.map((post) => post.category))];
 const anchor = (value: string) => value.toLowerCase().replace(/[^a-z0-9]+/g, '-');
 
 export default function BlogPage() {
-  return <main className="editorial-index">
+  return <main id="main-content" tabIndex={-1} className="editorial-index">
     <header className="editorial-index-hero">
       <div>
         <p className="eyebrow">Claims operations field notes</p>

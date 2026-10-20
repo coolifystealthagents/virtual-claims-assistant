@@ -1,8 +1,5 @@
-'use client';
-
 import Image from 'next/image';
 import Link from 'next/link';
-import { useEffect } from 'react';
 import { site } from '@/lib/site';
 import { ArrowIcon } from './Icons';
 
@@ -13,14 +10,6 @@ const primaryNav = [
 ] as const;
 
 export function Header() {
-  useEffect(() => {
-    const main = document.querySelector('main');
-    if (main) {
-      main.id = 'main-content';
-      main.tabIndex = -1;
-    }
-  }, []);
-
   return <>
     <a className="skip-link" href="#main-content">Skip to main content</a>
     <header className="site-header">
