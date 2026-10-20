@@ -58,6 +58,13 @@ test('every content record has a hero mapping and every mapped asset exists', ()
   for (const asset of ['/editorial/blog-library.svg', '/editorial/research-library.svg']) assert.ok(existsSync(join(root, 'public', asset)), asset);
 });
 
+test('editorial mobile grid tracks cannot expand past the viewport', () => {
+  const css = read('components/editorial.css');
+  assert.match(css, /grid-template-columns:minmax\(0,1fr\)/);
+  assert.match(css, /\.article-hero-copy,\.article-hero-media\{min-width:0\}/);
+  assert.match(css, /\.article-hero h1\{font-size:clamp\(2\.25rem,10\.25vw,2\.5rem\);overflow-wrap:break-word\}/);
+});
+
 test('legacy research is expanded with useful record-specific sections and limits', () => {
   const content = read('lib/content.ts');
   for (const heading of ['Evidence questions to ask', 'Apply the finding to the workflow', 'Owner and decision boundaries', 'Source interpretation', 'Limitations and responsible use']) assert.match(content, new RegExp(heading));
