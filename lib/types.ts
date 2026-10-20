@@ -1,4 +1,25 @@
-export type Service = { slug: string; name: string; short: string; tasks: string[] };
+export type ServiceFaq = { q: string; a: string };
+export type ServiceScenario = { title: string; situation: string; response: string };
+export type Service = {
+  slug: string;
+  name: string;
+  short: string;
+  audience: string;
+  problem: string;
+  heroImage: string;
+  heroAlt: string;
+  socialDescription: string;
+  inputs: string[];
+  workflow: { title: string; detail: string }[];
+  scope: { included: string[]; excluded: string[] };
+  deliverables: string[];
+  decisionBoundaries: string[];
+  qualityControls: string[];
+  scenarios: ServiceScenario[];
+  faq: ServiceFaq[];
+  related: string[];
+  tasks: string[];
+};
 export type BlogPost = { slug: string; title: string; description: string; category: string; publishedAt: string; readTime: string; thumbnail?: string; sections: { heading: string; paragraphs: string[] }[]; faq: { q: string; a: string }[]; internalService: string; internalSibling: string; source: { label: string; url: string } };
 export type ResearchPost = { slug: string; title: string; summary: string; cluster: string; publishedAt: string; finding: string; thumbnail?: string; methodology?: string; sections?: { heading: string; paragraphs: string[] }[]; faq?: { q: string; a: string }[]; sources: { label: string; url: string }[] };
 export type SiteConfig = {
