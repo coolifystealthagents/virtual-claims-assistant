@@ -2,6 +2,8 @@ import { site } from './site';
 import type { BlogPost, ResearchPost } from './types';
 import { october12BlogPosts } from './october12-blog';
 import { october12ResearchPosts } from './october12-research';
+import { october22BlogPosts } from './october22-blog';
+import { october22ResearchPosts } from './october22-research';
 
 export const LAST_CONTENT_REVIEW = '2026-10-20';
 
@@ -1006,11 +1008,12 @@ function enrichLegacyResearch(post: ResearchPost): ResearchPost {
   };
 }
 
-export const blogPosts: BlogPost[] = [...october12BlogPosts, ...legacyBlogPosts].map((post) => ({
+export const blogPosts: BlogPost[] = [...october22BlogPosts, ...october12BlogPosts, ...legacyBlogPosts].map((post) => ({
   ...post,
   thumbnail: post.thumbnail || workflowImage(post.slug)
 }));
 export const researchPosts: ResearchPost[] = [
+  ...october22ResearchPosts.map((post) => ({ ...post, readTime: post.readTime || '8 min read' })),
   ...october12ResearchPosts.map((post) => ({ ...post, readTime: post.readTime || '12 min read' })),
   ...legacyResearchPosts.map(enrichLegacyResearch)
 ];

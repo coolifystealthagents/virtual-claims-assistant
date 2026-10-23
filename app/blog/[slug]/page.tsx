@@ -42,7 +42,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         <p className="article-kicker"><Link href="/blog">Field notes</Link> / {post.category}</p>
         <h1>{post.title}</h1>
         <p className="article-deck">{post.description}</p>
-        <div className="article-byline"><span>{site.name} Editorial Team</span><span>Published <time dateTime={post.publishedAt}>{post.publishedAt}</time></span><span>Updated <time dateTime={LAST_CONTENT_REVIEW}>{LAST_CONTENT_REVIEW}</time></span><span>{post.readTime}</span></div>
+        <div className="article-byline"><span>{site.name} Editorial Team</span><span><time dateTime={post.publishedAt}>{`Published ${new Intl.DateTimeFormat('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${post.publishedAt}T00:00:00Z`))}`}</time></span><span>Updated <time dateTime={LAST_CONTENT_REVIEW}>{LAST_CONTENT_REVIEW}</time></span><span>{post.readTime}</span></div>
       </div>
       <div className="article-hero-media"><img src={post.thumbnail} alt={`${post.title} evidence workflow illustration`} /></div>
     </header>
