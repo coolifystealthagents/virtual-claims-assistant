@@ -792,5 +792,703 @@ export const october27BlogPosts: BlogPost[] = [
       "label": "United States Government Accountability Office",
       "url": "https://www.gao.gov/products/gao-14-704g"
     }
+  },
+
+  {
+    "slug": "vca-fnol-completeness-oct28",
+    "title": "FNOL Completeness Before Assignment",
+    "description": "A checklist for first notice of loss records that names the missing fact, the owner, and the next action.",
+    "category": "FNOL intake",
+    "publishedAt": "2026-10-28",
+    "readTime": "9 min read",
+    "thumbnail": "/thumbnails/october-28/vca-fnol-completeness-oct28.jpg",
+    "sections": [
+      {
+        "heading": "Why this control matters",
+        "paragraphs": [
+          "FNOL Completeness Before Assignment is a record, not a reminder to be careful. It shows what the team checked, who owned the next step, and what remained open before the claim moved.",
+          "The control matters because the file is assigned before the loss date, location, or contact method is confirmed."
+        ]
+      },
+      {
+        "heading": "Open the governing record",
+        "paragraphs": [
+          "Start with the FNOL record and assignment note. Record the source, the date, the owner, and the evidence. The assistant prepares and checks; the adjuster or claim owner keeps the coverage and liability decision."
+        ]
+      },
+      {
+        "heading": "Where the handoff breaks",
+        "paragraphs": [
+          "The predictable failure is this: the file is assigned before the loss date, location, or contact method is confirmed. Use one status set: ready, exception, approved, and closed."
+        ]
+      },
+      {
+        "heading": "A worked claim example",
+        "paragraphs": [
+          "A notice arrives with no loss date. The checklist records the gap and routes one question before assignment. The record shows the original state, the change, the reviewer, and the confirmation."
+        ]
+      },
+      {
+        "heading": "Weekly review and stop rule",
+        "paragraphs": [
+          "Sample one ordinary claim, one exception, and one corrected file. Count errors by rule rather than by person. When the same gap appears twice, fix the form or the routing rule."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Who owns the decision?",
+        "a": "The claim owner or adjuster; the assistant prepares and routes the record."
+      },
+      {
+        "q": "How often is it reviewed?",
+        "a": "Weekly and whenever the carrier or queue rule changes."
+      }
+    ],
+    "internalService": "/services/claims-support",
+    "internalSibling": "/services/claim-intake",
+    "source": {
+      "label": "FEMA public assistance guidance",
+      "url": "https://www.fema.gov/assistance/public"
+    }
+  },
+  {
+    "slug": "vca-document-provenance-oct28",
+    "title": "Claim Document Provenance",
+    "description": "A provenance record that names the document, the source, the date, and the claim it supports.",
+    "category": "Claim documentation",
+    "publishedAt": "2026-10-28",
+    "readTime": "9 min read",
+    "thumbnail": "/thumbnails/october-28/vca-document-provenance-oct28.jpg",
+    "sections": [
+      {
+        "heading": "Why this control matters",
+        "paragraphs": [
+          "Claim Document Provenance is a record, not a reminder to be careful. It shows what the team checked, who owned the next step, and what remained open before the claim moved.",
+          "The control matters because a photo is filed without a source and no one can show which property it belongs to."
+        ]
+      },
+      {
+        "heading": "Open the governing record",
+        "paragraphs": [
+          "Start with the document index. Record the source, the date, the owner, and the evidence. The assistant prepares and checks; the adjuster or claim owner keeps the coverage and liability decision."
+        ]
+      },
+      {
+        "heading": "Where the handoff breaks",
+        "paragraphs": [
+          "The predictable failure is this: a photo is filed without a source and no one can show which property it belongs to. Use one status set: ready, exception, approved, and closed."
+        ]
+      },
+      {
+        "heading": "A worked claim example",
+        "paragraphs": [
+          "A contractor estimate arrives by email. The index records the sender, the property, and the date. The record shows the original state, the change, the reviewer, and the confirmation."
+        ]
+      },
+      {
+        "heading": "Weekly review and stop rule",
+        "paragraphs": [
+          "Sample one ordinary claim, one exception, and one corrected file. Count errors by rule rather than by person. When the same gap appears twice, fix the form or the routing rule."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Who owns the decision?",
+        "a": "The claim owner or adjuster; the assistant prepares and routes the record."
+      },
+      {
+        "q": "How often is it reviewed?",
+        "a": "Weekly and whenever the carrier or queue rule changes."
+      }
+    ],
+    "internalService": "/services/claims-support",
+    "internalSibling": "/services/claim-intake",
+    "source": {
+      "label": "FEMA public assistance guidance",
+      "url": "https://www.fema.gov/assistance/public"
+    }
+  },
+  {
+    "slug": "vca-status-communication-oct28",
+    "title": "Claim Status Communication",
+    "description": "A status routine that records the last update, the next milestone, and the customer contact.",
+    "category": "Customer communication",
+    "publishedAt": "2026-10-28",
+    "readTime": "9 min read",
+    "thumbnail": "/thumbnails/october-28/vca-status-communication-oct28.jpg",
+    "sections": [
+      {
+        "heading": "Why this control matters",
+        "paragraphs": [
+          "Claim Status Communication is a record, not a reminder to be careful. It shows what the team checked, who owned the next step, and what remained open before the claim moved.",
+          "The control matters because the customer calls for an update because the last message was a generic acknowledgment."
+        ]
+      },
+      {
+        "heading": "Open the governing record",
+        "paragraphs": [
+          "Start with the status log and customer note. Record the source, the date, the owner, and the evidence. The assistant prepares and checks; the adjuster or claim owner keeps the coverage and liability decision."
+        ]
+      },
+      {
+        "heading": "Where the handoff breaks",
+        "paragraphs": [
+          "The predictable failure is this: the customer calls for an update because the last message was a generic acknowledgment. Use one status set: ready, exception, approved, and closed."
+        ]
+      },
+      {
+        "heading": "A worked claim example",
+        "paragraphs": [
+          "A claim waits on an adjuster inspection. The log records the scheduled date and the next customer update. The record shows the original state, the change, the reviewer, and the confirmation."
+        ]
+      },
+      {
+        "heading": "Weekly review and stop rule",
+        "paragraphs": [
+          "Sample one ordinary claim, one exception, and one corrected file. Count errors by rule rather than by person. When the same gap appears twice, fix the form or the routing rule."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Who owns the decision?",
+        "a": "The claim owner or adjuster; the assistant prepares and routes the record."
+      },
+      {
+        "q": "How often is it reviewed?",
+        "a": "Weekly and whenever the carrier or queue rule changes."
+      }
+    ],
+    "internalService": "/services/claims-support",
+    "internalSibling": "/services/claim-intake",
+    "source": {
+      "label": "FEMA public assistance guidance",
+      "url": "https://www.fema.gov/assistance/public"
+    }
+  },
+  {
+    "slug": "vca-queue-aging-oct28",
+    "title": "Claim Queue Aging",
+    "description": "An aging review that separates waiting on the carrier, the adjuster, the insured, and the vendor.",
+    "category": "Queue operations",
+    "publishedAt": "2026-10-28",
+    "readTime": "9 min read",
+    "thumbnail": "/thumbnails/october-28/vca-queue-aging-oct28.jpg",
+    "sections": [
+      {
+        "heading": "Why this control matters",
+        "paragraphs": [
+          "Claim Queue Aging is a record, not a reminder to be careful. It shows what the team checked, who owned the next step, and what remained open before the claim moved.",
+          "The control matters because the queue age grows because every item is labeled pending."
+        ]
+      },
+      {
+        "heading": "Open the governing record",
+        "paragraphs": [
+          "Start with the aging report and owner note. Record the source, the date, the owner, and the evidence. The assistant prepares and checks; the adjuster or claim owner keeps the coverage and liability decision."
+        ]
+      },
+      {
+        "heading": "Where the handoff breaks",
+        "paragraphs": [
+          "The predictable failure is this: the queue age grows because every item is labeled pending. Use one status set: ready, exception, approved, and closed."
+        ]
+      },
+      {
+        "heading": "A worked claim example",
+        "paragraphs": [
+          "A file waits on a police report. The aging record names the dependency and the follow-up owner. The record shows the original state, the change, the reviewer, and the confirmation."
+        ]
+      },
+      {
+        "heading": "Weekly review and stop rule",
+        "paragraphs": [
+          "Sample one ordinary claim, one exception, and one corrected file. Count errors by rule rather than by person. When the same gap appears twice, fix the form or the routing rule."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Who owns the decision?",
+        "a": "The claim owner or adjuster; the assistant prepares and routes the record."
+      },
+      {
+        "q": "How often is it reviewed?",
+        "a": "Weekly and whenever the carrier or queue rule changes."
+      }
+    ],
+    "internalService": "/services/claims-support",
+    "internalSibling": "/services/claim-intake",
+    "source": {
+      "label": "FEMA public assistance guidance",
+      "url": "https://www.fema.gov/assistance/public"
+    }
+  },
+  {
+    "slug": "vca-review-sampling-oct28",
+    "title": "Claim Review Sampling",
+    "description": "A sampling plan that checks the record, the decision, and the customer communication.",
+    "category": "Quality review",
+    "publishedAt": "2026-10-28",
+    "readTime": "9 min read",
+    "thumbnail": "/thumbnails/october-28/vca-review-sampling-oct28.jpg",
+    "sections": [
+      {
+        "heading": "Why this control matters",
+        "paragraphs": [
+          "Claim Review Sampling is a record, not a reminder to be careful. It shows what the team checked, who owned the next step, and what remained open before the claim moved.",
+          "The control matters because the sample reviews only closed files and misses the open work that drives complaints."
+        ]
+      },
+      {
+        "heading": "Open the governing record",
+        "paragraphs": [
+          "Start with the sample record and correction log. Record the source, the date, the owner, and the evidence. The assistant prepares and checks; the adjuster or claim owner keeps the coverage and liability decision."
+        ]
+      },
+      {
+        "heading": "Where the handoff breaks",
+        "paragraphs": [
+          "The predictable failure is this: the sample reviews only closed files and misses the open work that drives complaints. Use one status set: ready, exception, approved, and closed."
+        ]
+      },
+      {
+        "heading": "A worked claim example",
+        "paragraphs": [
+          "A closed claim is sampled for document completeness and customer confirmation. The record shows the original state, the change, the reviewer, and the confirmation."
+        ]
+      },
+      {
+        "heading": "Weekly review and stop rule",
+        "paragraphs": [
+          "Sample one ordinary claim, one exception, and one corrected file. Count errors by rule rather than by person. When the same gap appears twice, fix the form or the routing rule."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Who owns the decision?",
+        "a": "The claim owner or adjuster; the assistant prepares and routes the record."
+      },
+      {
+        "q": "How often is it reviewed?",
+        "a": "Weekly and whenever the carrier or queue rule changes."
+      }
+    ],
+    "internalService": "/services/claims-support",
+    "internalSibling": "/services/claim-intake",
+    "source": {
+      "label": "FEMA public assistance guidance",
+      "url": "https://www.fema.gov/assistance/public"
+    }
+  },
+  {
+    "slug": "vca-cat-intake-board-oct28",
+    "title": "CAT Intake Board",
+    "description": "A temporary board that records the event, the notice, the completeness, and the owner.",
+    "category": "Catastrophe operations",
+    "publishedAt": "2026-10-28",
+    "readTime": "9 min read",
+    "thumbnail": "/thumbnails/october-28/vca-cat-intake-board-oct28.jpg",
+    "sections": [
+      {
+        "heading": "Why this control matters",
+        "paragraphs": [
+          "CAT Intake Board is a record, not a reminder to be careful. It shows what the team checked, who owned the next step, and what remained open before the claim moved.",
+          "The control matters because the board becomes a second claim system and duplicates the file."
+        ]
+      },
+      {
+        "heading": "Open the governing record",
+        "paragraphs": [
+          "Start with the event board and notice log. Record the source, the date, the owner, and the evidence. The assistant prepares and checks; the adjuster or claim owner keeps the coverage and liability decision."
+        ]
+      },
+      {
+        "heading": "Where the handoff breaks",
+        "paragraphs": [
+          "The predictable failure is this: the board becomes a second claim system and duplicates the file. Use one status set: ready, exception, approved, and closed."
+        ]
+      },
+      {
+        "heading": "A worked claim example",
+        "paragraphs": [
+          "A storm produces 200 notices. The board tracks the event, the file, and the assignment owner. The record shows the original state, the change, the reviewer, and the confirmation."
+        ]
+      },
+      {
+        "heading": "Weekly review and stop rule",
+        "paragraphs": [
+          "Sample one ordinary claim, one exception, and one corrected file. Count errors by rule rather than by person. When the same gap appears twice, fix the form or the routing rule."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Who owns the decision?",
+        "a": "The claim owner or adjuster; the assistant prepares and routes the record."
+      },
+      {
+        "q": "How often is it reviewed?",
+        "a": "Weekly and whenever the carrier or queue rule changes."
+      }
+    ],
+    "internalService": "/services/claims-support",
+    "internalSibling": "/services/claim-intake",
+    "source": {
+      "label": "FEMA public assistance guidance",
+      "url": "https://www.fema.gov/assistance/public"
+    }
+  },
+  {
+    "slug": "vca-total-loss-documentation-oct28",
+    "title": "Total Loss Documentation",
+    "description": "A total-loss checklist that records the valuation, the salvage, the lienholder, and the customer notice.",
+    "category": "Claims",
+    "publishedAt": "2026-10-28",
+    "readTime": "9 min read",
+    "thumbnail": "/thumbnails/october-28/vca-total-loss-documentation-oct28.jpg",
+    "sections": [
+      {
+        "heading": "Why this control matters",
+        "paragraphs": [
+          "Total Loss Documentation is a record, not a reminder to be careful. It shows what the team checked, who owned the next step, and what remained open before the claim moved.",
+          "The control matters because the settlement is delayed because the salvage or lienholder document is missing."
+        ]
+      },
+      {
+        "heading": "Open the governing record",
+        "paragraphs": [
+          "Start with the total-loss file. Record the source, the date, the owner, and the evidence. The assistant prepares and checks; the adjuster or claim owner keeps the coverage and liability decision."
+        ]
+      },
+      {
+        "heading": "Where the handoff breaks",
+        "paragraphs": [
+          "The predictable failure is this: the settlement is delayed because the salvage or lienholder document is missing. Use one status set: ready, exception, approved, and closed."
+        ]
+      },
+      {
+        "heading": "A worked claim example",
+        "paragraphs": [
+          "A vehicle is declared a total loss. The checklist records the valuation source, the salvage, and the lienholder. The record shows the original state, the change, the reviewer, and the confirmation."
+        ]
+      },
+      {
+        "heading": "Weekly review and stop rule",
+        "paragraphs": [
+          "Sample one ordinary claim, one exception, and one corrected file. Count errors by rule rather than by person. When the same gap appears twice, fix the form or the routing rule."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Who owns the decision?",
+        "a": "The claim owner or adjuster; the assistant prepares and routes the record."
+      },
+      {
+        "q": "How often is it reviewed?",
+        "a": "Weekly and whenever the carrier or queue rule changes."
+      }
+    ],
+    "internalService": "/services/claims-support",
+    "internalSibling": "/services/claim-intake",
+    "source": {
+      "label": "FEMA public assistance guidance",
+      "url": "https://www.fema.gov/assistance/public"
+    }
+  },
+  {
+    "slug": "vca-subrogation-referral-oct28",
+    "title": "Subrogation Referral",
+    "description": "A referral record that captures the liability evidence, the recovery potential, and the owner.",
+    "category": "Claims",
+    "publishedAt": "2026-10-28",
+    "readTime": "9 min read",
+    "thumbnail": "/thumbnails/october-28/vca-subrogation-referral-oct28.jpg",
+    "sections": [
+      {
+        "heading": "Why this control matters",
+        "paragraphs": [
+          "Subrogation Referral is a record, not a reminder to be careful. It shows what the team checked, who owned the next step, and what remained open before the claim moved.",
+          "The control matters because the referral misses the liability evidence and the recovery window closes."
+        ]
+      },
+      {
+        "heading": "Open the governing record",
+        "paragraphs": [
+          "Start with the referral form and evidence. Record the source, the date, the owner, and the evidence. The assistant prepares and checks; the adjuster or claim owner keeps the coverage and liability decision."
+        ]
+      },
+      {
+        "heading": "Where the handoff breaks",
+        "paragraphs": [
+          "The predictable failure is this: the referral misses the liability evidence and the recovery window closes. Use one status set: ready, exception, approved, and closed."
+        ]
+      },
+      {
+        "heading": "A worked claim example",
+        "paragraphs": [
+          "A claim shows a third-party fault. The record captures the police report and the referral date. The record shows the original state, the change, the reviewer, and the confirmation."
+        ]
+      },
+      {
+        "heading": "Weekly review and stop rule",
+        "paragraphs": [
+          "Sample one ordinary claim, one exception, and one corrected file. Count errors by rule rather than by person. When the same gap appears twice, fix the form or the routing rule."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Who owns the decision?",
+        "a": "The claim owner or adjuster; the assistant prepares and routes the record."
+      },
+      {
+        "q": "How often is it reviewed?",
+        "a": "Weekly and whenever the carrier or queue rule changes."
+      }
+    ],
+    "internalService": "/services/claims-support",
+    "internalSibling": "/services/claim-intake",
+    "source": {
+      "label": "FEMA public assistance guidance",
+      "url": "https://www.fema.gov/assistance/public"
+    }
+  },
+  {
+    "slug": "vca-medical-bill-review-oct28",
+    "title": "Medical Bill Review",
+    "description": "A review record that checks the bill, the treatment date, the provider, and the payment status.",
+    "category": "Claims",
+    "publishedAt": "2026-10-28",
+    "readTime": "9 min read",
+    "thumbnail": "/thumbnails/october-28/vca-medical-bill-review-oct28.jpg",
+    "sections": [
+      {
+        "heading": "Why this control matters",
+        "paragraphs": [
+          "Medical Bill Review is a record, not a reminder to be careful. It shows what the team checked, who owned the next step, and what remained open before the claim moved.",
+          "The control matters because a bill is paid twice or for a date outside the loss period."
+        ]
+      },
+      {
+        "heading": "Open the governing record",
+        "paragraphs": [
+          "Start with the bill log and claim record. Record the source, the date, the owner, and the evidence. The assistant prepares and checks; the adjuster or claim owner keeps the coverage and liability decision."
+        ]
+      },
+      {
+        "heading": "Where the handoff breaks",
+        "paragraphs": [
+          "The predictable failure is this: a bill is paid twice or for a date outside the loss period. Use one status set: ready, exception, approved, and closed."
+        ]
+      },
+      {
+        "heading": "A worked claim example",
+        "paragraphs": [
+          "A provider bill arrives for the wrong date. The review records the date and the claim link. The record shows the original state, the change, the reviewer, and the confirmation."
+        ]
+      },
+      {
+        "heading": "Weekly review and stop rule",
+        "paragraphs": [
+          "Sample one ordinary claim, one exception, and one corrected file. Count errors by rule rather than by person. When the same gap appears twice, fix the form or the routing rule."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Who owns the decision?",
+        "a": "The claim owner or adjuster; the assistant prepares and routes the record."
+      },
+      {
+        "q": "How often is it reviewed?",
+        "a": "Weekly and whenever the carrier or queue rule changes."
+      }
+    ],
+    "internalService": "/services/claims-support",
+    "internalSibling": "/services/claim-intake",
+    "source": {
+      "label": "FEMA public assistance guidance",
+      "url": "https://www.fema.gov/assistance/public"
+    }
+  },
+  {
+    "slug": "vca-rental-reimbursement-oct28",
+    "title": "Rental Reimbursement",
+    "description": "A reimbursement record that names the policy limit, the rental period, the receipt, and the approval.",
+    "category": "Claims",
+    "publishedAt": "2026-10-28",
+    "readTime": "9 min read",
+    "thumbnail": "/thumbnails/october-28/vca-rental-reimbursement-oct28.jpg",
+    "sections": [
+      {
+        "heading": "Why this control matters",
+        "paragraphs": [
+          "Rental Reimbursement is a record, not a reminder to be careful. It shows what the team checked, who owned the next step, and what remained open before the claim moved.",
+          "The control matters because the rental continues past the limit and the customer is surprised by the bill."
+        ]
+      },
+      {
+        "heading": "Open the governing record",
+        "paragraphs": [
+          "Start with the rental log and receipt. Record the source, the date, the owner, and the evidence. The assistant prepares and checks; the adjuster or claim owner keeps the coverage and liability decision."
+        ]
+      },
+      {
+        "heading": "Where the handoff breaks",
+        "paragraphs": [
+          "The predictable failure is this: the rental continues past the limit and the customer is surprised by the bill. Use one status set: ready, exception, approved, and closed."
+        ]
+      },
+      {
+        "heading": "A worked claim example",
+        "paragraphs": [
+          "A rental is approved for 14 days. The log records the limit, the extension request, and the approval. The record shows the original state, the change, the reviewer, and the confirmation."
+        ]
+      },
+      {
+        "heading": "Weekly review and stop rule",
+        "paragraphs": [
+          "Sample one ordinary claim, one exception, and one corrected file. Count errors by rule rather than by person. When the same gap appears twice, fix the form or the routing rule."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Who owns the decision?",
+        "a": "The claim owner or adjuster; the assistant prepares and routes the record."
+      },
+      {
+        "q": "How often is it reviewed?",
+        "a": "Weekly and whenever the carrier or queue rule changes."
+      }
+    ],
+    "internalService": "/services/claims-support",
+    "internalSibling": "/services/claim-intake",
+    "source": {
+      "label": "FEMA public assistance guidance",
+      "url": "https://www.fema.gov/assistance/public"
+    }
+  },
+  {
+    "slug": "vca-salvage-title-oct28",
+    "title": "Salvage Title Handling",
+    "description": "A salvage title routine that records the title, the transfer, the buyer, and the proceeds.",
+    "category": "Claims",
+    "publishedAt": "2026-10-28",
+    "readTime": "9 min read",
+    "thumbnail": "/thumbnails/october-28/vca-salvage-title-oct28.jpg",
+    "sections": [
+      {
+        "heading": "Why this control matters",
+        "paragraphs": [
+          "Salvage Title Handling is a record, not a reminder to be careful. It shows what the team checked, who owned the next step, and what remained open before the claim moved.",
+          "The control matters because the salvage proceeds are received but the title transfer is not documented."
+        ]
+      },
+      {
+        "heading": "Open the governing record",
+        "paragraphs": [
+          "Start with the title log and transfer. Record the source, the date, the owner, and the evidence. The assistant prepares and checks; the adjuster or claim owner keeps the coverage and liability decision."
+        ]
+      },
+      {
+        "heading": "Where the handoff breaks",
+        "paragraphs": [
+          "The predictable failure is this: the salvage proceeds are received but the title transfer is not documented. Use one status set: ready, exception, approved, and closed."
+        ]
+      },
+      {
+        "heading": "A worked claim example",
+        "paragraphs": [
+          "A salvage vehicle is sold. The record shows the title, the buyer, and the proceeds. The record shows the original state, the change, the reviewer, and the confirmation."
+        ]
+      },
+      {
+        "heading": "Weekly review and stop rule",
+        "paragraphs": [
+          "Sample one ordinary claim, one exception, and one corrected file. Count errors by rule rather than by person. When the same gap appears twice, fix the form or the routing rule."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Who owns the decision?",
+        "a": "The claim owner or adjuster; the assistant prepares and routes the record."
+      },
+      {
+        "q": "How often is it reviewed?",
+        "a": "Weekly and whenever the carrier or queue rule changes."
+      }
+    ],
+    "internalService": "/services/claims-support",
+    "internalSibling": "/services/claim-intake",
+    "source": {
+      "label": "FEMA public assistance guidance",
+      "url": "https://www.fema.gov/assistance/public"
+    }
+  },
+  {
+    "slug": "vca-claim-closure-letter-oct28",
+    "title": "Claim Closure Letter",
+    "description": "A closure record that states the decision, the payment, the remaining rights, and the contact.",
+    "category": "Claims",
+    "publishedAt": "2026-10-28",
+    "readTime": "9 min read",
+    "thumbnail": "/thumbnails/october-28/vca-claim-closure-letter-oct28.jpg",
+    "sections": [
+      {
+        "heading": "Why this control matters",
+        "paragraphs": [
+          "Claim Closure Letter is a record, not a reminder to be careful. It shows what the team checked, who owned the next step, and what remained open before the claim moved.",
+          "The control matters because the file closes without telling the customer what happens next."
+        ]
+      },
+      {
+        "heading": "Open the governing record",
+        "paragraphs": [
+          "Start with the closure letter and claim file. Record the source, the date, the owner, and the evidence. The assistant prepares and checks; the adjuster or claim owner keeps the coverage and liability decision."
+        ]
+      },
+      {
+        "heading": "Where the handoff breaks",
+        "paragraphs": [
+          "The predictable failure is this: the file closes without telling the customer what happens next. Use one status set: ready, exception, approved, and closed."
+        ]
+      },
+      {
+        "heading": "A worked claim example",
+        "paragraphs": [
+          "A claim is closed with payment. The letter records the amount, the basis, and the contact for questions. The record shows the original state, the change, the reviewer, and the confirmation."
+        ]
+      },
+      {
+        "heading": "Weekly review and stop rule",
+        "paragraphs": [
+          "Sample one ordinary claim, one exception, and one corrected file. Count errors by rule rather than by person. When the same gap appears twice, fix the form or the routing rule."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Who owns the decision?",
+        "a": "The claim owner or adjuster; the assistant prepares and routes the record."
+      },
+      {
+        "q": "How often is it reviewed?",
+        "a": "Weekly and whenever the carrier or queue rule changes."
+      }
+    ],
+    "internalService": "/services/claims-support",
+    "internalSibling": "/services/claim-intake",
+    "source": {
+      "label": "FEMA public assistance guidance",
+      "url": "https://www.fema.gov/assistance/public"
+    }
   }
+
 ];

@@ -415,5 +415,387 @@ export const october27ResearchPosts: ResearchPost[] = [
         "url": "https://content.naic.org/consumer/insurance-claims"
       }
     ]
+  },
+
+  {
+    "slug": "vca-fnol-completeness-study-oct28",
+    "title": "FNOL Completeness",
+    "summary": "Which required facts are missing at first notice of loss, and when are they corrected?",
+    "cluster": "Claims operations research",
+    "publishedAt": "2026-10-28",
+    "readTime": "8 min read",
+    "finding": "A complete FNOL still needs confirmation against the source.",
+    "thumbnail": "/thumbnails/october-28/vca-fnol-completeness-study-oct28.jpg",
+    "methodology": "A bounded review of claim records with a frozen population and documented evidence rules.",
+    "sections": [
+      {
+        "heading": "Question and scope",
+        "paragraphs": [
+          "Which required facts are missing at first notice of loss, and when are they corrected?",
+          "The scope is the claim record and the events the team can observe in a defined window. It does not evaluate coverage or claim merit."
+        ]
+      },
+      {
+        "heading": "Population and unit",
+        "paragraphs": [
+          "FNOL records in a defined quarter, sampled by channel and claim type.",
+          "The unit is one notice, document, queue item, review, or communication."
+        ]
+      },
+      {
+        "heading": "Definitions and measures",
+        "paragraphs": [
+          "Field completeness, correction time, assignment delay, and rework.",
+          "Define the window and evidence standard before the sample begins."
+        ]
+      },
+      {
+        "heading": "Where the record fails",
+        "paragraphs": [
+          "Missing loss date and contact method are the most common gaps.",
+          "A failure needs a reason code, an owner, and a recheck date."
+        ]
+      },
+      {
+        "heading": "Worked example",
+        "paragraphs": [
+          "A complete FNOL still needs confirmation against the source.",
+          "The numbers are illustrative. The value is the stage split."
+        ]
+      },
+      {
+        "heading": "Evidence and limits",
+        "paragraphs": [
+          "Public guidance can frame the questions but cannot prove a local result. Record the sample frame and unavailable fields."
+        ]
+      },
+      {
+        "heading": "Practical use",
+        "paragraphs": [
+          "Change one controlled element at a time and recheck the same measure after two cycles."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Does this evaluate coverage?",
+        "a": "No. It evaluates the record and the handoff."
+      }
+    ],
+    "sources": [
+      {
+        "label": "FEMA public assistance guidance",
+        "url": "https://www.fema.gov/assistance/public"
+      },
+      {
+        "label": "NIST Privacy Framework",
+        "url": "https://www.nist.gov/privacy-framework"
+      }
+    ]
+  },
+  {
+    "slug": "vca-queue-aging-study-oct28",
+    "title": "Claim Queue Aging",
+    "summary": "Where does claim queue time accumulate, and which dependency owns it?",
+    "cluster": "Claims operations research",
+    "publishedAt": "2026-10-28",
+    "readTime": "8 min read",
+    "finding": "An age without the dependency is not actionable.",
+    "thumbnail": "/thumbnails/october-28/vca-queue-aging-study-oct28.jpg",
+    "methodology": "A bounded review of claim records with a frozen population and documented evidence rules.",
+    "sections": [
+      {
+        "heading": "Question and scope",
+        "paragraphs": [
+          "Where does claim queue time accumulate, and which dependency owns it?",
+          "The scope is the claim record and the events the team can observe in a defined window. It does not evaluate coverage or claim merit."
+        ]
+      },
+      {
+        "heading": "Population and unit",
+        "paragraphs": [
+          "Claims open in a defined quarter, sampled by queue and owner.",
+          "The unit is one notice, document, queue item, review, or communication."
+        ]
+      },
+      {
+        "heading": "Definitions and measures",
+        "paragraphs": [
+          "Age, dependency, owner, and resolution.",
+          "Define the window and evidence standard before the sample begins."
+        ]
+      },
+      {
+        "heading": "Where the record fails",
+        "paragraphs": [
+          "Aging clusters where the dependency is not named.",
+          "A failure needs a reason code, an owner, and a recheck date."
+        ]
+      },
+      {
+        "heading": "Worked example",
+        "paragraphs": [
+          "An age without the dependency is not actionable.",
+          "The numbers are illustrative. The value is the stage split."
+        ]
+      },
+      {
+        "heading": "Evidence and limits",
+        "paragraphs": [
+          "Public guidance can frame the questions but cannot prove a local result. Record the sample frame and unavailable fields."
+        ]
+      },
+      {
+        "heading": "Practical use",
+        "paragraphs": [
+          "Change one controlled element at a time and recheck the same measure after two cycles."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Does this evaluate coverage?",
+        "a": "No. It evaluates the record and the handoff."
+      }
+    ],
+    "sources": [
+      {
+        "label": "FEMA public assistance guidance",
+        "url": "https://www.fema.gov/assistance/public"
+      },
+      {
+        "label": "NIST Privacy Framework",
+        "url": "https://www.nist.gov/privacy-framework"
+      }
+    ]
+  },
+  {
+    "slug": "vca-review-sampling-study-oct28",
+    "title": "Claim Review Sampling",
+    "summary": "Does the sample cover open, closed, and exception files?",
+    "cluster": "Claims operations research",
+    "publishedAt": "2026-10-28",
+    "readTime": "8 min read",
+    "finding": "A sample frame should include the hard cases.",
+    "thumbnail": "/thumbnails/october-28/vca-review-sampling-study-oct28.jpg",
+    "methodology": "A bounded review of claim records with a frozen population and documented evidence rules.",
+    "sections": [
+      {
+        "heading": "Question and scope",
+        "paragraphs": [
+          "Does the sample cover open, closed, and exception files?",
+          "The scope is the claim record and the events the team can observe in a defined window. It does not evaluate coverage or claim merit."
+        ]
+      },
+      {
+        "heading": "Population and unit",
+        "paragraphs": [
+          "Claim reviews in a defined quarter, sampled by reviewer and status.",
+          "The unit is one notice, document, queue item, review, or communication."
+        ]
+      },
+      {
+        "heading": "Definitions and measures",
+        "paragraphs": [
+          "Sample coverage, defects, correction time, and repeat causes.",
+          "Define the window and evidence standard before the sample begins."
+        ]
+      },
+      {
+        "heading": "Where the record fails",
+        "paragraphs": [
+          "Samples miss open exceptions when they are drawn only from closures.",
+          "A failure needs a reason code, an owner, and a recheck date."
+        ]
+      },
+      {
+        "heading": "Worked example",
+        "paragraphs": [
+          "A sample frame should include the hard cases.",
+          "The numbers are illustrative. The value is the stage split."
+        ]
+      },
+      {
+        "heading": "Evidence and limits",
+        "paragraphs": [
+          "Public guidance can frame the questions but cannot prove a local result. Record the sample frame and unavailable fields."
+        ]
+      },
+      {
+        "heading": "Practical use",
+        "paragraphs": [
+          "Change one controlled element at a time and recheck the same measure after two cycles."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Does this evaluate coverage?",
+        "a": "No. It evaluates the record and the handoff."
+      }
+    ],
+    "sources": [
+      {
+        "label": "FEMA public assistance guidance",
+        "url": "https://www.fema.gov/assistance/public"
+      },
+      {
+        "label": "NIST Privacy Framework",
+        "url": "https://www.nist.gov/privacy-framework"
+      }
+    ]
+  },
+  {
+    "slug": "vca-status-communication-study-oct28",
+    "title": "Claim Status Communication",
+    "summary": "How often does the customer receive a documented status update?",
+    "cluster": "Claims operations research",
+    "publishedAt": "2026-10-28",
+    "readTime": "8 min read",
+    "finding": "A generic acknowledgment is not a status update.",
+    "thumbnail": "/thumbnails/october-28/vca-status-communication-study-oct28.jpg",
+    "methodology": "A bounded review of claim records with a frozen population and documented evidence rules.",
+    "sections": [
+      {
+        "heading": "Question and scope",
+        "paragraphs": [
+          "How often does the customer receive a documented status update?",
+          "The scope is the claim record and the events the team can observe in a defined window. It does not evaluate coverage or claim merit."
+        ]
+      },
+      {
+        "heading": "Population and unit",
+        "paragraphs": [
+          "Claims active in a defined quarter, sampled by stage.",
+          "The unit is one notice, document, queue item, review, or communication."
+        ]
+      },
+      {
+        "heading": "Definitions and measures",
+        "paragraphs": [
+          "Update frequency, next milestone, and customer contact.",
+          "Define the window and evidence standard before the sample begins."
+        ]
+      },
+      {
+        "heading": "Where the record fails",
+        "paragraphs": [
+          "Updates stop when the file waits on a third party.",
+          "A failure needs a reason code, an owner, and a recheck date."
+        ]
+      },
+      {
+        "heading": "Worked example",
+        "paragraphs": [
+          "A generic acknowledgment is not a status update.",
+          "The numbers are illustrative. The value is the stage split."
+        ]
+      },
+      {
+        "heading": "Evidence and limits",
+        "paragraphs": [
+          "Public guidance can frame the questions but cannot prove a local result. Record the sample frame and unavailable fields."
+        ]
+      },
+      {
+        "heading": "Practical use",
+        "paragraphs": [
+          "Change one controlled element at a time and recheck the same measure after two cycles."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Does this evaluate coverage?",
+        "a": "No. It evaluates the record and the handoff."
+      }
+    ],
+    "sources": [
+      {
+        "label": "FEMA public assistance guidance",
+        "url": "https://www.fema.gov/assistance/public"
+      },
+      {
+        "label": "NIST Privacy Framework",
+        "url": "https://www.nist.gov/privacy-framework"
+      }
+    ]
+  },
+  {
+    "slug": "vca-document-provenance-study-oct28",
+    "title": "Claim Document Provenance",
+    "summary": "Can a reviewer trace each document to its source and claim?",
+    "cluster": "Claims operations research",
+    "publishedAt": "2026-10-28",
+    "readTime": "8 min read",
+    "finding": "A document without a source is not evidence.",
+    "thumbnail": "/thumbnails/october-28/vca-document-provenance-study-oct28.jpg",
+    "methodology": "A bounded review of claim records with a frozen population and documented evidence rules.",
+    "sections": [
+      {
+        "heading": "Question and scope",
+        "paragraphs": [
+          "Can a reviewer trace each document to its source and claim?",
+          "The scope is the claim record and the events the team can observe in a defined window. It does not evaluate coverage or claim merit."
+        ]
+      },
+      {
+        "heading": "Population and unit",
+        "paragraphs": [
+          "Documents received in a defined quarter, sampled by type.",
+          "The unit is one notice, document, queue item, review, or communication."
+        ]
+      },
+      {
+        "heading": "Definitions and measures",
+        "paragraphs": [
+          "Source, date, claim link, and missing metadata.",
+          "Define the window and evidence standard before the sample begins."
+        ]
+      },
+      {
+        "heading": "Where the record fails",
+        "paragraphs": [
+          "Provenance gaps cluster in email attachments and contractor uploads.",
+          "A failure needs a reason code, an owner, and a recheck date."
+        ]
+      },
+      {
+        "heading": "Worked example",
+        "paragraphs": [
+          "A document without a source is not evidence.",
+          "The numbers are illustrative. The value is the stage split."
+        ]
+      },
+      {
+        "heading": "Evidence and limits",
+        "paragraphs": [
+          "Public guidance can frame the questions but cannot prove a local result. Record the sample frame and unavailable fields."
+        ]
+      },
+      {
+        "heading": "Practical use",
+        "paragraphs": [
+          "Change one controlled element at a time and recheck the same measure after two cycles."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Does this evaluate coverage?",
+        "a": "No. It evaluates the record and the handoff."
+      }
+    ],
+    "sources": [
+      {
+        "label": "FEMA public assistance guidance",
+        "url": "https://www.fema.gov/assistance/public"
+      },
+      {
+        "label": "NIST Privacy Framework",
+        "url": "https://www.nist.gov/privacy-framework"
+      }
+    ]
   }
+
 ];
