@@ -22,9 +22,11 @@ test('contact proof uses the verified first-party Bacolod team photo and officia
   assert.match(source, /src="\/brand\/stealth-agents-team-bacolod\.jpg"/);
   assert.match(source, /width=\{953\}/);
   assert.match(source, /height=\{540\}/);
+  assert.match(source, /sizes="\(max-width: 900px\) 100vw, 635px"/);
   assert.doesNotMatch(source, /stealth-agents-team-bacolod\.jpg"[^>]*\sfill\b/);
   assert.match(source, /alt="The official StealthAgents team in Bacolod"/);
   assert.match(source, /src="\/brand\/stealth-agents-logo-black\.png"/);
+  assert.match(source, /stealth-agents-logo-black\.png"[^>]*width=\{149\}[^>]*height=\{50\}/);
   assert.match(source, />Official team, Bacolod</);
   assert.match(source, /role design, candidate matching, onboarding support, and accountable service operations/);
 
@@ -36,4 +38,6 @@ test('contact proof uses the verified first-party Bacolod team photo and officia
   const css = read('app/contact-us/contact.css', 'utf8');
   assert.match(css, /\.team-photo img\{[^}]*object-fit:contain/);
   assert.match(css, /\.team-photo img\{[^}]*aspect-ratio:953\/540/);
+  assert.match(css, /\.parent-proof\{[^}]*grid-template-columns:minmax\(0,635px\)/);
+  assert.match(css, /\.parent-logo\{[^}]*width:min\(149px,100%\)/);
 });

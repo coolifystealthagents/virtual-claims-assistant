@@ -60,10 +60,10 @@ export default function ContactPage() {
     </section>
 
     <section className="parent-proof" aria-labelledby="parent-proof-title">
-      <div className="team-photo"><Image src="/brand/stealth-agents-team-bacolod.jpg" alt="The official StealthAgents team in Bacolod" width={953} height={540} sizes="(max-width: 900px) 100vw, 56vw" priority /></div>
+      <div className="team-photo"><Image src="/brand/stealth-agents-team-bacolod.jpg" alt="The official StealthAgents team in Bacolod" width={953} height={540} sizes="(max-width: 900px) 100vw, 635px" priority /></div>
       <div className="parent-proof-copy">
         <p className="evidence-tab">Parent brand evidence</p>
-        <Image className="parent-logo" src="/brand/stealth-agents-logo-black.png" alt="StealthAgents" width={310} height={92} />
+        <Image className="parent-logo" src="/brand/stealth-agents-logo-black.png" alt="StealthAgents" width={149} height={50} />
         <h2 id="parent-proof-title">Claims focus backed by an established staffing team.</h2>
         <p>Virtual Claims Assistant is supported by the StealthAgents team, with role design, candidate matching, onboarding support, and accountable service operations behind each engagement.</p>
         <p className="official-plate">Official team, Bacolod</p>
