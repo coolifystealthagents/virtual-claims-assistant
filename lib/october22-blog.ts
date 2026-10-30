@@ -60,7 +60,7 @@ export const october22BlogPosts: BlogPost[] = [
         "a": "Review a small sample against the checklist and confirm that acknowledgment time, missing fields, and routing errors are visible and reproducible."
       }
     ],
-    "internalService": "/services/claims-intake",
+    "internalService": "/services/fnol-intake-support",
     "internalSibling": "/blog/claim-status-update-cadence",
     "source": {
       "label": "Centers for Medicare & Medicaid Services",
@@ -126,7 +126,7 @@ export const october22BlogPosts: BlogPost[] = [
         "a": "Review a small sample against the checklist and confirm that verification age, missing sources, and exceptions are visible and reproducible."
       }
     ],
-    "internalService": "/services/eligibility-verification",
+    "internalService": "/services/claims-document-coordination",
     "internalSibling": "/blog/claim-status-update-cadence",
     "source": {
       "label": "Centers for Medicare & Medicaid Services",
@@ -192,7 +192,7 @@ export const october22BlogPosts: BlogPost[] = [
         "a": "Review a small sample against the checklist and confirm that missing documents, resubmission, and age are visible and reproducible."
       }
     ],
-    "internalService": "/services/claims-intake",
+    "internalService": "/services/claims-document-coordination",
     "internalSibling": "/blog/claim-status-update-cadence",
     "source": {
       "label": "Centers for Medicare & Medicaid Services",
@@ -258,7 +258,7 @@ export const october22BlogPosts: BlogPost[] = [
         "a": "Review a small sample against the checklist and confirm that status age, stale updates, and unanswered questions are visible and reproducible."
       }
     ],
-    "internalService": "/services/claims-status",
+    "internalService": "/services/policyholder-status-support",
     "internalSibling": "/blog/claim-intake-acknowledgment",
     "source": {
       "label": "Centers for Medicare & Medicaid Services",
@@ -324,7 +324,7 @@ export const october22BlogPosts: BlogPost[] = [
         "a": "Review a small sample against the checklist and confirm that denial mix, coding disagreement, and open appeals are visible and reproducible."
       }
     ],
-    "internalService": "/services/denials-management",
+    "internalService": "/services/claims-quality-support",
     "internalSibling": "/blog/claim-status-update-cadence",
     "source": {
       "label": "Centers for Medicare & Medicaid Services",
@@ -390,7 +390,7 @@ export const october22BlogPosts: BlogPost[] = [
         "a": "Review a small sample against the checklist and confirm that packet completeness, deadlines, and outcomes are visible and reproducible."
       }
     ],
-    "internalService": "/services/appeals-support",
+    "internalService": "/services/claims-document-coordination",
     "internalSibling": "/blog/claim-status-update-cadence",
     "source": {
       "label": "Centers for Medicare & Medicaid Services",
@@ -456,7 +456,7 @@ export const october22BlogPosts: BlogPost[] = [
         "a": "Review a small sample against the checklist and confirm that unposted payments, variances, and age are visible and reproducible."
       }
     ],
-    "internalService": "/services/payment-posting",
+    "internalService": "/services/claims-quality-support",
     "internalSibling": "/blog/claim-status-update-cadence",
     "source": {
       "label": "Centers for Medicare & Medicaid Services",
@@ -522,7 +522,7 @@ export const october22BlogPosts: BlogPost[] = [
         "a": "Review a small sample against the checklist and confirm that resubmission rate, duplicates, and denials are visible and reproducible."
       }
     ],
-    "internalService": "/services/claims-status",
+    "internalService": "/services/claims-document-coordination",
     "internalSibling": "/blog/claim-status-update-cadence",
     "source": {
       "label": "Centers for Medicare & Medicaid Services",
@@ -588,7 +588,7 @@ export const october22BlogPosts: BlogPost[] = [
         "a": "Review a small sample against the checklist and confirm that response time, privacy exceptions, and escalations are visible and reproducible."
       }
     ],
-    "internalService": "/services/patient-support",
+    "internalService": "/services/policyholder-status-support",
     "internalSibling": "/blog/claim-status-update-cadence",
     "source": {
       "label": "Centers for Medicare & Medicaid Services",
@@ -654,7 +654,7 @@ export const october22BlogPosts: BlogPost[] = [
         "a": "Review a small sample against the checklist and confirm that expired documents, missing files, and review time are visible and reproducible."
       }
     ],
-    "internalService": "/services/provider-credentialing",
+    "internalService": "/services/claims-document-coordination",
     "internalSibling": "/blog/claim-status-update-cadence",
     "source": {
       "label": "Centers for Medicare & Medicaid Services",
@@ -720,7 +720,7 @@ export const october22BlogPosts: BlogPost[] = [
         "a": "Review a small sample against the checklist and confirm that error categories, sample coverage, and rework are visible and reproducible."
       }
     ],
-    "internalService": "/services/claims-quality",
+    "internalService": "/services/claims-quality-support",
     "internalSibling": "/blog/claim-status-update-cadence",
     "source": {
       "label": "Centers for Medicare & Medicaid Services",
@@ -786,7 +786,7 @@ export const october22BlogPosts: BlogPost[] = [
         "a": "Review a small sample against the checklist and confirm that closed with open items, rework, and age are visible and reproducible."
       }
     ],
-    "internalService": "/services/claims-status",
+    "internalService": "/services/claims-quality-support",
     "internalSibling": "/blog/claim-status-update-cadence",
     "source": {
       "label": "Centers for Medicare & Medicaid Services",
@@ -859,7 +859,7 @@ export const october22BlogPosts: BlogPost[] = [
         "a": "Preserve both values, pause the dependent action, and route a concise comparison to the authorized owner."
       }
     ],
-    "internalService": "/services/claims-intake",
+    "internalService": "/services/fnol-intake-support",
     "internalSibling": "/blog/claim-status-update-cadence",
     "source": {
       "label": "Centers for Medicare & Medicaid Services",
@@ -932,7 +932,7 @@ export const october22BlogPosts: BlogPost[] = [
         "a": "Preserve both values, pause the dependent action, and route a concise comparison to the authorized owner."
       }
     ],
-    "internalService": "/services/claims-intake",
+    "internalService": "/services/claims-document-coordination",
     "internalSibling": "/blog/claim-status-update-cadence",
     "source": {
       "label": "Centers for Medicare & Medicaid Services",
@@ -1005,7 +1005,7 @@ export const october22BlogPosts: BlogPost[] = [
         "a": "Preserve both values, pause the dependent action, and route a concise comparison to the authorized owner."
       }
     ],
-    "internalService": "/services/claims-intake",
+    "internalService": "/services/adjuster-work-queue-support",
     "internalSibling": "/blog/claim-status-update-cadence",
     "source": {
       "label": "Centers for Medicare & Medicaid Services",
@@ -1078,7 +1078,7 @@ export const october22BlogPosts: BlogPost[] = [
         "a": "Preserve both values, pause the dependent action, and route a concise comparison to the authorized owner."
       }
     ],
-    "internalService": "/services/claims-intake",
+    "internalService": "/services/adjuster-work-queue-support",
     "internalSibling": "/blog/claim-status-update-cadence",
     "source": {
       "label": "Centers for Medicare & Medicaid Services",
@@ -1151,7 +1151,7 @@ export const october22BlogPosts: BlogPost[] = [
         "a": "Preserve both values, pause the dependent action, and route a concise comparison to the authorized owner."
       }
     ],
-    "internalService": "/services/claims-intake",
+    "internalService": "/services/adjuster-work-queue-support",
     "internalSibling": "/blog/claim-status-update-cadence",
     "source": {
       "label": "Centers for Medicare & Medicaid Services",
@@ -1224,7 +1224,7 @@ export const october22BlogPosts: BlogPost[] = [
         "a": "Preserve both values, pause the dependent action, and route a concise comparison to the authorized owner."
       }
     ],
-    "internalService": "/services/claims-intake",
+    "internalService": "/services/claims-quality-support",
     "internalSibling": "/blog/claim-status-update-cadence",
     "source": {
       "label": "Centers for Medicare & Medicaid Services",
@@ -1297,7 +1297,7 @@ export const october22BlogPosts: BlogPost[] = [
         "a": "Preserve both values, pause the dependent action, and route a concise comparison to the authorized owner."
       }
     ],
-    "internalService": "/services/claims-intake",
+    "internalService": "/services/claims-document-coordination",
     "internalSibling": "/blog/claim-status-update-cadence",
     "source": {
       "label": "Centers for Medicare & Medicaid Services",
@@ -1370,7 +1370,7 @@ export const october22BlogPosts: BlogPost[] = [
         "a": "Preserve both values, pause the dependent action, and route a concise comparison to the authorized owner."
       }
     ],
-    "internalService": "/services/claims-intake",
+    "internalService": "/services/claims-document-coordination",
     "internalSibling": "/blog/claim-status-update-cadence",
     "source": {
       "label": "Centers for Medicare & Medicaid Services",
@@ -1443,7 +1443,7 @@ export const october22BlogPosts: BlogPost[] = [
         "a": "Preserve both values, pause the dependent action, and route a concise comparison to the authorized owner."
       }
     ],
-    "internalService": "/services/claims-intake",
+    "internalService": "/services/adjuster-work-queue-support",
     "internalSibling": "/blog/claim-status-update-cadence",
     "source": {
       "label": "Centers for Medicare & Medicaid Services",
@@ -1516,7 +1516,7 @@ export const october22BlogPosts: BlogPost[] = [
         "a": "Preserve both values, pause the dependent action, and route a concise comparison to the authorized owner."
       }
     ],
-    "internalService": "/services/claims-intake",
+    "internalService": "/services/fnol-intake-support",
     "internalSibling": "/blog/claim-status-update-cadence",
     "source": {
       "label": "Centers for Medicare & Medicaid Services",
@@ -1589,7 +1589,7 @@ export const october22BlogPosts: BlogPost[] = [
         "a": "Preserve both values, pause the dependent action, and route a concise comparison to the authorized owner."
       }
     ],
-    "internalService": "/services/claims-intake",
+    "internalService": "/services/claims-quality-support",
     "internalSibling": "/blog/claim-status-update-cadence",
     "source": {
       "label": "Centers for Medicare & Medicaid Services",
@@ -1662,7 +1662,7 @@ export const october22BlogPosts: BlogPost[] = [
         "a": "Preserve both values, pause the dependent action, and route a concise comparison to the authorized owner."
       }
     ],
-    "internalService": "/services/claims-intake",
+    "internalService": "/services/claims-quality-support",
     "internalSibling": "/blog/claim-status-update-cadence",
     "source": {
       "label": "Centers for Medicare & Medicaid Services",
@@ -1735,7 +1735,7 @@ export const october22BlogPosts: BlogPost[] = [
         "a": "Preserve both values, pause the dependent action, and route a concise comparison to the authorized owner."
       }
     ],
-    "internalService": "/services/claims-intake",
+    "internalService": "/services/fnol-intake-support",
     "internalSibling": "/blog/claim-status-update-cadence",
     "source": {
       "label": "Centers for Medicare & Medicaid Services",
@@ -1808,7 +1808,7 @@ export const october22BlogPosts: BlogPost[] = [
         "a": "Preserve both values, pause the dependent action, and route a concise comparison to the authorized owner."
       }
     ],
-    "internalService": "/services/claims-intake",
+    "internalService": "/services/claims-document-coordination",
     "internalSibling": "/blog/claim-status-update-cadence",
     "source": {
       "label": "Centers for Medicare & Medicaid Services",
@@ -1881,7 +1881,7 @@ export const october22BlogPosts: BlogPost[] = [
         "a": "Preserve both values, pause the dependent action, and route a concise comparison to the authorized owner."
       }
     ],
-    "internalService": "/services/claims-intake",
+    "internalService": "/services/adjuster-work-queue-support",
     "internalSibling": "/blog/claim-status-update-cadence",
     "source": {
       "label": "Centers for Medicare & Medicaid Services",
@@ -1954,7 +1954,7 @@ export const october22BlogPosts: BlogPost[] = [
         "a": "Preserve both values, pause the dependent action, and route a concise comparison to the authorized owner."
       }
     ],
-    "internalService": "/services/claims-intake",
+    "internalService": "/services/adjuster-work-queue-support",
     "internalSibling": "/blog/claim-status-update-cadence",
     "source": {
       "label": "Centers for Medicare & Medicaid Services",
@@ -2027,7 +2027,7 @@ export const october22BlogPosts: BlogPost[] = [
         "a": "Preserve both values, pause the dependent action, and route a concise comparison to the authorized owner."
       }
     ],
-    "internalService": "/services/claims-intake",
+    "internalService": "/services/adjuster-work-queue-support",
     "internalSibling": "/blog/claim-status-update-cadence",
     "source": {
       "label": "Centers for Medicare & Medicaid Services",
@@ -2100,7 +2100,7 @@ export const october22BlogPosts: BlogPost[] = [
         "a": "Preserve both values, pause the dependent action, and route a concise comparison to the authorized owner."
       }
     ],
-    "internalService": "/services/claims-intake",
+    "internalService": "/services/claims-quality-support",
     "internalSibling": "/blog/claim-status-update-cadence",
     "source": {
       "label": "Centers for Medicare & Medicaid Services",
@@ -2173,7 +2173,7 @@ export const october22BlogPosts: BlogPost[] = [
         "a": "Preserve both values, pause the dependent action, and route a concise comparison to the authorized owner."
       }
     ],
-    "internalService": "/services/claims-intake",
+    "internalService": "/services/claims-document-coordination",
     "internalSibling": "/blog/claim-status-update-cadence",
     "source": {
       "label": "Centers for Medicare & Medicaid Services",
@@ -2246,7 +2246,7 @@ export const october22BlogPosts: BlogPost[] = [
         "a": "Preserve both values, pause the dependent action, and route a concise comparison to the authorized owner."
       }
     ],
-    "internalService": "/services/claims-intake",
+    "internalService": "/services/claims-document-coordination",
     "internalSibling": "/blog/claim-status-update-cadence",
     "source": {
       "label": "Centers for Medicare & Medicaid Services",
@@ -2319,7 +2319,7 @@ export const october22BlogPosts: BlogPost[] = [
         "a": "Preserve both values, pause the dependent action, and route a concise comparison to the authorized owner."
       }
     ],
-    "internalService": "/services/claims-intake",
+    "internalService": "/services/adjuster-work-queue-support",
     "internalSibling": "/blog/claim-status-update-cadence",
     "source": {
       "label": "Centers for Medicare & Medicaid Services",
@@ -2392,7 +2392,7 @@ export const october22BlogPosts: BlogPost[] = [
         "a": "Preserve both values, pause the dependent action, and route a concise comparison to the authorized owner."
       }
     ],
-    "internalService": "/services/claims-intake",
+    "internalService": "/services/fnol-intake-support",
     "internalSibling": "/blog/claim-status-update-cadence",
     "source": {
       "label": "Centers for Medicare & Medicaid Services",
@@ -2465,7 +2465,7 @@ export const october22BlogPosts: BlogPost[] = [
         "a": "Preserve both values, pause the dependent action, and route a concise comparison to the authorized owner."
       }
     ],
-    "internalService": "/services/claims-intake",
+    "internalService": "/services/claims-quality-support",
     "internalSibling": "/blog/claim-status-update-cadence",
     "source": {
       "label": "Centers for Medicare & Medicaid Services",
@@ -2538,7 +2538,7 @@ export const october22BlogPosts: BlogPost[] = [
         "a": "Preserve both values, pause the dependent action, and route a concise comparison to the authorized owner."
       }
     ],
-    "internalService": "/services/claims-intake",
+    "internalService": "/services/claims-quality-support",
     "internalSibling": "/blog/claim-status-update-cadence",
     "source": {
       "label": "Centers for Medicare & Medicaid Services",

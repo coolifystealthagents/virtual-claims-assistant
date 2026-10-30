@@ -845,8 +845,8 @@ export const october27BlogPosts: BlogPost[] = [
         "a": "Weekly and whenever the carrier or queue rule changes."
       }
     ],
-    "internalService": "/services/claims-support",
-    "internalSibling": "/services/claim-intake",
+    "internalService": "/services/fnol-intake-support",
+    "internalSibling": "/blog/claim-intake-acknowledgment",
     "source": {
       "label": "FEMA public assistance guidance",
       "url": "https://www.fema.gov/assistance/public"
@@ -903,8 +903,8 @@ export const october27BlogPosts: BlogPost[] = [
         "a": "Weekly and whenever the carrier or queue rule changes."
       }
     ],
-    "internalService": "/services/claims-support",
-    "internalSibling": "/services/claim-intake",
+    "internalService": "/services/claims-document-coordination",
+    "internalSibling": "/blog/claim-document-checklist",
     "source": {
       "label": "FEMA public assistance guidance",
       "url": "https://www.fema.gov/assistance/public"
@@ -961,8 +961,8 @@ export const october27BlogPosts: BlogPost[] = [
         "a": "Weekly and whenever the carrier or queue rule changes."
       }
     ],
-    "internalService": "/services/claims-support",
-    "internalSibling": "/services/claim-intake",
+    "internalService": "/services/policyholder-status-support",
+    "internalSibling": "/blog/claim-status-update-cadence",
     "source": {
       "label": "FEMA public assistance guidance",
       "url": "https://www.fema.gov/assistance/public"
@@ -1019,8 +1019,8 @@ export const october27BlogPosts: BlogPost[] = [
         "a": "Weekly and whenever the carrier or queue rule changes."
       }
     ],
-    "internalService": "/services/claims-support",
-    "internalSibling": "/services/claim-intake",
+    "internalService": "/services/adjuster-work-queue-support",
+    "internalSibling": "/blog/adjuster-work-queue-rhythm",
     "source": {
       "label": "FEMA public assistance guidance",
       "url": "https://www.fema.gov/assistance/public"
@@ -1077,8 +1077,8 @@ export const october27BlogPosts: BlogPost[] = [
         "a": "Weekly and whenever the carrier or queue rule changes."
       }
     ],
-    "internalService": "/services/claims-support",
-    "internalSibling": "/services/claim-intake",
+    "internalService": "/services/claims-quality-support",
+    "internalSibling": "/blog/claim-audit-sample",
     "source": {
       "label": "FEMA public assistance guidance",
       "url": "https://www.fema.gov/assistance/public"
@@ -1135,8 +1135,8 @@ export const october27BlogPosts: BlogPost[] = [
         "a": "Weekly and whenever the carrier or queue rule changes."
       }
     ],
-    "internalService": "/services/claims-support",
-    "internalSibling": "/services/claim-intake",
+    "internalService": "/services/fnol-intake-support",
+    "internalSibling": "/blog/claim-intake-acknowledgment",
     "source": {
       "label": "FEMA public assistance guidance",
       "url": "https://www.fema.gov/assistance/public"
@@ -1193,8 +1193,8 @@ export const october27BlogPosts: BlogPost[] = [
         "a": "Weekly and whenever the carrier or queue rule changes."
       }
     ],
-    "internalService": "/services/claims-support",
-    "internalSibling": "/services/claim-intake",
+    "internalService": "/services/claims-document-coordination",
+    "internalSibling": "/blog/claim-document-checklist",
     "source": {
       "label": "FEMA public assistance guidance",
       "url": "https://www.fema.gov/assistance/public"
@@ -1251,8 +1251,8 @@ export const october27BlogPosts: BlogPost[] = [
         "a": "Weekly and whenever the carrier or queue rule changes."
       }
     ],
-    "internalService": "/services/claims-support",
-    "internalSibling": "/services/claim-intake",
+    "internalService": "/services/subrogation-admin-support",
+    "internalSibling": "/blog/subrogation-party-record-reconciliation",
     "source": {
       "label": "FEMA public assistance guidance",
       "url": "https://www.fema.gov/assistance/public"
@@ -1309,8 +1309,8 @@ export const october27BlogPosts: BlogPost[] = [
         "a": "Weekly and whenever the carrier or queue rule changes."
       }
     ],
-    "internalService": "/services/claims-support",
-    "internalSibling": "/services/claim-intake",
+    "internalService": "/services/claims-quality-support",
+    "internalSibling": "/blog/payment-posting-reconciliation",
     "source": {
       "label": "FEMA public assistance guidance",
       "url": "https://www.fema.gov/assistance/public"
@@ -1367,8 +1367,8 @@ export const october27BlogPosts: BlogPost[] = [
         "a": "Weekly and whenever the carrier or queue rule changes."
       }
     ],
-    "internalService": "/services/claims-support",
-    "internalSibling": "/services/claim-intake",
+    "internalService": "/services/policyholder-status-support",
+    "internalSibling": "/blog/claim-status-update-cadence",
     "source": {
       "label": "FEMA public assistance guidance",
       "url": "https://www.fema.gov/assistance/public"
@@ -1425,8 +1425,8 @@ export const october27BlogPosts: BlogPost[] = [
         "a": "Weekly and whenever the carrier or queue rule changes."
       }
     ],
-    "internalService": "/services/claims-support",
-    "internalSibling": "/services/claim-intake",
+    "internalService": "/services/claims-document-coordination",
+    "internalSibling": "/blog/claim-document-checklist",
     "source": {
       "label": "FEMA public assistance guidance",
       "url": "https://www.fema.gov/assistance/public"
@@ -1483,8 +1483,8 @@ export const october27BlogPosts: BlogPost[] = [
         "a": "Weekly and whenever the carrier or queue rule changes."
       }
     ],
-    "internalService": "/services/claims-support",
-    "internalSibling": "/services/claim-intake",
+    "internalService": "/services/policyholder-status-support",
+    "internalSibling": "/blog/claim-closure-checklist",
     "source": {
       "label": "FEMA public assistance guidance",
       "url": "https://www.fema.gov/assistance/public"

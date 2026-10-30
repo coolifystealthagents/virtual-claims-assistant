@@ -31,7 +31,7 @@ export function Footer() {
       <p>Specialist remote staff for {site.audience}.</p>
       <p className="footer-powered">Powered by StealthAgents</p>
     </div>
-    <nav className="footer-links" aria-label="Footer navigation">{primaryNav.map((item) => <Link key={item.href} href={item.href}>{item.label}</Link>)}<Link href="/privacy">Privacy</Link><Link href="/terms">Terms</Link></nav>
+    <nav className="footer-links" aria-label="Footer navigation">{primaryNav.map((item) => <Link key={item.href} href={item.href}>{item.label}</Link>)}<Link href="/blog">Blog</Link><Link href="/privacy">Privacy</Link><Link href="/terms">Terms</Link></nav>
     <p className="copyright">© {new Date().getFullYear()} {site.name}</p>
   </footer>;
 }
