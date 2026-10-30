@@ -46,7 +46,7 @@ test('contact follows the review, form, and parent proof contract', () => {
   assert.match(contact, /StealthAgents reviews/);
   assert.match(contact, /★★★★★/);
   assert.match(contact, /<LeadForm source="contact-page-consultation"/);
-  assert.match(contact, /stealth-agents-team\.webp/);
+  assert.match(contact, /stealth-agents-team-bacolod\.jpg/);
   assert.match(contact, /stealth-agents-logo-black\.png/);
   assert.match(contact, /Official team, Bacolod/);
   assert.doesNotMatch(contact, /go\.oncehub\.com|<iframe/);

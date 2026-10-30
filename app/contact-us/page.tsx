@@ -60,7 +60,7 @@ export default function ContactPage() {
     </section>
 
     <section className="parent-proof" aria-labelledby="parent-proof-title">
-      <div className="team-photo"><Image src="/brand/stealth-agents-team.webp" alt="The official StealthAgents team in Bacolod" fill sizes="(max-width: 900px) 100vw, 56vw" priority /></div>
+      <div className="team-photo"><Image src="/brand/stealth-agents-team-bacolod.jpg" alt="The official StealthAgents team in Bacolod" width={953} height={540} sizes="(max-width: 900px) 100vw, 56vw" priority /></div>
       <div className="parent-proof-copy">
         <p className="evidence-tab">Parent brand evidence</p>
         <Image className="parent-logo" src="/brand/stealth-agents-logo-black.png" alt="StealthAgents" width={310} height={92} />
