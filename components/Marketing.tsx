@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { site } from '@/lib/site';
 import { blogPosts } from '@/lib/content';
@@ -15,7 +14,15 @@ export function HomePage() {
   return <main id="main-content" tabIndex={-1} className={`home design-${design}`}>
     <section className="hero">
       <div className="hero-copy"><p className="eyebrow">{site.eyebrow}</p><h1>{site.hero} <em>{site.heroAccent}</em></h1><p className="hero-body">{site.heroBody}</p><div className="hero-actions"><CTA id="cta-home-hero-bookcall">Book a free consultation</CTA><Link className="quiet-link" href="/services">See specialist roles</Link></div><Principles /></div>
-      <div className="hero-visual"><Image src={site.heroImage} alt={site.heroAlt} fill priority sizes="(max-width: 900px) 100vw, 54vw" /><div className="hero-label"><SparkIcon /><span>{site.manifesto}</span></div></div>
+      <figure className="hero-visual">
+        <picture className="hero-picture">
+          <source type="image/avif" srcSet="/hero/claims-coordination-720.avif 720w, /hero/claims-coordination-960.avif 960w, /hero/claims-coordination-1440.avif 1440w" sizes="(max-width: 600px) 90vw, (max-width: 900px) 92vw, 48vw" />
+          <source type="image/webp" srcSet="/hero/claims-coordination-720.webp 720w, /hero/claims-coordination-960.webp 960w, /hero/claims-coordination-1440.webp 1440w" sizes="(max-width: 600px) 90vw, (max-width: 900px) 92vw, 48vw" />
+          <img src="/hero/claims-coordination-1440.webp" alt={site.heroAlt} width="1440" height="960" fetchPriority="high" loading="eager" decoding="async" />
+        </picture>
+        <figcaption className="visually-hidden">Illustrative stock photography. The people shown are not identified as Virtual Claims Assistant employees or clients.</figcaption>
+        <div className="hero-label"><SparkIcon /><span>{site.manifesto}</span></div>
+      </figure>
     </section>
     {design === 'signal' && <section className="signal-strip" aria-label="Inside sales workflow"><span>Prospecting support</span><span>CRM hygiene</span><span>Follow through</span><span>Pipeline visibility</span></section>}
     {design === 'conversation' && <section className="conversation-band"><div className="bubble one">Clear replies</div><div className="bubble two">Useful context</div><div className="bubble three">Thoughtful escalation</div></section>}

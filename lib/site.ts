@@ -13,8 +13,8 @@ export const site: SiteConfig = {
   heroBody: 'Specialist remote assistants help claims teams organize intake records, document indexes, status communication, adjuster queues, and approved follow up while accountable professionals retain every coverage decision.',
   manifesto: 'Every status should point to evidence. Every exception should reach the right owner.',
   primary: '#174bd8', secondary: '#9fc8ff', accent: '#84efd0', canvas: '#f3f7ff', ink: '#0b1c3e',
-  displayFont: 'Palatino Linotype', bodyFont: 'Avenir Next', heroImage: '/hero.png',
-  heroAlt: 'Claims folder, magnifying glass, and transparent shield arranged in a cobalt evidence workspace',
+  displayFont: 'Palatino Linotype', bodyFont: 'Avenir Next', heroImage: '/hero/claims-coordination-1440.webp',
+  heroAlt: 'Two professionals reviewing notes and a document folder together at an office table',
   services: [
     {
       slug: 'fnol-intake-support', name: 'FNOL intake support',
