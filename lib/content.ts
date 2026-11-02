@@ -1012,7 +1012,7 @@ function enrichLegacyResearch(post: ResearchPost): ResearchPost {
   };
 }
 
-export const blogPosts: BlogPost[] = [...october22BlogPosts, ...october27BlogPosts, ...october12BlogPosts, ...legacyBlogPosts].map((post) => ({
+export const blogPosts: BlogPost[] = [...november01BlogPosts, ...october22BlogPosts, ...october27BlogPosts, ...october12BlogPosts, ...legacyBlogPosts].map((post) => ({
   ...post,
   thumbnail: post.thumbnail || workflowImage(post.slug)
 }));
