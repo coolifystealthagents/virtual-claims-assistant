@@ -1,5 +1,7 @@
 import { site } from './site';
 import type { BlogPost, ResearchPost } from './types';
+import { november01BlogPosts } from './november01-blog';
+import { november01ResearchPosts } from './november01-research';
 import { october12BlogPosts } from './october12-blog';
 import { october12ResearchPosts } from './october12-research';
 import { october22BlogPosts } from './october22-blog';
@@ -1015,6 +1017,7 @@ export const blogPosts: BlogPost[] = [...october22BlogPosts, ...october27BlogPos
   thumbnail: post.thumbnail || workflowImage(post.slug)
 }));
 export const researchPosts: ResearchPost[] = [
+  ...november01ResearchPosts,
   ...october22ResearchPosts.map((post) => ({ ...post, readTime: post.readTime || '8 min read' })),
   ...october27ResearchPosts.map((post) => ({ ...post, readTime: post.readTime || '8 min read' })),
   ...october12ResearchPosts.map((post) => ({ ...post, readTime: post.readTime || '12 min read' })),
