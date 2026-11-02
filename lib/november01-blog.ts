@@ -88,7 +88,7 @@ export const november01BlogPosts: readonly BlogPost[] = [
     "a": "Use the same fnol intake sample rule every month; a changing sample shows that someone looked, not whether the control improved. Inside Virtual Claims Assistant, fnol intake follows the same insurance claims teams pattern as claims document coordination, policyholder status, and the fnol intake service itself. The specialist works through \u2019Prepare intake records\u2019, \u2019Escalate missing information\u2019, and \u2019Index submitted materials\u2019, then dates the source for the agency owner. The virtualclaimsassistant.com reviewer checks the sequence before closure."
    }
   ],
-  "internalService": "/services",
+  "internalService": "/services/fnol-intake-support",
   "internalSibling": "/blog",
   "source": {
    "label": "National Association of Insurance Commissioners",
@@ -182,7 +182,7 @@ export const november01BlogPosts: readonly BlogPost[] = [
     "a": "The monthly claims document coordination review should end with one process change, one owner, and one check date, or it becomes another status meeting. At Virtual Claims Assistant, claims document coordination work belongs to the claims document coordination service alongside fnol intake and policyholder status. A specialist working with claims leaders, independent adjusters, and insurance operations teams records \u2019Name and classify files\u2019, \u2019Flag missing items\u2019, and \u2019Track approved requests\u2019, then attaches the dated claims document coordination source for the agency owner. The virtualclaimsassistant.com queue shows both the entry date and the reviewer who accepted it."
    }
   ],
-  "internalService": "/services",
+  "internalService": "/services/claims-document-coordination",
   "internalSibling": "/blog/virtualclaimsassistant-map-the-fnol-intake-decision-to-one-accountable-owner-2026-11-01",
   "source": {
    "label": "Federal Trade Commission",
@@ -276,7 +276,7 @@ export const november01BlogPosts: readonly BlogPost[] = [
     "a": "Once a month, pull a small policyholder status sample and test the source, the decision, the execution, and the confirmation against the same rule. Virtual Claims Assistant documents policyholder status inside the policyholder status service, with fnol intake and claims document coordination as related insurance claims teams workflows for claims leaders, independent adjusters, and insurance operations teams. The expected steps are \u2019Prepare status drafts\u2019, \u2019Escalate sensitive messages\u2019, and \u2019Route coverage questions\u2019, each with a source and a date. the agency owner reviews the packet before the virtualclaimsassistant.com record is closed."
    }
   ],
-  "internalService": "/services",
+  "internalService": "/services/policyholder-status-support",
   "internalSibling": "/blog/virtualclaimsassistant-map-the-fnol-intake-decision-to-one-accountable-owner-2026-11-01",
   "source": {
    "label": "NIST Cybersecurity Framework",
@@ -370,7 +370,7 @@ export const november01BlogPosts: readonly BlogPost[] = [
     "a": "A repeated adjuster work queue defect is usually a template problem, so fix the form or the instruction before coaching the person again. The Virtual Claims Assistant adjuster work queue service supports adjuster work queue for claims leaders, independent adjusters, and insurance operations teams, and it shares its insurance claims teams controls with fnol intake and claims document coordination. Each case records \u2019Prepare queue summaries\u2019, \u2019Flag aging exceptions\u2019, and \u2019Maintain next actions\u2019 plus the source date. the agency owner signs the decision that releases the virtualclaimsassistant.com entry."
    }
   ],
-  "internalService": "/services",
+  "internalService": "/services/adjuster-work-queue-support",
   "internalSibling": "/blog/virtualclaimsassistant-map-the-fnol-intake-decision-to-one-accountable-owner-2026-11-01",
   "source": {
    "label": "NIST Privacy Framework",
@@ -464,7 +464,7 @@ export const november01BlogPosts: readonly BlogPost[] = [
     "a": "Use the same subrogation administration sample rule every month; a changing sample shows that someone looked, not whether the control improved. The Virtual Claims Assistant subrogation administration service for claims leaders, independent adjusters, and insurance operations teams treats \u2019Prepare record packets\u2019, \u2019Escalate disputed information\u2019, and \u2019Maintain party details\u2019 as the evidence sequence for subrogation administration. Neighbouring insurance claims teams services such as fnol intake and claims document coordination follow the same rule. the agency owner signs the release, and the virtualclaimsassistant.com record keeps the source date."
    }
   ],
-  "internalService": "/services",
+  "internalService": "/services/subrogation-admin-support",
   "internalSibling": "/blog/virtualclaimsassistant-map-the-fnol-intake-decision-to-one-accountable-owner-2026-11-01",
   "source": {
    "label": "U.S. Department of Labor",
@@ -558,7 +558,7 @@ export const november01BlogPosts: readonly BlogPost[] = [
     "a": "The monthly claims quality review should end with one process change, one owner, and one check date, or it becomes another status meeting. The Virtual Claims Assistant service map places claims quality under claims quality, next to fnol intake and claims document coordination. A specialist serving claims leaders, independent adjusters, and insurance operations teams records \u2019Assemble review samples\u2019, \u2019Prepare quality summaries\u2019, and \u2019Document exception patterns\u2019, then links the claims quality evidence to the case. the agency owner approves the outcome, and virtualclaimsassistant.com keeps the trail."
    }
   ],
-  "internalService": "/services",
+  "internalService": "/services/claims-quality-support",
   "internalSibling": "/blog/virtualclaimsassistant-map-the-fnol-intake-decision-to-one-accountable-owner-2026-11-01",
   "source": {
    "label": "U.S. Small Business Administration",
@@ -652,7 +652,7 @@ export const november01BlogPosts: readonly BlogPost[] = [
     "a": "Once a month, pull a small fnol intake queue sample and test the source, the decision, the execution, and the confirmation against the same rule. Virtual Claims Assistant runs this work through its fnol intake service, one of several insurance claims teams services that also include claims document coordination and policyholder status. The specialist completes \u2019Prepare intake records\u2019, \u2019Escalate missing information\u2019, and \u2019Index submitted materials\u2019 before the agency owner reviews the fnol intake queue entry. The Virtual Claims Assistant desk at virtualclaimsassistant.com keeps the dated source and the reviewer initials with the case."
    }
   ],
-  "internalService": "/services",
+  "internalService": "/services/fnol-intake-support",
   "internalSibling": "/blog/virtualclaimsassistant-map-the-fnol-intake-decision-to-one-accountable-owner-2026-11-01",
   "source": {
    "label": "National Association of Insurance Commissioners",
@@ -746,7 +746,7 @@ export const november01BlogPosts: readonly BlogPost[] = [
     "a": "A repeated claims document coordination queue defect is usually a template problem, so fix the form or the instruction before coaching the person again. For claims leaders, independent adjusters, and insurance operations teams, Virtual Claims Assistant separates preparation from approval across its insurance claims teams services, including claims document coordination, fnol intake, and policyholder status. The specialist completes \u2019Name and classify files\u2019, \u2019Flag missing items\u2019, and \u2019Track approved requests\u2019 on claims document coordination queue; the agency owner decides what leaves the queue. The virtualclaimsassistant.com entry shows who prepared and who approved."
    }
   ],
-  "internalService": "/services",
+  "internalService": "/services/claims-document-coordination",
   "internalSibling": "/blog/virtualclaimsassistant-map-the-fnol-intake-decision-to-one-accountable-owner-2026-11-01",
   "source": {
    "label": "Federal Trade Commission",
@@ -840,7 +840,7 @@ export const november01BlogPosts: readonly BlogPost[] = [
     "a": "Use the same policyholder status queue sample rule every month; a changing sample shows that someone looked, not whether the control improved. Inside Virtual Claims Assistant, policyholder status queue follows the same insurance claims teams pattern as fnol intake, claims document coordination, and the policyholder status service itself. The specialist works through \u2019Prepare status drafts\u2019, \u2019Escalate sensitive messages\u2019, and \u2019Route coverage questions\u2019, then dates the source for the agency owner. The virtualclaimsassistant.com reviewer checks the sequence before closure."
    }
   ],
-  "internalService": "/services",
+  "internalService": "/services/policyholder-status-support",
   "internalSibling": "/blog/virtualclaimsassistant-map-the-fnol-intake-decision-to-one-accountable-owner-2026-11-01",
   "source": {
    "label": "NIST Cybersecurity Framework",
@@ -934,7 +934,7 @@ export const november01BlogPosts: readonly BlogPost[] = [
     "a": "The monthly adjuster work queue queue review should end with one process change, one owner, and one check date, or it becomes another status meeting. At Virtual Claims Assistant, adjuster work queue queue work belongs to the adjuster work queue service alongside fnol intake and claims document coordination. A specialist working with claims leaders, independent adjusters, and insurance operations teams records \u2019Prepare queue summaries\u2019, \u2019Flag aging exceptions\u2019, and \u2019Maintain next actions\u2019, then attaches the dated adjuster work queue source for the agency owner. The virtualclaimsassistant.com queue shows both the entry date and the reviewer who accepted it."
    }
   ],
-  "internalService": "/services",
+  "internalService": "/services/adjuster-work-queue-support",
   "internalSibling": "/blog/virtualclaimsassistant-map-the-fnol-intake-decision-to-one-accountable-owner-2026-11-01",
   "source": {
    "label": "NIST Privacy Framework",
@@ -1028,7 +1028,7 @@ export const november01BlogPosts: readonly BlogPost[] = [
     "a": "Once a month, pull a small subrogation administration queue sample and test the source, the decision, the execution, and the confirmation against the same rule. Virtual Claims Assistant documents subrogation administration queue inside the subrogation administration service, with fnol intake and claims document coordination as related insurance claims teams workflows for claims leaders, independent adjusters, and insurance operations teams. The expected steps are \u2019Prepare record packets\u2019, \u2019Escalate disputed information\u2019, and \u2019Maintain party details\u2019, each with a source and a date. the agency owner reviews the packet before the virtualclaimsassistant.com record is closed."
    }
   ],
-  "internalService": "/services",
+  "internalService": "/services/subrogation-admin-support",
   "internalSibling": "/blog/virtualclaimsassistant-map-the-fnol-intake-decision-to-one-accountable-owner-2026-11-01",
   "source": {
    "label": "U.S. Department of Labor",
@@ -1122,7 +1122,7 @@ export const november01BlogPosts: readonly BlogPost[] = [
     "a": "A repeated claims quality queue defect is usually a template problem, so fix the form or the instruction before coaching the person again. The Virtual Claims Assistant claims quality service supports claims quality queue for claims leaders, independent adjusters, and insurance operations teams, and it shares its insurance claims teams controls with fnol intake and claims document coordination. Each case records \u2019Assemble review samples\u2019, \u2019Prepare quality summaries\u2019, and \u2019Document exception patterns\u2019 plus the source date. the agency owner signs the decision that releases the virtualclaimsassistant.com entry."
    }
   ],
-  "internalService": "/services",
+  "internalService": "/services/claims-quality-support",
   "internalSibling": "/blog/virtualclaimsassistant-map-the-fnol-intake-decision-to-one-accountable-owner-2026-11-01",
   "source": {
    "label": "U.S. Small Business Administration",
@@ -1147,13 +1147,12 @@ export const november01BlogPosts: readonly BlogPost[] = [
    }
   ],
   "faq": [],
-  "internalService": "/services",
+  "internalService": "/services/fnol-intake-support",
   "internalSibling": "/blog",
   "source": {
    "label": "National Association of Insurance Commissioners",
    "url": "https://content.naic.org/"
-  },
-  "excerpt": "A claims operations guide for fnol intake."
+  }
  },
  {
   "slug": "vca02-adjuster-queue",
@@ -1173,13 +1172,12 @@ export const november01BlogPosts: readonly BlogPost[] = [
    }
   ],
   "faq": [],
-  "internalService": "/services",
+  "internalService": "/services/adjuster-work-queue-support",
   "internalSibling": "/blog",
   "source": {
    "label": "National Association of Insurance Commissioners",
    "url": "https://content.naic.org/"
-  },
-  "excerpt": "A claims operations guide for adjuster queue."
+  }
  },
  {
   "slug": "vca02-claims-document",
@@ -1199,13 +1197,12 @@ export const november01BlogPosts: readonly BlogPost[] = [
    }
   ],
   "faq": [],
-  "internalService": "/services",
+  "internalService": "/services/claims-document-coordination",
   "internalSibling": "/blog",
   "source": {
    "label": "National Association of Insurance Commissioners",
    "url": "https://content.naic.org/"
-  },
-  "excerpt": "A claims operations guide for claims document."
+  }
  },
  {
   "slug": "vca02-subrogation",
@@ -1225,13 +1222,12 @@ export const november01BlogPosts: readonly BlogPost[] = [
    }
   ],
   "faq": [],
-  "internalService": "/services",
+  "internalService": "/services/subrogation-admin-support",
   "internalSibling": "/blog",
   "source": {
    "label": "National Association of Insurance Commissioners",
    "url": "https://content.naic.org/"
-  },
-  "excerpt": "A claims operations guide for subrogation."
+  }
  },
  {
   "slug": "vca02-reserve-review",
@@ -1251,13 +1247,12 @@ export const november01BlogPosts: readonly BlogPost[] = [
    }
   ],
   "faq": [],
-  "internalService": "/services",
+  "internalService": "/services/claims-quality-support",
   "internalSibling": "/blog",
   "source": {
    "label": "National Association of Insurance Commissioners",
    "url": "https://content.naic.org/"
-  },
-  "excerpt": "A claims operations guide for reserve review."
+  }
  },
  {
   "slug": "vca02-payment-approval",
@@ -1277,13 +1272,12 @@ export const november01BlogPosts: readonly BlogPost[] = [
    }
   ],
   "faq": [],
-  "internalService": "/services",
+  "internalService": "/services/claims-quality-support",
   "internalSibling": "/blog",
   "source": {
    "label": "National Association of Insurance Commissioners",
    "url": "https://content.naic.org/"
-  },
-  "excerpt": "A claims operations guide for payment approval."
+  }
  },
  {
   "slug": "vca02-fraud-flag",
@@ -1303,13 +1297,12 @@ export const november01BlogPosts: readonly BlogPost[] = [
    }
   ],
   "faq": [],
-  "internalService": "/services",
+  "internalService": "/services/claims-quality-support",
   "internalSibling": "/blog",
   "source": {
    "label": "National Association of Insurance Commissioners",
    "url": "https://content.naic.org/"
-  },
-  "excerpt": "A claims operations guide for fraud flag."
+  }
  },
  {
   "slug": "vca02-vendor-assignment",
@@ -1329,13 +1322,12 @@ export const november01BlogPosts: readonly BlogPost[] = [
    }
   ],
   "faq": [],
-  "internalService": "/services",
+  "internalService": "/services/adjuster-work-queue-support",
   "internalSibling": "/blog",
   "source": {
    "label": "National Association of Insurance Commissioners",
    "url": "https://content.naic.org/"
-  },
-  "excerpt": "A claims operations guide for vendor assignment."
+  }
  },
  {
   "slug": "vca02-policy-verification",
@@ -1355,13 +1347,12 @@ export const november01BlogPosts: readonly BlogPost[] = [
    }
   ],
   "faq": [],
-  "internalService": "/services",
+  "internalService": "/services/fnol-intake-support",
   "internalSibling": "/blog",
   "source": {
    "label": "National Association of Insurance Commissioners",
    "url": "https://content.naic.org/"
-  },
-  "excerpt": "A claims operations guide for policy verification."
+  }
  },
  {
   "slug": "vca02-claim-closure",
@@ -1381,13 +1372,12 @@ export const november01BlogPosts: readonly BlogPost[] = [
    }
   ],
   "faq": [],
-  "internalService": "/services",
+  "internalService": "/services/claims-quality-support",
   "internalSibling": "/blog",
   "source": {
    "label": "National Association of Insurance Commissioners",
    "url": "https://content.naic.org/"
-  },
-  "excerpt": "A claims operations guide for claim closure."
+  }
  },
  {
   "slug": "vca02-customer-update",
@@ -1407,13 +1397,12 @@ export const november01BlogPosts: readonly BlogPost[] = [
    }
   ],
   "faq": [],
-  "internalService": "/services",
+  "internalService": "/services/policyholder-status-support",
   "internalSibling": "/blog",
   "source": {
    "label": "National Association of Insurance Commissioners",
    "url": "https://content.naic.org/"
-  },
-  "excerpt": "A claims operations guide for customer update."
+  }
  },
  {
   "slug": "vca02-monthly-review",
@@ -1433,12 +1422,11 @@ export const november01BlogPosts: readonly BlogPost[] = [
    }
   ],
   "faq": [],
-  "internalService": "/services",
+  "internalService": "/services/claims-quality-support",
   "internalSibling": "/blog",
   "source": {
    "label": "National Association of Insurance Commissioners",
    "url": "https://content.naic.org/"
-  },
-  "excerpt": "A claims operations guide for monthly review."
+  }
  }
 ];

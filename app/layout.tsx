@@ -8,7 +8,9 @@ export const metadata: Metadata = {
   metadataBase: new URL(`https://${site.domain}`),
   title: { default: `${site.name} | Specialist remote staff`, template: `%s | ${site.name}` },
   description: site.heroBody,
-  openGraph: { type: 'website', siteName: site.name, images: ['/hero.png'] },
+  icons: { icon: '/favicon.png' },
+  openGraph: { type: 'website', siteName: site.name, images: ['/virtual-claims-assistant-open-graph.png'] },
+  twitter: { card: 'summary_large_image', images: ['/virtual-claims-assistant-open-graph.png'] },
   alternates: { canonical: '/' }
 };
 
