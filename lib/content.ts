@@ -2,8 +2,10 @@ import { site } from './site';
 import type { BlogPost, ResearchPost } from './types';
 import { november01BlogPosts } from './november01-blog';
 import { november03BlogPosts } from './november03-blog';
+import { november04BlogPosts } from './november04-blog';
 import { november01ResearchPosts } from './november01-research';
 import { november03ResearchPosts } from './november03-research';
+import { november04ResearchPosts } from './november04-research';
 import { october12BlogPosts } from './october12-blog';
 import { october12ResearchPosts } from './october12-research';
 import { october22BlogPosts } from './october22-blog';
@@ -1014,12 +1016,12 @@ function enrichLegacyResearch(post: ResearchPost): ResearchPost {
   };
 }
 
-export const blogPosts: BlogPost[] = [...november03BlogPosts, ...november01BlogPosts, ...october22BlogPosts, ...october27BlogPosts, ...october12BlogPosts, ...legacyBlogPosts].map((post) => ({
+export const blogPosts: BlogPost[] = [...november04BlogPosts, ...november03BlogPosts, ...november01BlogPosts, ...october22BlogPosts, ...october27BlogPosts, ...october12BlogPosts, ...legacyBlogPosts].map((post) => ({
   ...post,
   thumbnail: post.thumbnail || workflowImage(post.slug)
 }));
 export const researchPosts: ResearchPost[] = [
-  ...november03ResearchPosts, ...november01ResearchPosts,
+  ...november04ResearchPosts, ...november03ResearchPosts, ...november01ResearchPosts,
   ...october22ResearchPosts.map((post) => ({ ...post, readTime: post.readTime || '8 min read' })),
   ...october27ResearchPosts.map((post) => ({ ...post, readTime: post.readTime || '8 min read' })),
   ...october12ResearchPosts.map((post) => ({ ...post, readTime: post.readTime || '12 min read' })),
