@@ -43,7 +43,27 @@ export const november04BlogPosts = [
           "The close note names what was checked, who approved it, what changed, and what would reopen the case. A claims owner should be able to read one record later and explain the close without contacting the original assistant. Virtual Claims Assistant files the FNOL intake records close note with the source evidence. Virtual Claims Assistant keeps the note with the claim file."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "What should the team check first on record a fnol intake with the policy and loss date?",
+        "a": "Start with the source record and the named owner. The specialist records the source in the approved claim system before the case moves forward."
+      },
+      {
+        "q": "Which decisions stay with the accountable owner?",
+        "a": "The accountable owner keeps every decision that changes coverage, payment, access, policy, or a policyholder commitment. The specialist prepares the evidence and routes the exception."
+      },
+      {
+        "q": "How should results be reviewed?",
+        "a": "Review a small sample against the same definition each month and record one process change with an owner and a check date."
+      }
+    ],
+    "internalService": "/services/fnol-intake-support",
+    "internalSibling": "/blog/virtualclaimsassistant-map-the-fnol-intake-decision-to-one-accountable-owner-2026-11-01",
+    "source": {
+      "label": "U.S. Government Accountability Office",
+      "url": "https://www.gao.gov/"
+    }
   },
   {
     "slug": "virtualclaimsassistant-track-a-claim-document-request-until-the-file-is-complete",
@@ -89,7 +109,27 @@ export const november04BlogPosts = [
           "The close note names what was checked, who approved it, what changed, and what would reopen the case. A claims owner should be able to read one record later and explain the close without contacting the original assistant. Virtual Claims Assistant files the claim document requests close note with the source evidence. Virtual Claims Assistant keeps the note with the claim file."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "What should the team check first on track a claim document request until the file is complete?",
+        "a": "Start with the source record and the named owner. The specialist records the source in the approved claim system before the case moves forward."
+      },
+      {
+        "q": "Which decisions stay with the accountable owner?",
+        "a": "The accountable owner keeps every decision that changes coverage, payment, access, policy, or a policyholder commitment. The specialist prepares the evidence and routes the exception."
+      },
+      {
+        "q": "How should results be reviewed?",
+        "a": "Review a small sample against the same definition each month and record one process change with an owner and a check date."
+      }
+    ],
+    "internalService": "/services/claims-document-coordination",
+    "internalSibling": "/blog/virtualclaimsassistant-map-the-fnol-intake-decision-to-one-accountable-owner-2026-11-01",
+    "source": {
+      "label": "U.S. Government Accountability Office",
+      "url": "https://www.gao.gov/"
+    }
   },
   {
     "slug": "virtualclaimsassistant-prepare-an-adjuster-work-queue-note-with-the-next-owner",
@@ -135,7 +175,27 @@ export const november04BlogPosts = [
           "The close note names what was checked, who approved it, what changed, and what would reopen the case. A claims owner should be able to read one record later and explain the close without contacting the original assistant. Virtual Claims Assistant files the adjuster work queue notes close note with the source evidence. Virtual Claims Assistant keeps the note with the claim file."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "What should the team check first on prepare an adjuster work queue note with the next owner?",
+        "a": "Start with the source record and the named owner. The specialist records the source in the approved claim system before the case moves forward."
+      },
+      {
+        "q": "Which decisions stay with the accountable owner?",
+        "a": "The accountable owner keeps every decision that changes coverage, payment, access, policy, or a policyholder commitment. The specialist prepares the evidence and routes the exception."
+      },
+      {
+        "q": "How should results be reviewed?",
+        "a": "Review a small sample against the same definition each month and record one process change with an owner and a check date."
+      }
+    ],
+    "internalService": "/services/adjuster-work-queue-support",
+    "internalSibling": "/blog/virtualclaimsassistant-map-the-fnol-intake-decision-to-one-accountable-owner-2026-11-01",
+    "source": {
+      "label": "U.S. Government Accountability Office",
+      "url": "https://www.gao.gov/"
+    }
   },
   {
     "slug": "virtualclaimsassistant-check-a-policyholder-status-update-against-the-claim-record",
@@ -181,7 +241,27 @@ export const november04BlogPosts = [
           "The close note names what was checked, who approved it, what changed, and what would reopen the case. A claims owner should be able to read one record later and explain the close without contacting the original assistant. Virtual Claims Assistant files the policyholder status updates close note with the source evidence. Virtual Claims Assistant keeps the note with the claim file."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "What should the team check first on check a policyholder status update against the claim record?",
+        "a": "Start with the source record and the named owner. The specialist records the source in the approved claim system before the case moves forward."
+      },
+      {
+        "q": "Which decisions stay with the accountable owner?",
+        "a": "The accountable owner keeps every decision that changes coverage, payment, access, policy, or a policyholder commitment. The specialist prepares the evidence and routes the exception."
+      },
+      {
+        "q": "How should results be reviewed?",
+        "a": "Review a small sample against the same definition each month and record one process change with an owner and a check date."
+      }
+    ],
+    "internalService": "/services/policyholder-status-support",
+    "internalSibling": "/blog/virtualclaimsassistant-map-the-fnol-intake-decision-to-one-accountable-owner-2026-11-01",
+    "source": {
+      "label": "U.S. Government Accountability Office",
+      "url": "https://www.gao.gov/"
+    }
   },
   {
     "slug": "virtualclaimsassistant-review-a-claim-denial-letter-before-it-is-released",
@@ -227,7 +307,27 @@ export const november04BlogPosts = [
           "The close note names what was checked, who approved it, what changed, and what would reopen the case. A claims owner should be able to read one record later and explain the close without contacting the original assistant. Virtual Claims Assistant files the claim denial letters close note with the source evidence. Virtual Claims Assistant keeps the note with the claim file."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "What should the team check first on review a claim denial letter before it is released?",
+        "a": "Start with the source record and the named owner. The specialist records the source in the approved claim system before the case moves forward."
+      },
+      {
+        "q": "Which decisions stay with the accountable owner?",
+        "a": "The accountable owner keeps every decision that changes coverage, payment, access, policy, or a policyholder commitment. The specialist prepares the evidence and routes the exception."
+      },
+      {
+        "q": "How should results be reviewed?",
+        "a": "Review a small sample against the same definition each month and record one process change with an owner and a check date."
+      }
+    ],
+    "internalService": "/services/claims-quality-support",
+    "internalSibling": "/blog/virtualclaimsassistant-map-the-fnol-intake-decision-to-one-accountable-owner-2026-11-01",
+    "source": {
+      "label": "U.S. Government Accountability Office",
+      "url": "https://www.gao.gov/"
+    }
   },
   {
     "slug": "virtualclaimsassistant-coordinate-a-vendor-estimate-with-the-claim-file",
@@ -273,7 +373,27 @@ export const november04BlogPosts = [
           "The close note names what was checked, who approved it, what changed, and what would reopen the case. A claims owner should be able to read one record later and explain the close without contacting the original assistant. Virtual Claims Assistant files the vendor estimates close note with the source evidence. Virtual Claims Assistant keeps the note with the claim file."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "What should the team check first on coordinate a vendor estimate with the claim file?",
+        "a": "Start with the source record and the named owner. The specialist records the source in the approved claim system before the case moves forward."
+      },
+      {
+        "q": "Which decisions stay with the accountable owner?",
+        "a": "The accountable owner keeps every decision that changes coverage, payment, access, policy, or a policyholder commitment. The specialist prepares the evidence and routes the exception."
+      },
+      {
+        "q": "How should results be reviewed?",
+        "a": "Review a small sample against the same definition each month and record one process change with an owner and a check date."
+      }
+    ],
+    "internalService": "/services/claims-document-coordination",
+    "internalSibling": "/blog/virtualclaimsassistant-map-the-fnol-intake-decision-to-one-accountable-owner-2026-11-01",
+    "source": {
+      "label": "U.S. Government Accountability Office",
+      "url": "https://www.gao.gov/"
+    }
   },
   {
     "slug": "virtualclaimsassistant-keep-a-subrogation-referral-visible-after-the-first-notice",
@@ -319,7 +439,27 @@ export const november04BlogPosts = [
           "The close note names what was checked, who approved it, what changed, and what would reopen the case. A claims owner should be able to read one record later and explain the close without contacting the original assistant. Virtual Claims Assistant files the subrogation referrals close note with the source evidence. Virtual Claims Assistant keeps the note with the claim file."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "What should the team check first on keep a subrogation referral visible after the first notice?",
+        "a": "Start with the source record and the named owner. The specialist records the source in the approved claim system before the case moves forward."
+      },
+      {
+        "q": "Which decisions stay with the accountable owner?",
+        "a": "The accountable owner keeps every decision that changes coverage, payment, access, policy, or a policyholder commitment. The specialist prepares the evidence and routes the exception."
+      },
+      {
+        "q": "How should results be reviewed?",
+        "a": "Review a small sample against the same definition each month and record one process change with an owner and a check date."
+      }
+    ],
+    "internalService": "/services/subrogation-admin-support",
+    "internalSibling": "/blog/virtualclaimsassistant-map-the-fnol-intake-decision-to-one-accountable-owner-2026-11-01",
+    "source": {
+      "label": "U.S. Government Accountability Office",
+      "url": "https://www.gao.gov/"
+    }
   },
   {
     "slug": "virtualclaimsassistant-audit-a-closed-claim-file-for-missing-evidence",
@@ -365,6 +505,26 @@ export const november04BlogPosts = [
           "The close note names what was checked, who approved it, what changed, and what would reopen the case. A claims owner should be able to read one record later and explain the close without contacting the original assistant. Virtual Claims Assistant files the closed claim audits close note with the source evidence. Virtual Claims Assistant keeps the note with the claim file."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "What should the team check first on audit a closed claim file for missing evidence?",
+        "a": "Start with the source record and the named owner. The specialist records the source in the approved claim system before the case moves forward."
+      },
+      {
+        "q": "Which decisions stay with the accountable owner?",
+        "a": "The accountable owner keeps every decision that changes coverage, payment, access, policy, or a policyholder commitment. The specialist prepares the evidence and routes the exception."
+      },
+      {
+        "q": "How should results be reviewed?",
+        "a": "Review a small sample against the same definition each month and record one process change with an owner and a check date."
+      }
+    ],
+    "internalService": "/services/claims-quality-support",
+    "internalSibling": "/blog/virtualclaimsassistant-map-the-fnol-intake-decision-to-one-accountable-owner-2026-11-01",
+    "source": {
+      "label": "U.S. Government Accountability Office",
+      "url": "https://www.gao.gov/"
+    }
   }
 ];

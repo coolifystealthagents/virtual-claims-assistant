@@ -56,6 +56,24 @@ export const november04ResearchPosts = [
           "Pick a review date and keep it. End with one process change, one owner, and one check date. A defect that repeats should change the template, the source, or the rule before it changes coaching. Use the same sample rule each time and file the review note with the change."
         ]
       }
+    ],
+    "sources": [
+      {
+        "label": "U.S. Small Business Administration",
+        "url": "https://www.sba.gov/"
+      },
+      {
+        "label": "U.S. Government Accountability Office",
+        "url": "https://www.gao.gov/"
+      },
+      {
+        "label": "NIST Cybersecurity Framework",
+        "url": "https://www.nist.gov/cyberframework"
+      },
+      {
+        "label": "U.S. Department of Labor",
+        "url": "https://www.dol.gov/"
+      }
     ]
   },
   {
@@ -114,6 +132,24 @@ export const november04ResearchPosts = [
         "paragraphs": [
           "Pick a review date and keep it. End with one process change, one owner, and one check date. A defect that repeats should change the template, the source, or the rule before it changes coaching. Use the same sample rule each time and file the review note with the change."
         ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "U.S. Small Business Administration",
+        "url": "https://www.sba.gov/"
+      },
+      {
+        "label": "U.S. Government Accountability Office",
+        "url": "https://www.gao.gov/"
+      },
+      {
+        "label": "NIST Cybersecurity Framework",
+        "url": "https://www.nist.gov/cyberframework"
+      },
+      {
+        "label": "U.S. Department of Labor",
+        "url": "https://www.dol.gov/"
       }
     ]
   },
@@ -174,6 +210,24 @@ export const november04ResearchPosts = [
           "Pick a review date and keep it. End with one process change, one owner, and one check date. A defect that repeats should change the template, the source, or the rule before it changes coaching. Use the same sample rule each time and file the review note with the change."
         ]
       }
+    ],
+    "sources": [
+      {
+        "label": "U.S. Small Business Administration",
+        "url": "https://www.sba.gov/"
+      },
+      {
+        "label": "U.S. Government Accountability Office",
+        "url": "https://www.gao.gov/"
+      },
+      {
+        "label": "NIST Cybersecurity Framework",
+        "url": "https://www.nist.gov/cyberframework"
+      },
+      {
+        "label": "U.S. Department of Labor",
+        "url": "https://www.dol.gov/"
+      }
     ]
   },
   {
@@ -232,6 +286,24 @@ export const november04ResearchPosts = [
         "paragraphs": [
           "Pick a review date and keep it. End with one process change, one owner, and one check date. A defect that repeats should change the template, the source, or the rule before it changes coaching. Use the same sample rule each time and file the review note with the change."
         ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "U.S. Small Business Administration",
+        "url": "https://www.sba.gov/"
+      },
+      {
+        "label": "U.S. Government Accountability Office",
+        "url": "https://www.gao.gov/"
+      },
+      {
+        "label": "NIST Cybersecurity Framework",
+        "url": "https://www.nist.gov/cyberframework"
+      },
+      {
+        "label": "U.S. Department of Labor",
+        "url": "https://www.dol.gov/"
       }
     ]
   },
@@ -292,6 +364,24 @@ export const november04ResearchPosts = [
           "Pick a review date and keep it. End with one process change, one owner, and one check date. A defect that repeats should change the template, the source, or the rule before it changes coaching. Use the same sample rule each time and file the review note with the change."
         ]
       }
+    ],
+    "sources": [
+      {
+        "label": "U.S. Small Business Administration",
+        "url": "https://www.sba.gov/"
+      },
+      {
+        "label": "U.S. Government Accountability Office",
+        "url": "https://www.gao.gov/"
+      },
+      {
+        "label": "NIST Cybersecurity Framework",
+        "url": "https://www.nist.gov/cyberframework"
+      },
+      {
+        "label": "U.S. Department of Labor",
+        "url": "https://www.dol.gov/"
+      }
     ]
   },
   {
@@ -351,6 +441,24 @@ export const november04ResearchPosts = [
           "Pick a review date and keep it. End with one process change, one owner, and one check date. A defect that repeats should change the template, the source, or the rule before it changes coaching. Use the same sample rule each time and file the review note with the change."
         ]
       }
+    ],
+    "sources": [
+      {
+        "label": "U.S. Small Business Administration",
+        "url": "https://www.sba.gov/"
+      },
+      {
+        "label": "U.S. Government Accountability Office",
+        "url": "https://www.gao.gov/"
+      },
+      {
+        "label": "NIST Cybersecurity Framework",
+        "url": "https://www.nist.gov/cyberframework"
+      },
+      {
+        "label": "U.S. Department of Labor",
+        "url": "https://www.dol.gov/"
+      }
     ]
   },
   {
@@ -409,6 +517,24 @@ export const november04ResearchPosts = [
         "paragraphs": [
           "Pick a review date and keep it. End with one process change, one owner, and one check date. A defect that repeats should change the template, the source, or the rule before it changes coaching. Use the same sample rule each time and file the review note with the change."
         ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "U.S. Small Business Administration",
+        "url": "https://www.sba.gov/"
+      },
+      {
+        "label": "U.S. Government Accountability Office",
+        "url": "https://www.gao.gov/"
+      },
+      {
+        "label": "NIST Cybersecurity Framework",
+        "url": "https://www.nist.gov/cyberframework"
+      },
+      {
+        "label": "U.S. Department of Labor",
+        "url": "https://www.dol.gov/"
       }
     ]
   }
