@@ -54,11 +54,11 @@ test('image provenance records both stock sources and non-employee alt policy', 
   assert.match(provenance, /not employees or claims professionals affiliated with Virtual Claims Assistant/);
 });
 
-test('shared footer has one accessible Research button linking to the published route', () => {
+test('shared footer renders Research as one normal neighboring navigation link', () => {
   const chrome = read('components/SiteChrome.tsx');
   const css = read('app/globals.css');
   assert.equal((chrome.match(/>Research<\/Link>/g) || []).length, 1);
-  assert.match(chrome, /<Link className="footer-research-button" href="\/research">Research<\/Link>/);
-  assert.match(css, /\.footer-research-button\{[^}]*display:inline-flex[^}]*min-height:44px[^}]*align-items:center[^}]*justify-content:center/s);
-  assert.match(css, /\.footer-research-button:focus-visible/);
+  assert.match(chrome, /<Link href="\/blog">Blog<\/Link><Link href="\/research">Research<\/Link><Link href="\/privacy">Privacy<\/Link>/);
+  assert.doesNotMatch(chrome, /footer-research-button/);
+  assert.doesNotMatch(css, /footer-research-button/);
 });
