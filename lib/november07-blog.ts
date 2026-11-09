@@ -48,7 +48,7 @@ export const november07BlogPosts = [
       "label": "U.S. Government Accountability Office",
       "url": "https://www.gao.gov/"
     },
-    "internalService": "/services",
+    "internalService": "/services/claims-document-coordination",
     "internalSibling": "/blog/virtualclaimsassistant-check-a-rental-car-invoice-against-the-policy-limit",
     "faq": [
       {
@@ -114,7 +114,7 @@ export const november07BlogPosts = [
       "label": "U.S. Government Accountability Office",
       "url": "https://www.gao.gov/"
     },
-    "internalService": "/services",
+    "internalService": "/services/claims-quality-support",
     "internalSibling": "/blog/virtualclaimsassistant-track-a-medical-bill-review-through-the-adjuster-queue",
     "faq": [
       {
@@ -180,7 +180,7 @@ export const november07BlogPosts = [
       "label": "U.S. Government Accountability Office",
       "url": "https://www.gao.gov/"
     },
-    "internalService": "/services",
+    "internalService": "/services/adjuster-work-queue-support",
     "internalSibling": "/blog/virtualclaimsassistant-prepare-a-total-loss-valuation-summary-with-comparable-sources",
     "faq": [
       {
@@ -246,7 +246,7 @@ export const november07BlogPosts = [
       "label": "U.S. Government Accountability Office",
       "url": "https://www.gao.gov/"
     },
-    "internalService": "/services",
+    "internalService": "/services/claims-document-coordination",
     "internalSibling": "/blog/virtualclaimsassistant-review-a-water-damage-mitigation-invoice-for-the-dry-log",
     "faq": [
       {
@@ -312,7 +312,7 @@ export const november07BlogPosts = [
       "label": "U.S. Government Accountability Office",
       "url": "https://www.gao.gov/"
     },
-    "internalService": "/services",
+    "internalService": "/services/claims-quality-support",
     "internalSibling": "/blog/virtualclaimsassistant-check-a-claim-correspondence-letter-for-required-disclosures",
     "faq": [
       {
@@ -378,7 +378,7 @@ export const november07BlogPosts = [
       "label": "U.S. Government Accountability Office",
       "url": "https://www.gao.gov/"
     },
-    "internalService": "/services",
+    "internalService": "/services/claims-document-coordination",
     "internalSibling": "/blog/virtualclaimsassistant-coordinate-an-additional-living-expense-request-with-the-receipts",
     "faq": [
       {
@@ -444,7 +444,7 @@ export const november07BlogPosts = [
       "label": "U.S. Government Accountability Office",
       "url": "https://www.gao.gov/"
     },
-    "internalService": "/services",
+    "internalService": "/services/policyholder-status-support",
     "internalSibling": "/blog/virtualclaimsassistant-audit-a-claim-reserve-roll-forward-against-the-payment-ledger",
     "faq": [
       {
@@ -510,7 +510,7 @@ export const november07BlogPosts = [
       "label": "U.S. Government Accountability Office",
       "url": "https://www.gao.gov/"
     },
-    "internalService": "/services",
+    "internalService": "/services/claims-quality-support",
     "internalSibling": "/blog/virtualclaimsassistant-record-a-claim-photo-upload-with-the-loss-location-index",
     "faq": [
       {

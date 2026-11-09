@@ -83,7 +83,7 @@ export const november08BlogPosts = [
       "label": "U.S. Government Accountability Office",
       "url": "https://www.gao.gov/products/gao-20-283g"
     },
-    "internalService": "/services",
+    "internalService": "/services/claims-quality-support",
     "internalSibling": "/blog/virtualclaimsassistant-reconcile-a-salvage-recovery-against-the-settlement-ledger"
   },
   {
@@ -170,7 +170,7 @@ export const november08BlogPosts = [
       "label": "National Association of Insurance Commissioners",
       "url": "https://content.naic.org/"
     },
-    "internalService": "/services",
+    "internalService": "/services/subrogation-admin-support",
     "internalSibling": "/blog/virtualclaimsassistant-document-a-policyholder-call-with-the-coverage-question-and-answer"
   },
   {
@@ -257,7 +257,7 @@ export const november08BlogPosts = [
       "label": "National Association of Insurance Commissioners",
       "url": "https://content.naic.org/"
     },
-    "internalService": "/services",
+    "internalService": "/services/policyholder-status-support",
     "internalSibling": "/blog/virtualclaimsassistant-keep-a-claim-diary-note-that-survives-an-adjuster-reassignment"
   },
   {
@@ -344,7 +344,7 @@ export const november08BlogPosts = [
       "label": "U.S. Government Accountability Office",
       "url": "https://www.gao.gov/products/gao-20-283g"
     },
-    "internalService": "/services",
+    "internalService": "/services/adjuster-work-queue-support",
     "internalSibling": "/blog/virtualclaimsassistant-check-a-depreciation-holdback-release-against-the-completed-repair"
   },
   {
@@ -431,7 +431,7 @@ export const november08BlogPosts = [
       "label": "National Association of Insurance Commissioners",
       "url": "https://content.naic.org/"
     },
-    "internalService": "/services",
+    "internalService": "/services/claims-quality-support",
     "internalSibling": "/blog/virtualclaimsassistant-route-a-subrogation-referral-with-the-liability-evidence"
   },
   {
@@ -518,7 +518,7 @@ export const november08BlogPosts = [
       "label": "U.S. Government Accountability Office",
       "url": "https://www.gao.gov/products/gao-20-283g"
     },
-    "internalService": "/services",
+    "internalService": "/services/subrogation-admin-support",
     "internalSibling": "/blog/virtualclaimsassistant-prepare-a-fire-loss-contents-inventory-with-room-level-proof"
   },
   {
@@ -605,7 +605,7 @@ export const november08BlogPosts = [
       "label": "U.S. Fire Administration",
       "url": "https://www.usfa.fema.gov/"
     },
-    "internalService": "/services",
+    "internalService": "/services/claims-document-coordination",
     "internalSibling": "/blog/virtualclaimsassistant-review-a-claim-payment-batch-for-duplicate-payees"
   },
   {
@@ -692,7 +692,7 @@ export const november08BlogPosts = [
       "label": "U.S. Government Accountability Office",
       "url": "https://www.gao.gov/products/gao-20-283g"
     },
-    "internalService": "/services",
+    "internalService": "/services/claims-quality-support",
     "internalSibling": "/blog/virtualclaimsassistant-verify-a-contractor-estimate-against-the-claim-scope"
   }
 ];
