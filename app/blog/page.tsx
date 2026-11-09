@@ -7,8 +7,8 @@ export const metadata: Metadata = {
   title: 'Claims operations field notes',
   description: 'Practical, evidence-led guides for designing, delegating, and reviewing specialist claims support workflows.',
   alternates: { canonical: '/blog' },
-  openGraph: { title: 'Claims operations field notes', description: 'Practical guides to controlled claims support workflows.', url: '/blog', images: ['/editorial/blog-library.svg'] },
-  twitter: { card: 'summary_large_image', images: ['/editorial/blog-library.svg'] }
+  openGraph: { title: 'Claims operations field notes', description: 'Practical guides to controlled claims support workflows.', url: '/blog', images: ['/editorial/blog-hero-desktop.webp'] },
+  twitter: { card: 'summary_large_image', images: ['/editorial/blog-hero-desktop.webp'] }
 };
 
 const categories = [...new Set(blogPosts.map((post) => post.category))];
@@ -22,7 +22,13 @@ export default function BlogPage() {
         <h1>Build workflows people can inspect.</h1>
         <p className="lede">A working library for claims leaders who need clearer queues, stronger source records, and safer handoffs. Each guide turns a recurring administrative problem into a role boundary, evidence checklist, review rhythm, and escalation path.</p>
       </div>
-      <img src="/editorial/blog-library.svg" alt="Open field notebook with claims workflow tabs, check marks, and evidence cards" />
+      <picture className="editorial-hero-picture">
+        <source media="(max-width: 600px)" type="image/avif" srcSet="/editorial/blog-hero-mobile.avif" />
+        <source media="(max-width: 600px)" type="image/webp" srcSet="/editorial/blog-hero-mobile.webp" />
+        <source type="image/avif" srcSet="/editorial/blog-hero-desktop.avif" />
+        <source type="image/webp" srcSet="/editorial/blog-hero-desktop.webp" />
+        <img src="/editorial/blog-hero-desktop.webp" alt="Stock photo of a professional organizing notes beside a laptop at a desk" width="1440" height="1200" loading="eager" fetchPriority="high" decoding="async" />
+      </picture>
     </header>
     <div className="editorial-index-body">
       <section className="editorial-intro" aria-labelledby="blog-library-intro">

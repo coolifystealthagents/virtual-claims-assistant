@@ -7,8 +7,8 @@ export const metadata: Metadata = {
   title: 'Claims operations research library',
   description: 'A source-led library of claims workflow methods, evidence questions, limitations, and practical review controls.',
   alternates: { canonical: '/research' },
-  openGraph: { title: 'Claims operations research library', description: 'Source-led briefs for inspectable claims operations.', url: '/research', images: ['/editorial/research-library.svg'] },
-  twitter: { card: 'summary_large_image', images: ['/editorial/research-library.svg'] }
+  openGraph: { title: 'Claims operations research library', description: 'Source-led briefs for inspectable claims operations.', url: '/research', images: ['/editorial/research-hero-desktop.webp'] },
+  twitter: { card: 'summary_large_image', images: ['/editorial/research-hero-desktop.webp'] }
 };
 
 const clusters = [...new Set(researchPosts.map((post) => post.cluster))];
@@ -18,7 +18,13 @@ export default function ResearchPage() {
   return <main id="main-content" tabIndex={-1} className="editorial-index research-index">
     <header className="editorial-index-hero">
       <div><p className="eyebrow">Claims research file</p><h1>Evidence before inference.</h1><p className="lede">Source-led briefs for leaders building measurable claims support workflows. The library separates observable administrative records from protected judgment, states what a method can support, and keeps uncertainty and limitations visible.</p></div>
-      <img src="/editorial/research-library.svg" alt="Ruled research file with source tabs, evidence points, and review annotations" />
+      <picture className="editorial-hero-picture">
+        <source media="(max-width: 600px)" type="image/avif" srcSet="/editorial/research-hero-mobile.avif" />
+        <source media="(max-width: 600px)" type="image/webp" srcSet="/editorial/research-hero-mobile.webp" />
+        <source type="image/avif" srcSet="/editorial/research-hero-desktop.avif" />
+        <source type="image/webp" srcSet="/editorial/research-hero-desktop.webp" />
+        <img src="/editorial/research-hero-desktop.webp" alt="Stock photo of a person analyzing generic printed charts with a pencil" width="1440" height="1200" loading="eager" fetchPriority="high" decoding="async" />
+      </picture>
     </header>
     <div className="editorial-index-body">
       <section className="editorial-intro" aria-labelledby="research-intro"><h2 id="research-intro">A claims file, not a claims verdict.</h2><div>
