@@ -48,7 +48,7 @@ export const november05BlogPosts = [
       "label": "U.S. Government Accountability Office",
       "url": "https://www.gao.gov/"
     },
-    "internalService": "/services",
+    "internalService": "/services/fnol-intake-support",
     "internalSibling": "/blog/virtualclaimsassistant-record-a-fnol-intake-with-the-policy-and-loss-date",
     "faq": [
       {
@@ -114,7 +114,7 @@ export const november05BlogPosts = [
       "label": "U.S. Government Accountability Office",
       "url": "https://www.gao.gov/"
     },
-    "internalService": "/services",
+    "internalService": "/services/claims-document-coordination",
     "internalSibling": "/blog/virtualclaimsassistant-record-a-fnol-intake-with-the-policy-and-loss-date",
     "faq": [
       {
@@ -180,7 +180,7 @@ export const november05BlogPosts = [
       "label": "U.S. Government Accountability Office",
       "url": "https://www.gao.gov/"
     },
-    "internalService": "/services",
+    "internalService": "/services/claims-quality-support",
     "internalSibling": "/blog/virtualclaimsassistant-record-a-fnol-intake-with-the-policy-and-loss-date",
     "faq": [
       {
@@ -246,7 +246,7 @@ export const november05BlogPosts = [
       "label": "U.S. Government Accountability Office",
       "url": "https://www.gao.gov/"
     },
-    "internalService": "/services",
+    "internalService": "/services/policyholder-status-support",
     "internalSibling": "/blog/virtualclaimsassistant-record-a-fnol-intake-with-the-policy-and-loss-date",
     "faq": [
       {
@@ -312,7 +312,7 @@ export const november05BlogPosts = [
       "label": "U.S. Government Accountability Office",
       "url": "https://www.gao.gov/"
     },
-    "internalService": "/services",
+    "internalService": "/services/claims-quality-support",
     "internalSibling": "/blog/virtualclaimsassistant-record-a-fnol-intake-with-the-policy-and-loss-date",
     "faq": [
       {
@@ -378,7 +378,7 @@ export const november05BlogPosts = [
       "label": "U.S. Government Accountability Office",
       "url": "https://www.gao.gov/"
     },
-    "internalService": "/services",
+    "internalService": "/services/claims-document-coordination",
     "internalSibling": "/blog/virtualclaimsassistant-record-a-fnol-intake-with-the-policy-and-loss-date",
     "faq": [
       {
@@ -444,7 +444,7 @@ export const november05BlogPosts = [
       "label": "U.S. Government Accountability Office",
       "url": "https://www.gao.gov/"
     },
-    "internalService": "/services",
+    "internalService": "/services/subrogation-admin-support",
     "internalSibling": "/blog/virtualclaimsassistant-record-a-fnol-intake-with-the-policy-and-loss-date",
     "faq": [
       {
@@ -510,7 +510,7 @@ export const november05BlogPosts = [
       "label": "U.S. Government Accountability Office",
       "url": "https://www.gao.gov/"
     },
-    "internalService": "/services",
+    "internalService": "/services/adjuster-work-queue-support",
     "internalSibling": "/blog/virtualclaimsassistant-record-a-fnol-intake-with-the-policy-and-loss-date",
     "faq": [
       {
