@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { site } from '@/lib/site';
 import { blogPosts } from '@/lib/content';
-import { ArrowIcon, CheckIcon, SparkIcon } from './Icons';
+import { ArrowIcon, BoundaryIcon, CheckIcon, ChecklistIcon, SparkIcon, TrendIcon } from './Icons';
 
 const CTA = ({ id, children }: { id: string; children: React.ReactNode }) => <Link id={id} className="button primary" href="/contact-us">{children} <ArrowIcon /></Link>;
 
@@ -37,7 +37,7 @@ export function HomePage() {
         </picture>
         <figcaption className="visually-hidden">Illustrative stock photography. The people shown are not identified as Virtual Claims Assistant employees or clients.</figcaption>
       </figure>
-      <div><p className="eyebrow">A useful working model</p><h2>Define. Delegate. Improve.</h2><p>Start with the recurring work that already has an owner, a standard, and a clear escalation path. Then create a small review loop that makes the handoff stronger over time.</p><ol><li><strong>Define the boundary.</strong> Separate preparation and coordination from licensed or executive judgment.</li><li><strong>Document the handoff.</strong> Set inputs, output format, review points, and exception rules.</li><li><strong>Improve with evidence.</strong> Review a focused sample and update the process when patterns emerge.</li></ol><CTA id="cta-home-method-consultation">Plan a free consultation</CTA></div>
+      <div><p className="eyebrow">A useful working model</p><h2>Define. Delegate. Improve.</h2><p>Start with the recurring work that already has an owner, a standard, and a clear escalation path. Then create a small review loop that makes the handoff stronger over time.</p><ol className="method-steps"><li><BoundaryIcon /><span><strong>Define the boundary.</strong> Separate preparation and coordination from licensed or executive judgment.</span></li><li><ChecklistIcon /><span><strong>Document the handoff.</strong> Set inputs, output format, review points, and exception rules.</span></li><li><TrendIcon /><span><strong>Improve with evidence.</strong> Review a focused sample and update the process when patterns emerge.</span></li></ol><CTA id="cta-home-method-consultation">Plan a free consultation</CTA></div>
     </section>
     <section className="section journal"><div className="section-heading"><p className="eyebrow">Field notes</p><h2>Practical guidance for better delegation.</h2></div><Latest /></section>
     <section className="closing">

@@ -93,6 +93,27 @@ test('method section uses responsive lazy stock photography and preserves readab
   assert.match(component, /Illustrative stock photography\. The people shown are not identified as Virtual Claims Assistant employees or clients\./);
 });
 
+test('homepage method steps keep ordered semantics while replacing visible markers with scoped decorative icons', () => {
+  const component = read('components/Marketing.tsx');
+  const icons = read('components/Icons.tsx');
+  const css = read('app/globals.css');
+  const method = component.slice(component.indexOf('<section className="section method">'), component.indexOf('<section className="section journal">'));
+
+  assert.match(method, /<ol className="method-steps">/);
+  assert.equal((method.match(/<li>/g) || []).length, 3);
+  assert.match(method, /<li><BoundaryIcon \/><span><strong>Define the boundary\.<\/strong> Separate preparation and coordination from licensed or executive judgment\.<\/span><\/li>/);
+  assert.match(method, /<li><ChecklistIcon \/><span><strong>Document the handoff\.<\/strong> Set inputs, output format, review points, and exception rules\.<\/span><\/li>/);
+  assert.match(method, /<li><TrendIcon \/><span><strong>Improve with evidence\.<\/strong> Review a focused sample and update the process when patterns emerge\.<\/span><\/li>/);
+  for (const icon of ['BoundaryIcon', 'ChecklistIcon', 'TrendIcon']) {
+    assert.match(icons, new RegExp(`export function ${icon}\\(\\).*aria-hidden="true"`));
+    assert.equal((method.match(new RegExp(`<${icon} \\/>`, 'g')) || []).length, 1);
+  }
+  assert.match(css, /\.home \.method \.method-steps\{[^}]*list-style:none[^}]*padding-left:0[^}]*\}/);
+  assert.match(css, /\.home \.method \.method-steps li\{[^}]*display:grid[^}]*grid-template-columns:[^;}]*minmax\(0,1fr\)[^}]*align-items:start[^}]*\}/);
+  assert.match(css, /\.home \.method \.method-step-icon\{[^}]*\}/);
+  assert.doesNotMatch(css, /(^|})\s*(?:ol|li|\.method ol|\.method li)\s*\{[^}]*list-style:none/);
+});
+
 test('closing section uses distinct responsive lazy photography while preserving copy and CTA', () => {
   const component = read('components/Marketing.tsx');
   assert.match(component, /<div className="closing-copy">/);
