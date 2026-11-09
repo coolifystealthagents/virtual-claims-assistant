@@ -11,54 +11,54 @@ export const november08ResearchPosts = [
       {
         "heading": "Question and scope",
         "paragraphs": [
-          "This protocol asks what the contractor estimate scope matching record can show about evidence, timing, and closure at Virtual Claims Assistant. It is a local measurement method, not an industry benchmark or a coverage determination. The result describes one defined population during one observation window. The method is designed for claims leads and adjusters who need a reproducible review. Virtual Claims Assistant applies this rule to contractor estimate scope matching before the sample is drawn.",
-          "The scope of this contractor estimate scope matching protocol is the population named below, not every claim in the file. Write the start event, the stop event, and the pause rule before collecting data. A count without a denominator is not a measurement, especially when the queue changes size during the day. Virtual Claims Assistant records the window and every exclusion so a second reviewer can repeat the sample. The same contractor estimate scope matching rule is checked again after the workflow changes."
+          "This protocol asks what the contractor estimate scope matching record can show about evidence, timing, and closure at Virtual Claims Assistant. It is a local measurement method, not an industry benchmark or a coverage determination. The result describes one defined population during one observation window. The method is designed for claims leads and adjusters who need a reproducible review. Virtual Claims Assistant applies this rule to contractor estimate scope matching before the sample is drawn. The claims reviewer keeps the claim reference, source date, and decision owner together.",
+          "The scope of this contractor estimate scope matching protocol is the population named below, not every claim in the file. Write the start event, the stop event, and the pause rule before collecting data. A count without a denominator is not a measurement, especially when the queue changes size during the day. Virtual Claims Assistant records the window and every exclusion so a second reviewer can repeat the sample. The same contractor estimate scope matching rule is checked again after the workflow changes. A claims lead can repeat the extract from the written rule without private notes."
         ]
       },
       {
         "heading": "Population and unit of analysis",
         "paragraphs": [
-          "The population is contractor estimates received during the observation window. The primary measure is the share of cases that meet the written definition. Add a count of missing evidence and a median age for open cases. Report each measure with its denominator, observation window, and exclusion count. Virtual Claims Assistant applies this rule to contractor estimate scope matching before the sample is drawn.",
-          "Virtual Claims Assistant defines the population before the first case is selected. The population is contractor estimates received during the observation window, and every exclusion is listed with a reason. A sample drawn from a convenience queue can make a fragile control look stable. The point is to describe the population that actually exists, not the one the team wishes it had. The same contractor estimate scope matching rule is checked again after the workflow changes."
+          "The population is contractor estimates received during the observation window. The primary measure is the share of cases that meet the written definition. Add a count of missing evidence and a median age for open cases. Report each measure with its denominator, observation window, and exclusion count. Virtual Claims Assistant applies this rule to contractor estimate scope matching before the sample is drawn. The claims reviewer keeps the claim reference, source date, and decision owner together.",
+          "Virtual Claims Assistant defines the population before the first case is selected. The population is contractor estimates received during the observation window, and every exclusion is listed with a reason. A sample drawn from a convenience queue can make a fragile control look stable. The point is to describe the population that actually exists, not the one the team wishes it had. The same contractor estimate scope matching rule is checked again after the workflow changes. A claims lead can repeat the extract from the written rule without private notes."
         ]
       },
       {
         "heading": "Definitions and measures",
         "paragraphs": [
-          "The primary measure for contractor estimate scope matching is the share of estimate lines tied to an approved scope item. A second measure should capture the count of cases with at least one missing source. A third measure should show the median age of cases still open at the end of the window. The three measures together describe volume, evidence, and delay without hiding one behind another. Virtual Claims Assistant applies this rule to contractor estimate scope matching before the sample is drawn.",
-          "Define completion before the first case. For this protocol, completion means the record supports the measure with a dated source and a named reviewer. A case that fails the definition stays open even when a status field says closed. Virtual Claims Assistant records the status field and the evidence separately so the difference remains visible. The same contractor estimate scope matching rule is checked again after the workflow changes."
+          "The primary measure for contractor estimate scope matching is the share of estimate lines tied to an approved scope item. A second measure should capture the count of cases with at least one missing source. A third measure should show the median age of cases still open at the end of the window. The three measures together describe volume, evidence, and delay without hiding one behind another. Virtual Claims Assistant applies this rule to contractor estimate scope matching before the sample is drawn. The claims reviewer keeps the claim reference, source date, and decision owner together.",
+          "Define completion before the first case. For this protocol, completion means the record supports the measure with a dated source and a named reviewer. A case that fails the definition stays open even when a status field says closed. Virtual Claims Assistant records the status field and the evidence separately so the difference remains visible. The same contractor estimate scope matching rule is checked again after the workflow changes. A claims lead can repeat the extract from the written rule without private notes."
         ]
       },
       {
         "heading": "Evidence standard",
         "paragraphs": [
-          "Use a random or systematic start rule, then take consecutive cases within each stratum. Stratify by risk, owner, and channel so the sample is not dominated by the easiest queue. Include at least one adverse case: a missing source, a conflict, an unavailable owner, or a deadline that forced a decision. Virtual Claims Assistant records every access failure instead of replacing it silently. Virtual Claims Assistant applies this rule to contractor estimate scope matching before the sample is drawn.",
-          "Sample across the full observation window, including busy days and days when coverage changed. A sample drawn only from quiet days can make a fragile control look stable. Record the date and time of each observation. If the population is small, report the count and the instability instead of a precise-looking rate. The same contractor estimate scope matching rule is checked again after the workflow changes."
+          "Use a random or systematic start rule, then take consecutive cases within each stratum. Stratify by risk, owner, and channel so the sample is not dominated by the easiest queue. Include at least one adverse case: a missing source, a conflict, an unavailable owner, or a deadline that forced a decision. Virtual Claims Assistant records every access failure instead of replacing it silently. Virtual Claims Assistant applies this rule to contractor estimate scope matching before the sample is drawn. The claims reviewer keeps the claim reference, source date, and decision owner together.",
+          "Sample across the full observation window, including busy days and days when coverage changed. A sample drawn only from quiet days can make a fragile control look stable. Record the date and time of each observation. If the population is small, report the count and the instability instead of a precise-looking rate. The same contractor estimate scope matching rule is checked again after the workflow changes. A claims lead can repeat the extract from the written rule without private notes."
         ]
       },
       {
         "heading": "Sampling and collection",
         "paragraphs": [
-          "The main limit is that the contractor estimate scope matching record may be incomplete, delayed, or maintained outside the team. This method cannot infer missing work from a clean summary. It also cannot establish whether a policy was followed in cases that left no trace. Virtual Claims Assistant states those limits before presenting the result. Virtual Claims Assistant applies this rule to contractor estimate scope matching before the sample is drawn.",
-          "A change in systems, policy, claim mix, or volume can make the result stale. Record those triggers with the finding. If the definition changes, keep the old and new rules side by side for the transition period. Label which rule applies to each case so the comparison remains honest. The same contractor estimate scope matching rule is checked again after the workflow changes."
+          "The main limit is that the contractor estimate scope matching record may be incomplete, delayed, or maintained outside the team. This method cannot infer missing work from a clean summary. It also cannot establish whether a policy was followed in cases that left no trace. Virtual Claims Assistant states those limits before presenting the result. Virtual Claims Assistant applies this rule to contractor estimate scope matching before the sample is drawn. The claims reviewer keeps the claim reference, source date, and decision owner together.",
+          "A change in systems, policy, claim mix, or volume can make the result stale. Record those triggers with the finding. If the definition changes, keep the old and new rules side by side for the transition period. Label which rule applies to each case so the comparison remains honest. The same contractor estimate scope matching rule is checked again after the workflow changes. A claims lead can repeat the extract from the written rule without private notes."
         ]
       },
       {
         "heading": "Limits and honest reporting",
         "paragraphs": [
-          "Collection for contractor estimate scope matching ends when the sample is complete and the codebook is attached. Do not add cases after the result is known, and do not remove a difficult case to make the rate cleaner. A reviewer should be able to rerun the extract from the written rule. Virtual Claims Assistant stores the extract, the codebook, and the finding together. Virtual Claims Assistant applies this rule to contractor estimate scope matching before the sample is drawn.",
-          "Give the review a named owner and a review date. The report should end with one next action: fix the source, simplify the field, change the queue, or stop the work until the owner decides. Virtual Claims Assistant then repeats the protocol after the change and compares the same definitions. The next sample uses the same codebook and the same population rule. The same contractor estimate scope matching rule is checked again after the workflow changes."
+          "Collection for contractor estimate scope matching ends when the sample is complete and the codebook is attached. Do not add cases after the result is known, and do not remove a difficult case to make the rate cleaner. A reviewer should be able to rerun the extract from the written rule. Virtual Claims Assistant stores the extract, the codebook, and the finding together. Virtual Claims Assistant applies this rule to contractor estimate scope matching before the sample is drawn. The claims reviewer keeps the claim reference, source date, and decision owner together.",
+          "Give the review a named owner and a review date. The report should end with one next action: fix the source, simplify the field, change the queue, or stop the work until the owner decides. Virtual Claims Assistant then repeats the protocol after the change and compares the same definitions. The next sample uses the same codebook and the same population rule. The same contractor estimate scope matching rule is checked again after the workflow changes. A claims lead can repeat the extract from the written rule without private notes."
         ]
       }
     ],
     "faq": [
       {
         "q": "What population should a contractor estimate scope matching review use?",
-        "a": "Use one defined population and one observation window: contractor estimates received during the observation window. Keep the exclusion list beside the extract and repeat the same rule after the workflow changes."
+        "a": "Draw the contractor estimate scope matching sample from contractor estimates received during the observation window using one observation window. Keep the claim-reference rule and the exclusions beside the extract so a second claims reviewer can repeat it."
       },
       {
         "q": "What can the contractor estimate scope matching result honestly claim?",
-        "a": "It can describe the evidence and timing of the sampled cases. It cannot prove intent, a universal benchmark, or coverage beyond the cases that left a trace."
+        "a": "It can describe the evidence and timing of the sampled contractor estimate scope matching cases. It cannot prove intent, a universal benchmark, or coverage beyond the claim file that left a trace."
       },
       {
         "q": "Who should own the review?",
@@ -93,54 +93,54 @@ export const november08ResearchPosts = [
       {
         "heading": "Question and scope",
         "paragraphs": [
-          "The scope of this salvage recovery reconciliation protocol is the population named below, not every claim in the file. Write the start event, the stop event, and the pause rule before collecting data. A count without a denominator is not a measurement, especially when the queue changes size during the day. Virtual Claims Assistant records the window and every exclusion so a second reviewer can repeat the sample. Virtual Claims Assistant applies this rule to salvage recovery reconciliation before the sample is drawn.",
-          "The question behind this salvage recovery reconciliation protocol is narrow on purpose. It asks whether the evidence supports the share of recoveries matched to a claim and payee, not whether the team feels busy. A broad question produces a broad answer that cannot be tested. A narrow question can be repeated after the workflow changes, which is what makes it useful. The same salvage recovery reconciliation rule is checked again after the workflow changes."
+          "The scope of this salvage recovery reconciliation protocol is the population named below, not every claim in the file. Write the start event, the stop event, and the pause rule before collecting data. A count without a denominator is not a measurement, especially when the queue changes size during the day. Virtual Claims Assistant records the window and every exclusion so a second reviewer can repeat the sample. Virtual Claims Assistant applies this rule to salvage recovery reconciliation before the sample is drawn. The claims reviewer keeps the claim reference, source date, and decision owner together.",
+          "The question behind this salvage recovery reconciliation protocol is narrow on purpose. It asks whether the evidence supports the share of recoveries matched to a claim and payee, not whether the team feels busy. A broad question produces a broad answer that cannot be tested. A narrow question can be repeated after the workflow changes, which is what makes it useful. The same salvage recovery reconciliation rule is checked again after the workflow changes. A claims lead can repeat the extract from the written rule without private notes."
         ]
       },
       {
         "heading": "Population and unit of analysis",
         "paragraphs": [
-          "Virtual Claims Assistant defines the population before the first case is selected. The population is salvage recoveries posted during the observation window, and every exclusion is listed with a reason. A sample drawn from a convenience queue can make a fragile control look stable. The point is to describe the population that actually exists, not the one the team wishes it had. Virtual Claims Assistant applies this rule to salvage recovery reconciliation before the sample is drawn.",
-          "The unit is one salvage recovery and its settlement ledger entry. Test the definition on a case that crosses owners, a case that is still open, and a case that was reopened. Apply the same rule to every case and keep the rule beside the extract. A definition that changes halfway through the window destroys comparability. The same salvage recovery reconciliation rule is checked again after the workflow changes."
+          "Virtual Claims Assistant defines the population before the first case is selected. The population is salvage recoveries posted during the observation window, and every exclusion is listed with a reason. A sample drawn from a convenience queue can make a fragile control look stable. The point is to describe the population that actually exists, not the one the team wishes it had. Virtual Claims Assistant applies this rule to salvage recovery reconciliation before the sample is drawn. The claims reviewer keeps the claim reference, source date, and decision owner together.",
+          "The unit is one salvage recovery and its settlement ledger entry. Test the definition on a case that crosses owners, a case that is still open, and a case that was reopened. Apply the same rule to every case and keep the rule beside the extract. A definition that changes halfway through the window destroys comparability. The same salvage recovery reconciliation rule is checked again after the workflow changes. A claims lead can repeat the extract from the written rule without private notes."
         ]
       },
       {
         "heading": "Definitions and measures",
         "paragraphs": [
-          "Define completion before the first case. For this protocol, completion means the record supports the measure with a dated source and a named reviewer. A case that fails the definition stays open even when a status field says closed. Virtual Claims Assistant records the status field and the evidence separately so the difference remains visible. Virtual Claims Assistant applies this rule to salvage recovery reconciliation before the sample is drawn.",
-          "Each case needs a source, an observation time, the field it supports, and the reviewer who checked it. Mark missing, unavailable, and confirmed negative values separately. Collapsing them hides the difference between no evidence and evidence of absence. The data dictionary should name the allowed values before collection begins. The same salvage recovery reconciliation rule is checked again after the workflow changes."
+          "Define completion before the first case. For this protocol, completion means the record supports the measure with a dated source and a named reviewer. A case that fails the definition stays open even when a status field says closed. Virtual Claims Assistant records the status field and the evidence separately so the difference remains visible. Virtual Claims Assistant applies this rule to salvage recovery reconciliation before the sample is drawn. The claims reviewer keeps the claim reference, source date, and decision owner together.",
+          "Each case needs a source, an observation time, the field it supports, and the reviewer who checked it. Mark missing, unavailable, and confirmed negative values separately. Collapsing them hides the difference between no evidence and evidence of absence. The data dictionary should name the allowed values before collection begins. The same salvage recovery reconciliation rule is checked again after the workflow changes. A claims lead can repeat the extract from the written rule without private notes."
         ]
       },
       {
         "heading": "Evidence standard",
         "paragraphs": [
-          "Sample across the full observation window, including busy days and days when coverage changed. A sample drawn only from quiet days can make a fragile control look stable. Record the date and time of each observation. If the population is small, report the count and the instability instead of a precise-looking rate. Virtual Claims Assistant applies this rule to salvage recovery reconciliation before the sample is drawn.",
-          "The evidence standard for salvage recovery reconciliation should be written before the sample is selected. A reviewer needs to know which source counts, what date is attached, and how a missing field is treated. Virtual Claims Assistant keeps a short codebook beside the extract so the rule does not live in one person's memory. The codebook is part of the method, not an afterthought. The same salvage recovery reconciliation rule is checked again after the workflow changes."
+          "Sample across the full observation window, including busy days and days when coverage changed. A sample drawn only from quiet days can make a fragile control look stable. Record the date and time of each observation. If the population is small, report the count and the instability instead of a precise-looking rate. Virtual Claims Assistant applies this rule to salvage recovery reconciliation before the sample is drawn. The claims reviewer keeps the claim reference, source date, and decision owner together.",
+          "The evidence standard for salvage recovery reconciliation should be written before the sample is selected. A reviewer needs to know which source counts, what date is attached, and how a missing field is treated. Virtual Claims Assistant keeps a short codebook beside the extract so the rule does not live in one person's memory. The codebook is part of the method, not an afterthought. The same salvage recovery reconciliation rule is checked again after the workflow changes. A claims lead can repeat the extract from the written rule without private notes."
         ]
       },
       {
         "heading": "Sampling and collection",
         "paragraphs": [
-          "A change in systems, policy, claim mix, or volume can make the result stale. Record those triggers with the finding. If the definition changes, keep the old and new rules side by side for the transition period. Label which rule applies to each case so the comparison remains honest. Virtual Claims Assistant applies this rule to salvage recovery reconciliation before the sample is drawn.",
-          "Show the distribution, not only the mean. A median close time can hide a long tail of cases that nobody reviews. Report the open-case count and the oldest case age by owner. That view shows where delay accumulates and which queue needs a process change. The same salvage recovery reconciliation rule is checked again after the workflow changes."
+          "A change in systems, policy, claim mix, or volume can make the result stale. Record those triggers with the finding. If the definition changes, keep the old and new rules side by side for the transition period. Label which rule applies to each case so the comparison remains honest. Virtual Claims Assistant applies this rule to salvage recovery reconciliation before the sample is drawn. The claims reviewer keeps the claim reference, source date, and decision owner together.",
+          "Show the distribution, not only the mean. A median close time can hide a long tail of cases that nobody reviews. Report the open-case count and the oldest case age by owner. That view shows where delay accumulates and which queue needs a process change. The same salvage recovery reconciliation rule is checked again after the workflow changes. A claims lead can repeat the extract from the written rule without private notes."
         ]
       },
       {
         "heading": "Limits and honest reporting",
         "paragraphs": [
-          "Give the review a named owner and a review date. The report should end with one next action: fix the source, simplify the field, change the queue, or stop the work until the owner decides. Virtual Claims Assistant then repeats the protocol after the change and compares the same definitions. The next sample uses the same codebook and the same population rule. Virtual Claims Assistant applies this rule to salvage recovery reconciliation before the sample is drawn.",
-          "Report what moved, what did not, and what remains unknown. That final sentence is the honest close of a measurement protocol. It is more useful than a precise-looking rate built on an unclear denominator. The goal is a reviewable decision, not a perfect number. The same salvage recovery reconciliation rule is checked again after the workflow changes."
+          "Give the review a named owner and a review date. The report should end with one next action: fix the source, simplify the field, change the queue, or stop the work until the owner decides. Virtual Claims Assistant then repeats the protocol after the change and compares the same definitions. The next sample uses the same codebook and the same population rule. Virtual Claims Assistant applies this rule to salvage recovery reconciliation before the sample is drawn. The claims reviewer keeps the claim reference, source date, and decision owner together.",
+          "Report what moved, what did not, and what remains unknown. That final sentence is the honest close of a measurement protocol. It is more useful than a precise-looking rate built on an unclear denominator. The goal is a reviewable decision, not a perfect number. The same salvage recovery reconciliation rule is checked again after the workflow changes. A claims lead can repeat the extract from the written rule without private notes."
         ]
       }
     ],
     "faq": [
       {
         "q": "What population should a salvage recovery reconciliation review use?",
-        "a": "Use one defined population and one observation window: salvage recoveries posted during the observation window. Keep the exclusion list beside the extract and repeat the same rule after the workflow changes."
+        "a": "Draw the salvage recovery reconciliation sample from salvage recoveries posted during the observation window using one observation window. Keep the claim-reference rule and the exclusions beside the extract so a second claims reviewer can repeat it."
       },
       {
         "q": "What can the salvage recovery reconciliation result honestly claim?",
-        "a": "It can describe the evidence and timing of the sampled cases. It cannot prove intent, a universal benchmark, or coverage beyond the cases that left a trace."
+        "a": "It can describe the evidence and timing of the sampled salvage recovery reconciliation cases. It cannot prove intent, a universal benchmark, or coverage beyond the claim file that left a trace."
       },
       {
         "q": "Who should own the review?",
@@ -175,54 +175,54 @@ export const november08ResearchPosts = [
       {
         "heading": "Question and scope",
         "paragraphs": [
-          "The question behind this coverage call documentation protocol is narrow on purpose. It asks whether the evidence supports the share of calls with a recorded question and source, not whether the team feels busy. A broad question produces a broad answer that cannot be tested. A narrow question can be repeated after the workflow changes, which is what makes it useful. Virtual Claims Assistant applies this rule to coverage call documentation before the sample is drawn.",
-          "This protocol asks what the coverage call documentation record can show about evidence, timing, and closure at Virtual Claims Assistant. It is a local measurement method, not an industry benchmark or a coverage determination. The result describes one defined population during one observation window. The method is designed for claims leads and adjusters who need a reproducible review. The same coverage call documentation rule is checked again after the workflow changes."
+          "The question behind this coverage call documentation protocol is narrow on purpose. It asks whether the evidence supports the share of calls with a recorded question and source, not whether the team feels busy. A broad question produces a broad answer that cannot be tested. A narrow question can be repeated after the workflow changes, which is what makes it useful. Virtual Claims Assistant applies this rule to coverage call documentation before the sample is drawn. The claims reviewer keeps the claim reference, source date, and decision owner together.",
+          "This protocol asks what the coverage call documentation record can show about evidence, timing, and closure at Virtual Claims Assistant. It is a local measurement method, not an industry benchmark or a coverage determination. The result describes one defined population during one observation window. The method is designed for claims leads and adjusters who need a reproducible review. The same coverage call documentation rule is checked again after the workflow changes. A claims lead can repeat the extract from the written rule without private notes."
         ]
       },
       {
         "heading": "Population and unit of analysis",
         "paragraphs": [
-          "The unit is one policyholder call tied to a claim. Test the definition on a case that crosses owners, a case that is still open, and a case that was reopened. Apply the same rule to every case and keep the rule beside the extract. A definition that changes halfway through the window destroys comparability. Virtual Claims Assistant applies this rule to coverage call documentation before the sample is drawn.",
-          "The population is coverage-related calls during the observation window. The primary measure is the share of cases that meet the written definition. Add a count of missing evidence and a median age for open cases. Report each measure with its denominator, observation window, and exclusion count. The same coverage call documentation rule is checked again after the workflow changes."
+          "The unit is one policyholder call tied to a claim. Test the definition on a case that crosses owners, a case that is still open, and a case that was reopened. Apply the same rule to every case and keep the rule beside the extract. A definition that changes halfway through the window destroys comparability. Virtual Claims Assistant applies this rule to coverage call documentation before the sample is drawn. The claims reviewer keeps the claim reference, source date, and decision owner together.",
+          "The population is coverage-related calls during the observation window. The primary measure is the share of cases that meet the written definition. Add a count of missing evidence and a median age for open cases. Report each measure with its denominator, observation window, and exclusion count. The same coverage call documentation rule is checked again after the workflow changes. A claims lead can repeat the extract from the written rule without private notes."
         ]
       },
       {
         "heading": "Definitions and measures",
         "paragraphs": [
-          "Each case needs a source, an observation time, the field it supports, and the reviewer who checked it. Mark missing, unavailable, and confirmed negative values separately. Collapsing them hides the difference between no evidence and evidence of absence. The data dictionary should name the allowed values before collection begins. Virtual Claims Assistant applies this rule to coverage call documentation before the sample is drawn.",
-          "The primary measure for coverage call documentation is the share of calls with a recorded question and source. A second measure should capture the count of cases with at least one missing source. A third measure should show the median age of cases still open at the end of the window. The three measures together describe volume, evidence, and delay without hiding one behind another. The same coverage call documentation rule is checked again after the workflow changes."
+          "Each case needs a source, an observation time, the field it supports, and the reviewer who checked it. Mark missing, unavailable, and confirmed negative values separately. Collapsing them hides the difference between no evidence and evidence of absence. The data dictionary should name the allowed values before collection begins. Virtual Claims Assistant applies this rule to coverage call documentation before the sample is drawn. The claims reviewer keeps the claim reference, source date, and decision owner together.",
+          "The primary measure for coverage call documentation is the share of calls with a recorded question and source. A second measure should capture the count of cases with at least one missing source. A third measure should show the median age of cases still open at the end of the window. The three measures together describe volume, evidence, and delay without hiding one behind another. The same coverage call documentation rule is checked again after the workflow changes. A claims lead can repeat the extract from the written rule without private notes."
         ]
       },
       {
         "heading": "Evidence standard",
         "paragraphs": [
-          "The evidence standard for coverage call documentation should be written before the sample is selected. A reviewer needs to know which source counts, what date is attached, and how a missing field is treated. Virtual Claims Assistant keeps a short codebook beside the extract so the rule does not live in one person's memory. The codebook is part of the method, not an afterthought. Virtual Claims Assistant applies this rule to coverage call documentation before the sample is drawn.",
-          "Use a random or systematic start rule, then take consecutive cases within each stratum. Stratify by risk, owner, and channel so the sample is not dominated by the easiest queue. Include at least one adverse case: a missing source, a conflict, an unavailable owner, or a deadline that forced a decision. Virtual Claims Assistant records every access failure instead of replacing it silently. The same coverage call documentation rule is checked again after the workflow changes."
+          "The evidence standard for coverage call documentation should be written before the sample is selected. A reviewer needs to know which source counts, what date is attached, and how a missing field is treated. Virtual Claims Assistant keeps a short codebook beside the extract so the rule does not live in one person's memory. The codebook is part of the method, not an afterthought. Virtual Claims Assistant applies this rule to coverage call documentation before the sample is drawn. The claims reviewer keeps the claim reference, source date, and decision owner together.",
+          "Use a random or systematic start rule, then take consecutive cases within each stratum. Stratify by risk, owner, and channel so the sample is not dominated by the easiest queue. Include at least one adverse case: a missing source, a conflict, an unavailable owner, or a deadline that forced a decision. Virtual Claims Assistant records every access failure instead of replacing it silently. The same coverage call documentation rule is checked again after the workflow changes. A claims lead can repeat the extract from the written rule without private notes."
         ]
       },
       {
         "heading": "Sampling and collection",
         "paragraphs": [
-          "Show the distribution, not only the mean. A median close time can hide a long tail of cases that nobody reviews. Report the open-case count and the oldest case age by owner. That view shows where delay accumulates and which queue needs a process change. Virtual Claims Assistant applies this rule to coverage call documentation before the sample is drawn.",
-          "The main limit is that the coverage call documentation record may be incomplete, delayed, or maintained outside the team. This method cannot infer missing work from a clean summary. It also cannot establish whether a policy was followed in cases that left no trace. Virtual Claims Assistant states those limits before presenting the result. The same coverage call documentation rule is checked again after the workflow changes."
+          "Show the distribution, not only the mean. A median close time can hide a long tail of cases that nobody reviews. Report the open-case count and the oldest case age by owner. That view shows where delay accumulates and which queue needs a process change. Virtual Claims Assistant applies this rule to coverage call documentation before the sample is drawn. The claims reviewer keeps the claim reference, source date, and decision owner together.",
+          "The main limit is that the coverage call documentation record may be incomplete, delayed, or maintained outside the team. This method cannot infer missing work from a clean summary. It also cannot establish whether a policy was followed in cases that left no trace. Virtual Claims Assistant states those limits before presenting the result. The same coverage call documentation rule is checked again after the workflow changes. A claims lead can repeat the extract from the written rule without private notes."
         ]
       },
       {
         "heading": "Limits and honest reporting",
         "paragraphs": [
-          "Report what moved, what did not, and what remains unknown. That final sentence is the honest close of a measurement protocol. It is more useful than a precise-looking rate built on an unclear denominator. The goal is a reviewable decision, not a perfect number. Virtual Claims Assistant applies this rule to coverage call documentation before the sample is drawn.",
-          "Collection for coverage call documentation ends when the sample is complete and the codebook is attached. Do not add cases after the result is known, and do not remove a difficult case to make the rate cleaner. A reviewer should be able to rerun the extract from the written rule. Virtual Claims Assistant stores the extract, the codebook, and the finding together. The same coverage call documentation rule is checked again after the workflow changes."
+          "Report what moved, what did not, and what remains unknown. That final sentence is the honest close of a measurement protocol. It is more useful than a precise-looking rate built on an unclear denominator. The goal is a reviewable decision, not a perfect number. Virtual Claims Assistant applies this rule to coverage call documentation before the sample is drawn. The claims reviewer keeps the claim reference, source date, and decision owner together.",
+          "Collection for coverage call documentation ends when the sample is complete and the codebook is attached. Do not add cases after the result is known, and do not remove a difficult case to make the rate cleaner. A reviewer should be able to rerun the extract from the written rule. Virtual Claims Assistant stores the extract, the codebook, and the finding together. The same coverage call documentation rule is checked again after the workflow changes. A claims lead can repeat the extract from the written rule without private notes."
         ]
       }
     ],
     "faq": [
       {
         "q": "What population should a coverage call documentation review use?",
-        "a": "Use one defined population and one observation window: coverage-related calls during the observation window. Keep the exclusion list beside the extract and repeat the same rule after the workflow changes."
+        "a": "Draw the coverage call documentation sample from coverage-related calls during the observation window using one observation window. Keep the claim-reference rule and the exclusions beside the extract so a second claims reviewer can repeat it."
       },
       {
         "q": "What can the coverage call documentation result honestly claim?",
-        "a": "It can describe the evidence and timing of the sampled cases. It cannot prove intent, a universal benchmark, or coverage beyond the cases that left a trace."
+        "a": "It can describe the evidence and timing of the sampled coverage call documentation cases. It cannot prove intent, a universal benchmark, or coverage beyond the claim file that left a trace."
       },
       {
         "q": "Who should own the review?",
@@ -257,54 +257,54 @@ export const november08ResearchPosts = [
       {
         "heading": "Question and scope",
         "paragraphs": [
-          "This protocol asks what the claim diary handoff record can show about evidence, timing, and closure at Virtual Claims Assistant. It is a local measurement method, not an industry benchmark or a coverage determination. The result describes one defined population during one observation window. The method is designed for claims leads and adjusters who need a reproducible review. Virtual Claims Assistant applies this rule to claim diary handoff before the sample is drawn.",
-          "The scope of this claim diary handoff protocol is the population named below, not every claim in the file. Write the start event, the stop event, and the pause rule before collecting data. A count without a denominator is not a measurement, especially when the queue changes size during the day. Virtual Claims Assistant records the window and every exclusion so a second reviewer can repeat the sample. The same claim diary handoff rule is checked again after the workflow changes."
+          "This protocol asks what the claim diary handoff record can show about evidence, timing, and closure at Virtual Claims Assistant. It is a local measurement method, not an industry benchmark or a coverage determination. The result describes one defined population during one observation window. The method is designed for claims leads and adjusters who need a reproducible review. Virtual Claims Assistant applies this rule to claim diary handoff before the sample is drawn. The claims reviewer keeps the claim reference, source date, and decision owner together.",
+          "The scope of this claim diary handoff protocol is the population named below, not every claim in the file. Write the start event, the stop event, and the pause rule before collecting data. A count without a denominator is not a measurement, especially when the queue changes size during the day. Virtual Claims Assistant records the window and every exclusion so a second reviewer can repeat the sample. The same claim diary handoff rule is checked again after the workflow changes. A claims lead can repeat the extract from the written rule without private notes."
         ]
       },
       {
         "heading": "Population and unit of analysis",
         "paragraphs": [
-          "The population is claims reassigned during the observation window. The primary measure is the share of cases that meet the written definition. Add a count of missing evidence and a median age for open cases. Report each measure with its denominator, observation window, and exclusion count. Virtual Claims Assistant applies this rule to claim diary handoff before the sample is drawn.",
-          "Virtual Claims Assistant defines the population before the first case is selected. The population is claims reassigned during the observation window, and every exclusion is listed with a reason. A sample drawn from a convenience queue can make a fragile control look stable. The point is to describe the population that actually exists, not the one the team wishes it had. The same claim diary handoff rule is checked again after the workflow changes."
+          "The population is claims reassigned during the observation window. The primary measure is the share of cases that meet the written definition. Add a count of missing evidence and a median age for open cases. Report each measure with its denominator, observation window, and exclusion count. Virtual Claims Assistant applies this rule to claim diary handoff before the sample is drawn. The claims reviewer keeps the claim reference, source date, and decision owner together.",
+          "Virtual Claims Assistant defines the population before the first case is selected. The population is claims reassigned during the observation window, and every exclusion is listed with a reason. A sample drawn from a convenience queue can make a fragile control look stable. The point is to describe the population that actually exists, not the one the team wishes it had. The same claim diary handoff rule is checked again after the workflow changes. A claims lead can repeat the extract from the written rule without private notes."
         ]
       },
       {
         "heading": "Definitions and measures",
         "paragraphs": [
-          "The primary measure for claim diary handoff is the share of reassigned claims with an actionable diary note. A second measure should capture the count of cases with at least one missing source. A third measure should show the median age of cases still open at the end of the window. The three measures together describe volume, evidence, and delay without hiding one behind another. Virtual Claims Assistant applies this rule to claim diary handoff before the sample is drawn.",
-          "Define completion before the first case. For this protocol, completion means the record supports the measure with a dated source and a named reviewer. A case that fails the definition stays open even when a status field says closed. Virtual Claims Assistant records the status field and the evidence separately so the difference remains visible. The same claim diary handoff rule is checked again after the workflow changes."
+          "The primary measure for claim diary handoff is the share of reassigned claims with an actionable diary note. A second measure should capture the count of cases with at least one missing source. A third measure should show the median age of cases still open at the end of the window. The three measures together describe volume, evidence, and delay without hiding one behind another. Virtual Claims Assistant applies this rule to claim diary handoff before the sample is drawn. The claims reviewer keeps the claim reference, source date, and decision owner together.",
+          "Define completion before the first case. For this protocol, completion means the record supports the measure with a dated source and a named reviewer. A case that fails the definition stays open even when a status field says closed. Virtual Claims Assistant records the status field and the evidence separately so the difference remains visible. The same claim diary handoff rule is checked again after the workflow changes. A claims lead can repeat the extract from the written rule without private notes."
         ]
       },
       {
         "heading": "Evidence standard",
         "paragraphs": [
-          "Use a random or systematic start rule, then take consecutive cases within each stratum. Stratify by risk, owner, and channel so the sample is not dominated by the easiest queue. Include at least one adverse case: a missing source, a conflict, an unavailable owner, or a deadline that forced a decision. Virtual Claims Assistant records every access failure instead of replacing it silently. Virtual Claims Assistant applies this rule to claim diary handoff before the sample is drawn.",
-          "Sample across the full observation window, including busy days and days when coverage changed. A sample drawn only from quiet days can make a fragile control look stable. Record the date and time of each observation. If the population is small, report the count and the instability instead of a precise-looking rate. The same claim diary handoff rule is checked again after the workflow changes."
+          "Use a random or systematic start rule, then take consecutive cases within each stratum. Stratify by risk, owner, and channel so the sample is not dominated by the easiest queue. Include at least one adverse case: a missing source, a conflict, an unavailable owner, or a deadline that forced a decision. Virtual Claims Assistant records every access failure instead of replacing it silently. Virtual Claims Assistant applies this rule to claim diary handoff before the sample is drawn. The claims reviewer keeps the claim reference, source date, and decision owner together.",
+          "Sample across the full observation window, including busy days and days when coverage changed. A sample drawn only from quiet days can make a fragile control look stable. Record the date and time of each observation. If the population is small, report the count and the instability instead of a precise-looking rate. The same claim diary handoff rule is checked again after the workflow changes. A claims lead can repeat the extract from the written rule without private notes."
         ]
       },
       {
         "heading": "Sampling and collection",
         "paragraphs": [
-          "The main limit is that the claim diary handoff record may be incomplete, delayed, or maintained outside the team. This method cannot infer missing work from a clean summary. It also cannot establish whether a policy was followed in cases that left no trace. Virtual Claims Assistant states those limits before presenting the result. Virtual Claims Assistant applies this rule to claim diary handoff before the sample is drawn.",
-          "A change in systems, policy, claim mix, or volume can make the result stale. Record those triggers with the finding. If the definition changes, keep the old and new rules side by side for the transition period. Label which rule applies to each case so the comparison remains honest. The same claim diary handoff rule is checked again after the workflow changes."
+          "The main limit is that the claim diary handoff record may be incomplete, delayed, or maintained outside the team. This method cannot infer missing work from a clean summary. It also cannot establish whether a policy was followed in cases that left no trace. Virtual Claims Assistant states those limits before presenting the result. Virtual Claims Assistant applies this rule to claim diary handoff before the sample is drawn. The claims reviewer keeps the claim reference, source date, and decision owner together.",
+          "A change in systems, policy, claim mix, or volume can make the result stale. Record those triggers with the finding. If the definition changes, keep the old and new rules side by side for the transition period. Label which rule applies to each case so the comparison remains honest. The same claim diary handoff rule is checked again after the workflow changes. A claims lead can repeat the extract from the written rule without private notes."
         ]
       },
       {
         "heading": "Limits and honest reporting",
         "paragraphs": [
-          "Collection for claim diary handoff ends when the sample is complete and the codebook is attached. Do not add cases after the result is known, and do not remove a difficult case to make the rate cleaner. A reviewer should be able to rerun the extract from the written rule. Virtual Claims Assistant stores the extract, the codebook, and the finding together. Virtual Claims Assistant applies this rule to claim diary handoff before the sample is drawn.",
-          "Give the review a named owner and a review date. The report should end with one next action: fix the source, simplify the field, change the queue, or stop the work until the owner decides. Virtual Claims Assistant then repeats the protocol after the change and compares the same definitions. The next sample uses the same codebook and the same population rule. The same claim diary handoff rule is checked again after the workflow changes."
+          "Collection for claim diary handoff ends when the sample is complete and the codebook is attached. Do not add cases after the result is known, and do not remove a difficult case to make the rate cleaner. A reviewer should be able to rerun the extract from the written rule. Virtual Claims Assistant stores the extract, the codebook, and the finding together. Virtual Claims Assistant applies this rule to claim diary handoff before the sample is drawn. The claims reviewer keeps the claim reference, source date, and decision owner together.",
+          "Give the review a named owner and a review date. The report should end with one next action: fix the source, simplify the field, change the queue, or stop the work until the owner decides. Virtual Claims Assistant then repeats the protocol after the change and compares the same definitions. The next sample uses the same codebook and the same population rule. The same claim diary handoff rule is checked again after the workflow changes. A claims lead can repeat the extract from the written rule without private notes."
         ]
       }
     ],
     "faq": [
       {
         "q": "What population should a claim diary handoff review use?",
-        "a": "Use one defined population and one observation window: claims reassigned during the observation window. Keep the exclusion list beside the extract and repeat the same rule after the workflow changes."
+        "a": "Draw the claim diary handoff sample from claims reassigned during the observation window using one observation window. Keep the claim-reference rule and the exclusions beside the extract so a second claims reviewer can repeat it."
       },
       {
         "q": "What can the claim diary handoff result honestly claim?",
-        "a": "It can describe the evidence and timing of the sampled cases. It cannot prove intent, a universal benchmark, or coverage beyond the cases that left a trace."
+        "a": "It can describe the evidence and timing of the sampled claim diary handoff cases. It cannot prove intent, a universal benchmark, or coverage beyond the claim file that left a trace."
       },
       {
         "q": "Who should own the review?",
@@ -339,54 +339,54 @@ export const november08ResearchPosts = [
       {
         "heading": "Question and scope",
         "paragraphs": [
-          "The scope of this depreciation holdback release review protocol is the population named below, not every claim in the file. Write the start event, the stop event, and the pause rule before collecting data. A count without a denominator is not a measurement, especially when the queue changes size during the day. Virtual Claims Assistant records the window and every exclusion so a second reviewer can repeat the sample. Virtual Claims Assistant applies this rule to depreciation holdback release review before the sample is drawn.",
-          "The question behind this depreciation holdback release review protocol is narrow on purpose. It asks whether the evidence supports the share of releases supported by completed-repair proof, not whether the team feels busy. A broad question produces a broad answer that cannot be tested. A narrow question can be repeated after the workflow changes, which is what makes it useful. The same depreciation holdback release review rule is checked again after the workflow changes."
+          "The scope of this depreciation holdback release review protocol is the population named below, not every claim in the file. Write the start event, the stop event, and the pause rule before collecting data. A count without a denominator is not a measurement, especially when the queue changes size during the day. Virtual Claims Assistant records the window and every exclusion so a second reviewer can repeat the sample. Virtual Claims Assistant applies this rule to depreciation holdback release review before the sample is drawn. The claims reviewer keeps the claim reference, source date, and decision owner together.",
+          "The question behind this depreciation holdback release review protocol is narrow on purpose. It asks whether the evidence supports the share of releases supported by completed-repair proof, not whether the team feels busy. A broad question produces a broad answer that cannot be tested. A narrow question can be repeated after the workflow changes, which is what makes it useful. The same depreciation holdback release review rule is checked again after the workflow changes. A claims lead can repeat the extract from the written rule without private notes."
         ]
       },
       {
         "heading": "Population and unit of analysis",
         "paragraphs": [
-          "Virtual Claims Assistant defines the population before the first case is selected. The population is holdback releases during the observation window, and every exclusion is listed with a reason. A sample drawn from a convenience queue can make a fragile control look stable. The point is to describe the population that actually exists, not the one the team wishes it had. Virtual Claims Assistant applies this rule to depreciation holdback release review before the sample is drawn.",
-          "The unit is one depreciation holdback release. Test the definition on a case that crosses owners, a case that is still open, and a case that was reopened. Apply the same rule to every case and keep the rule beside the extract. A definition that changes halfway through the window destroys comparability. The same depreciation holdback release review rule is checked again after the workflow changes."
+          "Virtual Claims Assistant defines the population before the first case is selected. The population is holdback releases during the observation window, and every exclusion is listed with a reason. A sample drawn from a convenience queue can make a fragile control look stable. The point is to describe the population that actually exists, not the one the team wishes it had. Virtual Claims Assistant applies this rule to depreciation holdback release review before the sample is drawn. The claims reviewer keeps the claim reference, source date, and decision owner together.",
+          "The unit is one depreciation holdback release. Test the definition on a case that crosses owners, a case that is still open, and a case that was reopened. Apply the same rule to every case and keep the rule beside the extract. A definition that changes halfway through the window destroys comparability. The same depreciation holdback release review rule is checked again after the workflow changes. A claims lead can repeat the extract from the written rule without private notes."
         ]
       },
       {
         "heading": "Definitions and measures",
         "paragraphs": [
-          "Define completion before the first case. For this protocol, completion means the record supports the measure with a dated source and a named reviewer. A case that fails the definition stays open even when a status field says closed. Virtual Claims Assistant records the status field and the evidence separately so the difference remains visible. Virtual Claims Assistant applies this rule to depreciation holdback release review before the sample is drawn.",
-          "Each case needs a source, an observation time, the field it supports, and the reviewer who checked it. Mark missing, unavailable, and confirmed negative values separately. Collapsing them hides the difference between no evidence and evidence of absence. The data dictionary should name the allowed values before collection begins. The same depreciation holdback release review rule is checked again after the workflow changes."
+          "Define completion before the first case. For this protocol, completion means the record supports the measure with a dated source and a named reviewer. A case that fails the definition stays open even when a status field says closed. Virtual Claims Assistant records the status field and the evidence separately so the difference remains visible. Virtual Claims Assistant applies this rule to depreciation holdback release review before the sample is drawn. The claims reviewer keeps the claim reference, source date, and decision owner together.",
+          "Each case needs a source, an observation time, the field it supports, and the reviewer who checked it. Mark missing, unavailable, and confirmed negative values separately. Collapsing them hides the difference between no evidence and evidence of absence. The data dictionary should name the allowed values before collection begins. The same depreciation holdback release review rule is checked again after the workflow changes. A claims lead can repeat the extract from the written rule without private notes."
         ]
       },
       {
         "heading": "Evidence standard",
         "paragraphs": [
-          "Sample across the full observation window, including busy days and days when coverage changed. A sample drawn only from quiet days can make a fragile control look stable. Record the date and time of each observation. If the population is small, report the count and the instability instead of a precise-looking rate. Virtual Claims Assistant applies this rule to depreciation holdback release review before the sample is drawn.",
-          "The evidence standard for depreciation holdback release review should be written before the sample is selected. A reviewer needs to know which source counts, what date is attached, and how a missing field is treated. Virtual Claims Assistant keeps a short codebook beside the extract so the rule does not live in one person's memory. The codebook is part of the method, not an afterthought. The same depreciation holdback release review rule is checked again after the workflow changes."
+          "Sample across the full observation window, including busy days and days when coverage changed. A sample drawn only from quiet days can make a fragile control look stable. Record the date and time of each observation. If the population is small, report the count and the instability instead of a precise-looking rate. Virtual Claims Assistant applies this rule to depreciation holdback release review before the sample is drawn. The claims reviewer keeps the claim reference, source date, and decision owner together.",
+          "The evidence standard for depreciation holdback release review should be written before the sample is selected. A reviewer needs to know which source counts, what date is attached, and how a missing field is treated. Virtual Claims Assistant keeps a short codebook beside the extract so the rule does not live in one person's memory. The codebook is part of the method, not an afterthought. The same depreciation holdback release review rule is checked again after the workflow changes. A claims lead can repeat the extract from the written rule without private notes."
         ]
       },
       {
         "heading": "Sampling and collection",
         "paragraphs": [
-          "A change in systems, policy, claim mix, or volume can make the result stale. Record those triggers with the finding. If the definition changes, keep the old and new rules side by side for the transition period. Label which rule applies to each case so the comparison remains honest. Virtual Claims Assistant applies this rule to depreciation holdback release review before the sample is drawn.",
-          "Show the distribution, not only the mean. A median close time can hide a long tail of cases that nobody reviews. Report the open-case count and the oldest case age by owner. That view shows where delay accumulates and which queue needs a process change. The same depreciation holdback release review rule is checked again after the workflow changes."
+          "A change in systems, policy, claim mix, or volume can make the result stale. Record those triggers with the finding. If the definition changes, keep the old and new rules side by side for the transition period. Label which rule applies to each case so the comparison remains honest. Virtual Claims Assistant applies this rule to depreciation holdback release review before the sample is drawn. The claims reviewer keeps the claim reference, source date, and decision owner together.",
+          "Show the distribution, not only the mean. A median close time can hide a long tail of cases that nobody reviews. Report the open-case count and the oldest case age by owner. That view shows where delay accumulates and which queue needs a process change. The same depreciation holdback release review rule is checked again after the workflow changes. A claims lead can repeat the extract from the written rule without private notes."
         ]
       },
       {
         "heading": "Limits and honest reporting",
         "paragraphs": [
-          "Give the review a named owner and a review date. The report should end with one next action: fix the source, simplify the field, change the queue, or stop the work until the owner decides. Virtual Claims Assistant then repeats the protocol after the change and compares the same definitions. The next sample uses the same codebook and the same population rule. Virtual Claims Assistant applies this rule to depreciation holdback release review before the sample is drawn.",
-          "Report what moved, what did not, and what remains unknown. That final sentence is the honest close of a measurement protocol. It is more useful than a precise-looking rate built on an unclear denominator. The goal is a reviewable decision, not a perfect number. The same depreciation holdback release review rule is checked again after the workflow changes."
+          "Give the review a named owner and a review date. The report should end with one next action: fix the source, simplify the field, change the queue, or stop the work until the owner decides. Virtual Claims Assistant then repeats the protocol after the change and compares the same definitions. The next sample uses the same codebook and the same population rule. Virtual Claims Assistant applies this rule to depreciation holdback release review before the sample is drawn. The claims reviewer keeps the claim reference, source date, and decision owner together.",
+          "Report what moved, what did not, and what remains unknown. That final sentence is the honest close of a measurement protocol. It is more useful than a precise-looking rate built on an unclear denominator. The goal is a reviewable decision, not a perfect number. The same depreciation holdback release review rule is checked again after the workflow changes. A claims lead can repeat the extract from the written rule without private notes."
         ]
       }
     ],
     "faq": [
       {
         "q": "What population should a depreciation holdback release review review use?",
-        "a": "Use one defined population and one observation window: holdback releases during the observation window. Keep the exclusion list beside the extract and repeat the same rule after the workflow changes."
+        "a": "Draw the depreciation holdback release review sample from holdback releases during the observation window using one observation window. Keep the claim-reference rule and the exclusions beside the extract so a second claims reviewer can repeat it."
       },
       {
         "q": "What can the depreciation holdback release review result honestly claim?",
-        "a": "It can describe the evidence and timing of the sampled cases. It cannot prove intent, a universal benchmark, or coverage beyond the cases that left a trace."
+        "a": "It can describe the evidence and timing of the sampled depreciation holdback release review cases. It cannot prove intent, a universal benchmark, or coverage beyond the claim file that left a trace."
       },
       {
         "q": "Who should own the review?",
@@ -421,54 +421,54 @@ export const november08ResearchPosts = [
       {
         "heading": "Question and scope",
         "paragraphs": [
-          "The question behind this subrogation referral completeness protocol is narrow on purpose. It asks whether the evidence supports the share of referrals with a source-backed liability theory, not whether the team feels busy. A broad question produces a broad answer that cannot be tested. A narrow question can be repeated after the workflow changes, which is what makes it useful. Virtual Claims Assistant applies this rule to subrogation referral completeness before the sample is drawn.",
-          "This protocol asks what the subrogation referral completeness record can show about evidence, timing, and closure at Virtual Claims Assistant. It is a local measurement method, not an industry benchmark or a coverage determination. The result describes one defined population during one observation window. The method is designed for claims leads and adjusters who need a reproducible review. The same subrogation referral completeness rule is checked again after the workflow changes."
+          "The question behind this subrogation referral completeness protocol is narrow on purpose. It asks whether the evidence supports the share of referrals with a source-backed liability theory, not whether the team feels busy. A broad question produces a broad answer that cannot be tested. A narrow question can be repeated after the workflow changes, which is what makes it useful. Virtual Claims Assistant applies this rule to subrogation referral completeness before the sample is drawn. The claims reviewer keeps the claim reference, source date, and decision owner together.",
+          "This protocol asks what the subrogation referral completeness record can show about evidence, timing, and closure at Virtual Claims Assistant. It is a local measurement method, not an industry benchmark or a coverage determination. The result describes one defined population during one observation window. The method is designed for claims leads and adjusters who need a reproducible review. The same subrogation referral completeness rule is checked again after the workflow changes. A claims lead can repeat the extract from the written rule without private notes."
         ]
       },
       {
         "heading": "Population and unit of analysis",
         "paragraphs": [
-          "The unit is one subrogation referral. Test the definition on a case that crosses owners, a case that is still open, and a case that was reopened. Apply the same rule to every case and keep the rule beside the extract. A definition that changes halfway through the window destroys comparability. Virtual Claims Assistant applies this rule to subrogation referral completeness before the sample is drawn.",
-          "The population is referrals opened during the observation window. The primary measure is the share of cases that meet the written definition. Add a count of missing evidence and a median age for open cases. Report each measure with its denominator, observation window, and exclusion count. The same subrogation referral completeness rule is checked again after the workflow changes."
+          "The unit is one subrogation referral. Test the definition on a case that crosses owners, a case that is still open, and a case that was reopened. Apply the same rule to every case and keep the rule beside the extract. A definition that changes halfway through the window destroys comparability. Virtual Claims Assistant applies this rule to subrogation referral completeness before the sample is drawn. The claims reviewer keeps the claim reference, source date, and decision owner together.",
+          "The population is referrals opened during the observation window. The primary measure is the share of cases that meet the written definition. Add a count of missing evidence and a median age for open cases. Report each measure with its denominator, observation window, and exclusion count. The same subrogation referral completeness rule is checked again after the workflow changes. A claims lead can repeat the extract from the written rule without private notes."
         ]
       },
       {
         "heading": "Definitions and measures",
         "paragraphs": [
-          "Each case needs a source, an observation time, the field it supports, and the reviewer who checked it. Mark missing, unavailable, and confirmed negative values separately. Collapsing them hides the difference between no evidence and evidence of absence. The data dictionary should name the allowed values before collection begins. Virtual Claims Assistant applies this rule to subrogation referral completeness before the sample is drawn.",
-          "The primary measure for subrogation referral completeness is the share of referrals with a source-backed liability theory. A second measure should capture the count of cases with at least one missing source. A third measure should show the median age of cases still open at the end of the window. The three measures together describe volume, evidence, and delay without hiding one behind another. The same subrogation referral completeness rule is checked again after the workflow changes."
+          "Each case needs a source, an observation time, the field it supports, and the reviewer who checked it. Mark missing, unavailable, and confirmed negative values separately. Collapsing them hides the difference between no evidence and evidence of absence. The data dictionary should name the allowed values before collection begins. Virtual Claims Assistant applies this rule to subrogation referral completeness before the sample is drawn. The claims reviewer keeps the claim reference, source date, and decision owner together.",
+          "The primary measure for subrogation referral completeness is the share of referrals with a source-backed liability theory. A second measure should capture the count of cases with at least one missing source. A third measure should show the median age of cases still open at the end of the window. The three measures together describe volume, evidence, and delay without hiding one behind another. The same subrogation referral completeness rule is checked again after the workflow changes. A claims lead can repeat the extract from the written rule without private notes."
         ]
       },
       {
         "heading": "Evidence standard",
         "paragraphs": [
-          "The evidence standard for subrogation referral completeness should be written before the sample is selected. A reviewer needs to know which source counts, what date is attached, and how a missing field is treated. Virtual Claims Assistant keeps a short codebook beside the extract so the rule does not live in one person's memory. The codebook is part of the method, not an afterthought. Virtual Claims Assistant applies this rule to subrogation referral completeness before the sample is drawn.",
-          "Use a random or systematic start rule, then take consecutive cases within each stratum. Stratify by risk, owner, and channel so the sample is not dominated by the easiest queue. Include at least one adverse case: a missing source, a conflict, an unavailable owner, or a deadline that forced a decision. Virtual Claims Assistant records every access failure instead of replacing it silently. The same subrogation referral completeness rule is checked again after the workflow changes."
+          "The evidence standard for subrogation referral completeness should be written before the sample is selected. A reviewer needs to know which source counts, what date is attached, and how a missing field is treated. Virtual Claims Assistant keeps a short codebook beside the extract so the rule does not live in one person's memory. The codebook is part of the method, not an afterthought. Virtual Claims Assistant applies this rule to subrogation referral completeness before the sample is drawn. The claims reviewer keeps the claim reference, source date, and decision owner together.",
+          "Use a random or systematic start rule, then take consecutive cases within each stratum. Stratify by risk, owner, and channel so the sample is not dominated by the easiest queue. Include at least one adverse case: a missing source, a conflict, an unavailable owner, or a deadline that forced a decision. Virtual Claims Assistant records every access failure instead of replacing it silently. The same subrogation referral completeness rule is checked again after the workflow changes. A claims lead can repeat the extract from the written rule without private notes."
         ]
       },
       {
         "heading": "Sampling and collection",
         "paragraphs": [
-          "Show the distribution, not only the mean. A median close time can hide a long tail of cases that nobody reviews. Report the open-case count and the oldest case age by owner. That view shows where delay accumulates and which queue needs a process change. Virtual Claims Assistant applies this rule to subrogation referral completeness before the sample is drawn.",
-          "The main limit is that the subrogation referral completeness record may be incomplete, delayed, or maintained outside the team. This method cannot infer missing work from a clean summary. It also cannot establish whether a policy was followed in cases that left no trace. Virtual Claims Assistant states those limits before presenting the result. The same subrogation referral completeness rule is checked again after the workflow changes."
+          "Show the distribution, not only the mean. A median close time can hide a long tail of cases that nobody reviews. Report the open-case count and the oldest case age by owner. That view shows where delay accumulates and which queue needs a process change. Virtual Claims Assistant applies this rule to subrogation referral completeness before the sample is drawn. The claims reviewer keeps the claim reference, source date, and decision owner together.",
+          "The main limit is that the subrogation referral completeness record may be incomplete, delayed, or maintained outside the team. This method cannot infer missing work from a clean summary. It also cannot establish whether a policy was followed in cases that left no trace. Virtual Claims Assistant states those limits before presenting the result. The same subrogation referral completeness rule is checked again after the workflow changes. A claims lead can repeat the extract from the written rule without private notes."
         ]
       },
       {
         "heading": "Limits and honest reporting",
         "paragraphs": [
-          "Report what moved, what did not, and what remains unknown. That final sentence is the honest close of a measurement protocol. It is more useful than a precise-looking rate built on an unclear denominator. The goal is a reviewable decision, not a perfect number. Virtual Claims Assistant applies this rule to subrogation referral completeness before the sample is drawn.",
-          "Collection for subrogation referral completeness ends when the sample is complete and the codebook is attached. Do not add cases after the result is known, and do not remove a difficult case to make the rate cleaner. A reviewer should be able to rerun the extract from the written rule. Virtual Claims Assistant stores the extract, the codebook, and the finding together. The same subrogation referral completeness rule is checked again after the workflow changes."
+          "Report what moved, what did not, and what remains unknown. That final sentence is the honest close of a measurement protocol. It is more useful than a precise-looking rate built on an unclear denominator. The goal is a reviewable decision, not a perfect number. Virtual Claims Assistant applies this rule to subrogation referral completeness before the sample is drawn. The claims reviewer keeps the claim reference, source date, and decision owner together.",
+          "Collection for subrogation referral completeness ends when the sample is complete and the codebook is attached. Do not add cases after the result is known, and do not remove a difficult case to make the rate cleaner. A reviewer should be able to rerun the extract from the written rule. Virtual Claims Assistant stores the extract, the codebook, and the finding together. The same subrogation referral completeness rule is checked again after the workflow changes. A claims lead can repeat the extract from the written rule without private notes."
         ]
       }
     ],
     "faq": [
       {
         "q": "What population should a subrogation referral completeness review use?",
-        "a": "Use one defined population and one observation window: referrals opened during the observation window. Keep the exclusion list beside the extract and repeat the same rule after the workflow changes."
+        "a": "Draw the subrogation referral completeness sample from referrals opened during the observation window using one observation window. Keep the claim-reference rule and the exclusions beside the extract so a second claims reviewer can repeat it."
       },
       {
         "q": "What can the subrogation referral completeness result honestly claim?",
-        "a": "It can describe the evidence and timing of the sampled cases. It cannot prove intent, a universal benchmark, or coverage beyond the cases that left a trace."
+        "a": "It can describe the evidence and timing of the sampled subrogation referral completeness cases. It cannot prove intent, a universal benchmark, or coverage beyond the claim file that left a trace."
       },
       {
         "q": "Who should own the review?",
@@ -503,54 +503,54 @@ export const november08ResearchPosts = [
       {
         "heading": "Question and scope",
         "paragraphs": [
-          "This protocol asks what the contents inventory evidence record can show about evidence, timing, and closure at Virtual Claims Assistant. It is a local measurement method, not an industry benchmark or a coverage determination. The result describes one defined population during one observation window. The method is designed for claims leads and adjusters who need a reproducible review. Virtual Claims Assistant applies this rule to contents inventory evidence before the sample is drawn.",
-          "The scope of this contents inventory evidence protocol is the population named below, not every claim in the file. Write the start event, the stop event, and the pause rule before collecting data. A count without a denominator is not a measurement, especially when the queue changes size during the day. Virtual Claims Assistant records the window and every exclusion so a second reviewer can repeat the sample. The same contents inventory evidence rule is checked again after the workflow changes."
+          "This protocol asks what the contents inventory evidence record can show about evidence, timing, and closure at Virtual Claims Assistant. It is a local measurement method, not an industry benchmark or a coverage determination. The result describes one defined population during one observation window. The method is designed for claims leads and adjusters who need a reproducible review. Virtual Claims Assistant applies this rule to contents inventory evidence before the sample is drawn. The claims reviewer keeps the claim reference, source date, and decision owner together.",
+          "The scope of this contents inventory evidence protocol is the population named below, not every claim in the file. Write the start event, the stop event, and the pause rule before collecting data. A count without a denominator is not a measurement, especially when the queue changes size during the day. Virtual Claims Assistant records the window and every exclusion so a second reviewer can repeat the sample. The same contents inventory evidence rule is checked again after the workflow changes. A claims lead can repeat the extract from the written rule without private notes."
         ]
       },
       {
         "heading": "Population and unit of analysis",
         "paragraphs": [
-          "The population is contents items submitted during the observation window. The primary measure is the share of cases that meet the written definition. Add a count of missing evidence and a median age for open cases. Report each measure with its denominator, observation window, and exclusion count. Virtual Claims Assistant applies this rule to contents inventory evidence before the sample is drawn.",
-          "Virtual Claims Assistant defines the population before the first case is selected. The population is contents items submitted during the observation window, and every exclusion is listed with a reason. A sample drawn from a convenience queue can make a fragile control look stable. The point is to describe the population that actually exists, not the one the team wishes it had. The same contents inventory evidence rule is checked again after the workflow changes."
+          "The population is contents items submitted during the observation window. The primary measure is the share of cases that meet the written definition. Add a count of missing evidence and a median age for open cases. Report each measure with its denominator, observation window, and exclusion count. Virtual Claims Assistant applies this rule to contents inventory evidence before the sample is drawn. The claims reviewer keeps the claim reference, source date, and decision owner together.",
+          "Virtual Claims Assistant defines the population before the first case is selected. The population is contents items submitted during the observation window, and every exclusion is listed with a reason. A sample drawn from a convenience queue can make a fragile control look stable. The point is to describe the population that actually exists, not the one the team wishes it had. The same contents inventory evidence rule is checked again after the workflow changes. A claims lead can repeat the extract from the written rule without private notes."
         ]
       },
       {
         "heading": "Definitions and measures",
         "paragraphs": [
-          "The primary measure for contents inventory evidence is the share of items tied to a room and a supporting photo. A second measure should capture the count of cases with at least one missing source. A third measure should show the median age of cases still open at the end of the window. The three measures together describe volume, evidence, and delay without hiding one behind another. Virtual Claims Assistant applies this rule to contents inventory evidence before the sample is drawn.",
-          "Define completion before the first case. For this protocol, completion means the record supports the measure with a dated source and a named reviewer. A case that fails the definition stays open even when a status field says closed. Virtual Claims Assistant records the status field and the evidence separately so the difference remains visible. The same contents inventory evidence rule is checked again after the workflow changes."
+          "The primary measure for contents inventory evidence is the share of items tied to a room and a supporting photo. A second measure should capture the count of cases with at least one missing source. A third measure should show the median age of cases still open at the end of the window. The three measures together describe volume, evidence, and delay without hiding one behind another. Virtual Claims Assistant applies this rule to contents inventory evidence before the sample is drawn. The claims reviewer keeps the claim reference, source date, and decision owner together.",
+          "Define completion before the first case. For this protocol, completion means the record supports the measure with a dated source and a named reviewer. A case that fails the definition stays open even when a status field says closed. Virtual Claims Assistant records the status field and the evidence separately so the difference remains visible. The same contents inventory evidence rule is checked again after the workflow changes. A claims lead can repeat the extract from the written rule without private notes."
         ]
       },
       {
         "heading": "Evidence standard",
         "paragraphs": [
-          "Use a random or systematic start rule, then take consecutive cases within each stratum. Stratify by risk, owner, and channel so the sample is not dominated by the easiest queue. Include at least one adverse case: a missing source, a conflict, an unavailable owner, or a deadline that forced a decision. Virtual Claims Assistant records every access failure instead of replacing it silently. Virtual Claims Assistant applies this rule to contents inventory evidence before the sample is drawn.",
-          "Sample across the full observation window, including busy days and days when coverage changed. A sample drawn only from quiet days can make a fragile control look stable. Record the date and time of each observation. If the population is small, report the count and the instability instead of a precise-looking rate. The same contents inventory evidence rule is checked again after the workflow changes."
+          "Use a random or systematic start rule, then take consecutive cases within each stratum. Stratify by risk, owner, and channel so the sample is not dominated by the easiest queue. Include at least one adverse case: a missing source, a conflict, an unavailable owner, or a deadline that forced a decision. Virtual Claims Assistant records every access failure instead of replacing it silently. Virtual Claims Assistant applies this rule to contents inventory evidence before the sample is drawn. The claims reviewer keeps the claim reference, source date, and decision owner together.",
+          "Sample across the full observation window, including busy days and days when coverage changed. A sample drawn only from quiet days can make a fragile control look stable. Record the date and time of each observation. If the population is small, report the count and the instability instead of a precise-looking rate. The same contents inventory evidence rule is checked again after the workflow changes. A claims lead can repeat the extract from the written rule without private notes."
         ]
       },
       {
         "heading": "Sampling and collection",
         "paragraphs": [
-          "The main limit is that the contents inventory evidence record may be incomplete, delayed, or maintained outside the team. This method cannot infer missing work from a clean summary. It also cannot establish whether a policy was followed in cases that left no trace. Virtual Claims Assistant states those limits before presenting the result. Virtual Claims Assistant applies this rule to contents inventory evidence before the sample is drawn.",
-          "A change in systems, policy, claim mix, or volume can make the result stale. Record those triggers with the finding. If the definition changes, keep the old and new rules side by side for the transition period. Label which rule applies to each case so the comparison remains honest. The same contents inventory evidence rule is checked again after the workflow changes."
+          "The main limit is that the contents inventory evidence record may be incomplete, delayed, or maintained outside the team. This method cannot infer missing work from a clean summary. It also cannot establish whether a policy was followed in cases that left no trace. Virtual Claims Assistant states those limits before presenting the result. Virtual Claims Assistant applies this rule to contents inventory evidence before the sample is drawn. The claims reviewer keeps the claim reference, source date, and decision owner together.",
+          "A change in systems, policy, claim mix, or volume can make the result stale. Record those triggers with the finding. If the definition changes, keep the old and new rules side by side for the transition period. Label which rule applies to each case so the comparison remains honest. The same contents inventory evidence rule is checked again after the workflow changes. A claims lead can repeat the extract from the written rule without private notes."
         ]
       },
       {
         "heading": "Limits and honest reporting",
         "paragraphs": [
-          "Collection for contents inventory evidence ends when the sample is complete and the codebook is attached. Do not add cases after the result is known, and do not remove a difficult case to make the rate cleaner. A reviewer should be able to rerun the extract from the written rule. Virtual Claims Assistant stores the extract, the codebook, and the finding together. Virtual Claims Assistant applies this rule to contents inventory evidence before the sample is drawn.",
-          "Give the review a named owner and a review date. The report should end with one next action: fix the source, simplify the field, change the queue, or stop the work until the owner decides. Virtual Claims Assistant then repeats the protocol after the change and compares the same definitions. The next sample uses the same codebook and the same population rule. The same contents inventory evidence rule is checked again after the workflow changes."
+          "Collection for contents inventory evidence ends when the sample is complete and the codebook is attached. Do not add cases after the result is known, and do not remove a difficult case to make the rate cleaner. A reviewer should be able to rerun the extract from the written rule. Virtual Claims Assistant stores the extract, the codebook, and the finding together. Virtual Claims Assistant applies this rule to contents inventory evidence before the sample is drawn. The claims reviewer keeps the claim reference, source date, and decision owner together.",
+          "Give the review a named owner and a review date. The report should end with one next action: fix the source, simplify the field, change the queue, or stop the work until the owner decides. Virtual Claims Assistant then repeats the protocol after the change and compares the same definitions. The next sample uses the same codebook and the same population rule. The same contents inventory evidence rule is checked again after the workflow changes. A claims lead can repeat the extract from the written rule without private notes."
         ]
       }
     ],
     "faq": [
       {
         "q": "What population should a contents inventory evidence review use?",
-        "a": "Use one defined population and one observation window: contents items submitted during the observation window. Keep the exclusion list beside the extract and repeat the same rule after the workflow changes."
+        "a": "Draw the contents inventory evidence sample from contents items submitted during the observation window using one observation window. Keep the claim-reference rule and the exclusions beside the extract so a second claims reviewer can repeat it."
       },
       {
         "q": "What can the contents inventory evidence result honestly claim?",
-        "a": "It can describe the evidence and timing of the sampled cases. It cannot prove intent, a universal benchmark, or coverage beyond the cases that left a trace."
+        "a": "It can describe the evidence and timing of the sampled contents inventory evidence cases. It cannot prove intent, a universal benchmark, or coverage beyond the claim file that left a trace."
       },
       {
         "q": "Who should own the review?",
