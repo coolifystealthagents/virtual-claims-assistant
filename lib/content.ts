@@ -4,6 +4,7 @@ import { november01BlogPosts } from './november01-blog';
 import { november03BlogPosts } from './november03-blog';
 import { november04BlogPosts } from './november04-blog';
 import { november06BlogPosts } from './november06-blog';
+import { november10BlogPosts } from './november10-blog';
 import { november09BlogPosts } from './november09-blog';
 import { november08BlogPosts } from './november08-blog';
 import { november07BlogPosts } from './november07-blog';
@@ -12,6 +13,7 @@ import { november01ResearchPosts } from './november01-research';
 import { november03ResearchPosts } from './november03-research';
 import { november04ResearchPosts } from './november04-research';
 import { november06ResearchPosts } from './november06-research';
+import { november10ResearchPosts } from './november10-research';
 import { november09ResearchPosts } from './november09-research';
 import { november08ResearchPosts } from './november08-research';
 import { november07ResearchPosts } from './november07-research';
@@ -1026,12 +1028,12 @@ function enrichLegacyResearch(post: ResearchPost): ResearchPost {
   };
 }
 
-export const blogPosts: BlogPost[] = [...november09BlogPosts, ...november08BlogPosts, ...november07BlogPosts, ...november06BlogPosts, ...november05BlogPosts, ...november04BlogPosts, ...november03BlogPosts, ...november01BlogPosts, ...october22BlogPosts, ...october27BlogPosts, ...october12BlogPosts, ...legacyBlogPosts].map((post) => ({
+export const blogPosts: BlogPost[] = [...november10BlogPosts, ...november09BlogPosts, ...november08BlogPosts, ...november07BlogPosts, ...november06BlogPosts, ...november05BlogPosts, ...november04BlogPosts, ...november03BlogPosts, ...november01BlogPosts, ...october22BlogPosts, ...october27BlogPosts, ...october12BlogPosts, ...legacyBlogPosts].map((post) => ({
   ...post,
   thumbnail: post.thumbnail || workflowImage(post.slug)
 }));
 export const researchPosts: ResearchPost[] = [
-  ...november09ResearchPosts, ...november08ResearchPosts, ...november07ResearchPosts, ...november06ResearchPosts, ...november05ResearchPosts, ...november04ResearchPosts, ...november03ResearchPosts, ...november01ResearchPosts,
+  ...november10ResearchPosts, ...november09ResearchPosts, ...november08ResearchPosts, ...november07ResearchPosts, ...november06ResearchPosts, ...november05ResearchPosts, ...november04ResearchPosts, ...november03ResearchPosts, ...november01ResearchPosts,
   ...october22ResearchPosts.map((post) => ({ ...post, readTime: post.readTime || '8 min read' })),
   ...october27ResearchPosts.map((post) => ({ ...post, readTime: post.readTime || '8 min read' })),
   ...october12ResearchPosts.map((post) => ({ ...post, readTime: post.readTime || '12 min read' })),
