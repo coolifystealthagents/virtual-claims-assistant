@@ -19,6 +19,7 @@ export function slugifyHeading(value: string) {
 
 export default function ArticleLayout({ children, kind, ...sidebar }: Props) {
   return <section className={`editorial-shell editorial-${kind}`}>
+    <details className="mobile-toc"><summary>On this page</summary><nav aria-label="Article contents">{sidebar.toc.map((item) => <a key={item.id} href={`#${item.id}`}>{item.label}</a>)}</nav></details>
     <article className="editorial-prose">{children}</article>
     <ActiveArticleSidebar {...sidebar} items={sidebar.toc} />
   </section>;
