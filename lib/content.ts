@@ -1036,7 +1036,7 @@ function enrichLegacyResearch(post: ResearchPost): ResearchPost {
   };
 }
 
-export const blogPosts: BlogPost[] = [...november17BlogPosts, ...november16BlogPosts, ...november11BlogPosts, ...november10BlogPosts, ...november09BlogPosts, ...november08BlogPosts, ...november07BlogPosts, ...november06BlogPosts, ...november05BlogPosts, ...november04BlogPosts, ...november03BlogPosts, ...november01BlogPosts, ...october22BlogPosts, ...october27BlogPosts, ...october12BlogPosts, ...legacyBlogPosts].map((post) => ({
+export const blogPosts: BlogPost[] = [...november18BlogPosts, ...november17BlogPosts, ...november16BlogPosts, ...november11BlogPosts, ...november10BlogPosts, ...november09BlogPosts, ...november08BlogPosts, ...november07BlogPosts, ...november06BlogPosts, ...november05BlogPosts, ...november04BlogPosts, ...november03BlogPosts, ...november01BlogPosts, ...october22BlogPosts, ...october27BlogPosts, ...october12BlogPosts, ...legacyBlogPosts].map((post) => ({
   ...post,
   thumbnail: post.thumbnail || workflowImage(post.slug)
 }));
