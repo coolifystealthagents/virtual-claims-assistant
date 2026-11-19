@@ -21,8 +21,8 @@ test('all 42 editorial records resolve to unique static routes', () => {
 test('indexes provide introductions, taxonomy, thumbnails, dates, and reading metadata', () => {
   for (const path of ['app/blog/page.tsx', 'app/research/page.tsx']) {
     const source = read(path);
-    assert.match(source, /editorial-intro/);
-    assert.match(source, /taxonomy-nav/);
+    assert.match(source, /PageHero/);
+    assert.match(source, /lg-card-grid/);
     assert.match(source, /post\.thumbnail/);
     assert.match(source, /dateTime=\{post\.publishedAt\}/);
     assert.match(source, /post\.readTime/);
@@ -102,6 +102,6 @@ test('owned visible editorial prose contains no long dash characters or double h
   for (const path of paths) {
     const source = read(path);
     assert.doesNotMatch(source, /[—–]/, path);
-    assert.doesNotMatch(source, /--/, path);
+    assert.doesNotMatch(source.replace(/--[a-z0-9-]+/gi, ''), /--/, path);
   }
 });

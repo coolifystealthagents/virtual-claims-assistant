@@ -17,7 +17,7 @@ const assets = [
 
 test('homepage hero uses responsive modern photograph sources with eager stable loading', () => {
   const component = read('components/Marketing.tsx');
-  assert.match(component, /<picture className="hero-picture">/);
+  assert.match(component, /className="lg-photo"/);
   assert.match(component, /type="image\/avif"/);
   assert.match(component, /type="image\/webp"/);
   assert.match(component, /claims-coordination-720\.avif 720w/);
@@ -30,12 +30,9 @@ test('homepage hero uses responsive modern photograph sources with eager stable 
 });
 
 test('homepage hero describes illustrative document coordination without employee claims', () => {
-  const site = read('lib/site.ts');
   const component = read('components/Marketing.tsx');
-  assert.match(site, /heroAlt: 'Two professionals reviewing notes and a document folder together at an office table'/);
   assert.match(component, /Illustrative stock photography/);
-  assert.doesNotMatch(component, /site\.heroImage/);
-  assert.doesNotMatch(component, /src=\{site\.heroImage\}/);
+  assert.match(component, /not a client claim record/);
 });
 
 test('responsive hero assets are present and nonempty', () => {
@@ -45,11 +42,12 @@ test('responsive hero assets are present and nonempty', () => {
   }
 });
 
-test('narrow mobile keeps the manifesto label outside the photograph', () => {
-  const css = read('app/globals.css');
-  assert.match(css, /@media\(max-width:600px\)[^{]*\{[^}]*\.design-evidence \.hero-visual\{clip-path:none;border:0;overflow:visible\}/s);
-  assert.match(css, /\.design-evidence \.hero-picture\{clip-path:polygon\(4% 0,100% 0,96% 100%,0 94%\);border:2px solid var\(--primary\)\}/);
-  assert.match(css, /\.hero-label\{position:relative;left:auto;bottom:auto;width:100%;margin-top:\.75rem\}/);
+test('hero photograph is framed by the ledger layout rather than the old card grid', () => {
+  const css = read('app/ledger.css');
+  assert.match(css, /\.lg-photo\s*\{[^}]*position:\s*absolute/);
+  assert.match(css, /@media \(max-width: 720px\)[\s\S]*?\.lg-photo\s*\{/);
+  assert.match(css, /\.lg-photo figcaption/);
+  assert.match(css, /max-width: 45%/);
 });
 
 test('hero copy and conversion contracts remain unchanged', () => {

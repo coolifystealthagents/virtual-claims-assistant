@@ -10,6 +10,7 @@ const securityHeaders = [
 
 const nextConfig = {
   output: 'standalone',
+  async redirects() { return [{ source: '/services/claims-support', destination: '/services', permanent: true }]; },
   images: { unoptimized: true, formats: ['image/avif', 'image/webp'] },
   async headers() { return [{ source: '/(.*)', headers: securityHeaders }]; },
 };

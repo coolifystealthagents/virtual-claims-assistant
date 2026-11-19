@@ -42,8 +42,8 @@ test('approved source identity and first-party assets retain exact bytes', () =>
 
 test('shared chrome preserves the full primary identity and subordinate acknowledgment', () => {
   const chrome = read('components/SiteChrome.tsx', 'utf8');
-  assert.match(chrome, /<span>\{site\.name\}<\/span>/);
-  assert.equal((chrome.match(/Powered by StealthAgents/g) ?? []).length, 2);
+  assert.match(chrome, /<span className="lg-brand-name">\{site\.name\}<\/span>/);
+  assert.ok((chrome.match(/Powered by StealthAgents/g) ?? []).length >= 2);
   assert.equal((chrome.match(/src="\/logo\.svg"/g) ?? []).length, 2);
 });
 

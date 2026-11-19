@@ -6,14 +6,14 @@ export const site: SiteConfig = {
   siteId: 'virtual-claims-assistant',
   niche: 'insurance claims teams',
   audience: 'claims leaders, independent adjusters, and insurance operations teams',
-  design: 'evidence',
+  design: 'ledger',
   eyebrow: 'Claims operations built around evidence',
   hero: 'Keep every claim anchored',
   heroAccent: 'to the evidence.',
   heroBody: 'Specialist remote assistants help claims teams organize intake records, document indexes, status communication, adjuster queues, and approved follow up while accountable professionals retain every coverage decision.',
   manifesto: 'Every status should point to evidence. Every exception should reach the right owner.',
-  primary: '#174bd8', secondary: '#9fc8ff', accent: '#84efd0', canvas: '#f3f7ff', ink: '#0b1c3e',
-  displayFont: 'Palatino Linotype', bodyFont: 'Avenir Next', heroImage: '/hero/claims-coordination-1440.webp',
+  primary: '#b4472a', secondary: '#bfd2c0', accent: '#b4472a', canvas: '#f0eadd', ink: '#17251e',
+  displayFont: 'Bodoni Moda', bodyFont: 'Public Sans', heroImage: '/hero/claims-coordination-1440.webp',
   heroAlt: 'Two professionals reviewing notes and a document folder together at an office table',
   services: [
     {
@@ -195,6 +195,66 @@ export const site: SiteConfig = {
       ],
       related: ['adjuster-work-queue-support', 'claims-document-coordination'],
       tasks: ['Assemble review samples', 'Check required evidence', 'Document exception patterns', 'Prepare quality summaries']
+    },
+    {
+      slug: 'claims-correspondence-support', name: 'Claims correspondence support',
+      short: 'Prepare approved claim letters and emails, log every response, and route decision questions to the named owner.',
+      audience: 'For claims teams with recurring acknowledgments, document requests, and follow up messages that follow approved templates.',
+      problem: 'Routine correspondence slows down when templates, claim facts, contact history, and approval rules sit in different places.',
+      heroImage: '/claims/correspondence-support.svg', heroAlt: 'Approved claim correspondence moving from a template into a sender log and review queue',
+      socialDescription: 'Claims correspondence support for approved letters, tracked responses, source linked contact logs, and controlled escalation.',
+      inputs: ['Approved letter and email templates', 'Current claim facts and communication rules', 'Sender identity and approval matrix', 'Correspondence log fields and retention instructions'],
+      workflow: [
+        { title: 'Prepare', detail: 'Use the approved template and only the facts visible in the claim record.' },
+        { title: 'Check', detail: 'Compare names, addresses, dates, and open requests with the source record.' },
+        { title: 'Queue', detail: 'Send permitted messages or place drafts in the named approval queue.' },
+        { title: 'Log', detail: 'Record the message, response, channel, and any decision question that needs an owner.' }
+      ],
+      scope: { included: ['Prepare approved correspondence', 'Check recipient and claim facts', 'Log sent messages and responses', 'Route coverage, value, and settlement questions'], excluded: ['Interpret coverage or liability', 'Approve a settlement or payment', 'Change claim facts without a source record', 'Send a nonstandard promise or legal position'] },
+      deliverables: ['Prepared correspondence', 'Approval queue entries', 'Contact and response log', 'Open question and exception list'],
+      decisionBoundaries: ['Your team approves templates and any message that leaves the standard path.', 'Coverage, value, liability, settlement, and legal questions route to an authorized professional.', 'The assistant does not send a demand, admission, or payment promise without documented approval.'],
+      qualityControls: ['Template version check', 'Claim fact comparison before send', 'Approval evidence for nonstandard messages', 'Sample review of sent correspondence and logs'],
+      scenarios: [
+        { title: 'A request needs a missing document', situation: 'The claim record shows an open document request but no approved follow up letter for the current address.', response: 'The assistant prepares the approved request, verifies the mailing source, and routes the address conflict to the owner.' },
+        { title: 'A recipient asks about payment', situation: 'A policyholder replies to an acknowledgment with a payment timing question.', response: 'The assistant logs the question and routes it to the assigned professional instead of estimating a date.' }
+      ],
+      faq: [
+        { q: 'Can the assistant send claim correspondence?', a: 'Only approved templates and standard messages defined by your team. Anything outside that path waits for an authorized reviewer.' },
+        { q: 'Can the assistant answer a coverage question?', a: 'No. The question is recorded and routed to the claims professional who owns that decision.' },
+        { q: 'How is correspondence reviewed?', a: 'Use a sample of sent messages, approval evidence, and response logs to check accuracy, tone, and routing.' }
+      ],
+      related: ['policyholder-status-support', 'claims-document-coordination'],
+      tasks: ['Prepare approved letters', 'Verify claim facts', 'Log responses', 'Route decision questions']
+    },
+    {
+      slug: 'vendor-and-expert-coordination', name: 'Vendor and expert coordination',
+      short: 'Schedule inspections, track estimates and expert reports, and keep the claim file current without directing professional conclusions.',
+      audience: 'For claims teams coordinating adjusters, inspectors, repair vendors, medical reviewers, and other approved experts.',
+      problem: 'Inspection dates, revised estimates, expert reports, and invoice details can scatter across email, portals, and claim notes.',
+      heroImage: '/claims/vendor-expert-coordination.svg', heroAlt: 'Inspection, estimate, and expert report tasks linked to one claims coordination record',
+      socialDescription: 'Vendor and expert coordination for inspection scheduling, report tracking, version control, and documented escalation.',
+      inputs: ['Approved vendor and expert roster', 'Inspection and report request rules', 'Claim contacts, locations, and access notes', 'Report fields, deadlines, and escalation owners'],
+      workflow: [
+        { title: 'Request', detail: 'Send the approved request with the claim reference, scope, and required deliverable.' },
+        { title: 'Schedule', detail: 'Coordinate access windows and confirm attendance without promising claim outcomes.' },
+        { title: 'Track', detail: 'Record receipt, version, due date, and missing attachments in the claim file.' },
+        { title: 'Escalate', detail: 'Route late, incomplete, or conflicting reports to the assigned claims professional.' }
+      ],
+      scope: { included: ['Coordinate approved inspections', 'Track estimates and expert reports', 'Record versions and receipt dates', 'Flag late or incomplete deliverables'], excluded: ['Select or approve an expert without authority', 'Direct an expert toward a claim conclusion', 'Approve an estimate, invoice, or payment', 'Interpret a report as coverage or liability'] },
+      deliverables: ['Inspection schedule', 'Vendor and expert request log', 'Report receipt and version register', 'Overdue and exception list'],
+      decisionBoundaries: ['The claims team selects vendors and experts under its own procurement rules.', 'The assistant does not influence an expert conclusion or approve an estimate.', 'Coverage, liability, value, and payment decisions stay with authorized professionals.'],
+      qualityControls: ['Request scope matches the approved template', 'Schedule and access details confirmed', 'Report version and receipt reconciled', 'Overdue items reviewed against the owner list'],
+      scenarios: [
+        { title: 'An estimate is revised twice', situation: 'Two revised estimates arrive under similar filenames within one week.', response: 'The assistant preserves each version, records receipt dates, and flags the latest file for adjuster confirmation.' },
+        { title: 'An inspection window is missed', situation: 'The contact is unavailable when the vendor arrives.', response: 'The assistant records the attempt, follows the approved rescheduling rule, and routes repeat access problems to the owner.' }
+      ],
+      faq: [
+        { q: 'Can the assistant choose a vendor?', a: 'No. Vendor selection follows your approved procurement and authority rules. The assistant coordinates within that roster.' },
+        { q: 'Can the assistant discuss an expert conclusion?', a: 'The assistant can record what the report says and route questions. It does not interpret the report as coverage, liability, or value.' },
+        { q: 'What does coordination include?', a: 'Approved scheduling, reminders, report tracking, version logging, and escalation of missing or late deliverables.' }
+      ],
+      related: ['claims-document-coordination', 'adjuster-work-queue-support'],
+      tasks: ['Schedule approved inspections', 'Track reports and versions', 'Confirm access details', 'Escalate overdue deliverables']
     }
   ],
   categories: ['Claim intake', 'Evidence systems', 'Policyholder communication', 'Role design'],

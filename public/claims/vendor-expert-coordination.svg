@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Vendor and expert coordination inside a claims file</title>
+  <desc id="desc">An inspection schedule, estimate version register, and owner escalation card connected to one workflow.</desc>
+  <rect width="1200" height="900" fill="#f0eadd"/>
+  <g fill="none" stroke="#13251d" stroke-width="2">
+    <rect x="50" y="50" width="1100" height="800"/>
+    <path d="M50 150H1150"/>
+    <path d="M120 150V850M1050 150V850"/>
+  </g>
+  <text x="84" y="106" fill="#b4472a" font-family="Courier New, monospace" font-size="20" letter-spacing="4">VENDOR AND EXPERT COORDINATION</text>
+  <text x="84" y="205" fill="#13251d" font-family="Georgia, serif" font-size="54">Track the handoff, not the conclusion.</text>
+  <g transform="translate(120 270)">
+    <rect width="300" height="340" fill="#fffdf6" stroke="#13251d" stroke-width="2"/>
+    <text x="24" y="40" fill="#b4472a" font-family="Courier New, monospace" font-size="14" letter-spacing="2">INSPECTION WINDOW</text>
+    <g stroke="#13251d" stroke-width="1">
+      <path d="M24 70H276M24 120H276M24 170H276M24 220H276M24 270H276"/>
+      <path d="M80 70V300M160 70V300M236 70V300"/>
+    </g>
+    <rect x="80" y="170" width="80" height="50" fill="#bfd2c0" stroke="#13251d"/>
+    <rect x="160" y="120" width="76" height="50" fill="#b4472a" opacity=".78" stroke="#13251d"/>
+    <text x="24" y="326" fill="#5e675f" font-family="Courier New, monospace" font-size="12">ACCESS CONFIRMED / OWNER NOTIFIED</text>
+  </g>
+  <g transform="translate(478 270)">
+    <rect width="300" height="340" fill="#bfd2c0" stroke="#13251d" stroke-width="2"/>
+    <text x="24" y="40" fill="#13251d" font-family="Courier New, monospace" font-size="14" letter-spacing="2">REPORT REGISTER</text>
+    <g fill="#13251d" font-family="Courier New, monospace" font-size="13">
+      <text x="24" y="92">REQUEST SENT</text>
+      <text x="24" y="142">INSPECTION HELD</text>
+      <text x="24" y="192">REPORT RECEIVED</text>
+      <text x="24" y="242">VERSION FLAGGED</text>
+    </g>
+    <g stroke="#13251d" stroke-width="1">
+      <path d="M24 108H276M24 158H276M24 208H276M24 258H276"/>
+    </g>
+    <g fill="#b4472a"><circle cx="258" cy="104" r="6"/><circle cx="258" cy="154" r="6"/><circle cx="258" cy="204" r="6"/><circle cx="258" cy="254" r="6"/></g>
+  </g>
+  <g transform="translate(836 270)">
+    <rect width="214" height="340" fill="#13251d"/>
+    <text x="20" y="40" fill="#bfd2c0" font-family="Courier New, monospace" font-size="13" letter-spacing="2">OWNER REVIEW</text>
+    <g fill="#f0eadd" font-family="Courier New, monospace" font-size="12">
+      <text x="20" y="92">LATE REPORT</text>
+      <text x="20" y="132">MISSING PAGE</text>
+      <text x="20" y="172">CONFLICTING</text>
+      <text x="20" y="212">ESTIMATE</text>
+    </g>
+    <path d="M20 236H194" stroke="#b4472a" stroke-width="3"/>
+    <text x="20" y="278" fill="#bfd2c0" font-family="Courier New, monospace" font-size="12">NO VALUE OR</text>
+    <text x="20" y="300" fill="#bfd2c0" font-family="Courier New, monospace" font-size="12">COVERAGE OPINION</text>
+  </g>
+  <g fill="none" stroke="#b4472a" stroke-width="3" stroke-dasharray="9 9">
+    <path d="M420 440H478M778 440H836"/>
+  </g>
+  <text x="120" y="700" fill="#13251d" font-family="Courier New, monospace" font-size="15" letter-spacing="1">APPROVED ROSTER · MINIMUM ACCESS · DOCUMENTED RECEIPT · NAMED ESCALATION</text>
+  <rect x="120" y="744" width="930" height="58" fill="#b4472a"/>
+  <text x="146" y="780" fill="#faf5e9" font-family="Courier New, monospace" font-size="17" letter-spacing="2">THE ASSISTANT COORDINATES THE HANDOFF. YOUR TEAM OWNS THE INTERPRETATION.</text>
+</svg>

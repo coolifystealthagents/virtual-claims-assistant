@@ -6,12 +6,16 @@ import { join } from 'node:path';
 const root = new URL('..', import.meta.url).pathname;
 const read = (path) => readFileSync(join(root, path), 'utf8');
 const serviceRoutes = new Set([
+  '/services',
+  '/services/claims-support',
   '/services/fnol-intake-support',
   '/services/claims-document-coordination',
   '/services/policyholder-status-support',
   '/services/adjuster-work-queue-support',
   '/services/subrogation-admin-support',
   '/services/claims-quality-support',
+  '/services/claims-correspondence-support',
+  '/services/vendor-and-expert-coordination',
 ]);
 
 function editorialTargets() {

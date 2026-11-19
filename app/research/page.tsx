@@ -1,43 +1,64 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { researchPosts } from '@/lib/content';
-import '@/components/editorial.css';
+import { PageHero, LedgerCTA } from '@/components/Ledger';
 
 export const metadata: Metadata = {
   title: 'Claims operations research library',
   description: 'A source-led library of claims workflow methods, evidence questions, limitations, and practical review controls.',
   alternates: { canonical: '/research' },
-  openGraph: { title: 'Claims operations research library', description: 'Source-led briefs for inspectable claims operations.', url: '/research', images: ['/editorial/research-hero-desktop.webp'] },
-  twitter: { card: 'summary_large_image', images: ['/editorial/research-hero-desktop.webp'] }
+  openGraph: { title: 'Claims operations research library', description: 'Source-led briefs for inspectable claims operations.', url: '/research', images: ['/virtual-claims-assistant-open-graph.png'] },
+  twitter: { card: 'summary_large_image', images: ['/virtual-claims-assistant-open-graph.png'] }
 };
 
 const clusters = [...new Set(researchPosts.map((post) => post.cluster))];
-const anchor = (value: string) => value.toLowerCase().replace(/[^a-z0-9]+/g, '-');
 
 export default function ResearchPage() {
-  return <main id="main-content" tabIndex={-1} className="editorial-index research-index">
-    <header className="editorial-index-hero">
-      <div><p className="eyebrow">Claims research file</p><h1>Evidence before inference.</h1><p className="lede">Source-led briefs for leaders building measurable claims support workflows. The library separates observable administrative records from protected judgment, states what a method can support, and keeps uncertainty and limitations visible.</p></div>
-      <picture className="editorial-hero-picture">
-        <source media="(max-width: 600px)" type="image/avif" srcSet="/editorial/research-hero-mobile.avif" />
-        <source media="(max-width: 600px)" type="image/webp" srcSet="/editorial/research-hero-mobile.webp" />
-        <source type="image/avif" srcSet="/editorial/research-hero-desktop.avif" />
-        <source type="image/webp" srcSet="/editorial/research-hero-desktop.webp" />
-        <img src="/editorial/research-hero-desktop.webp" alt="Stock photo of a person analyzing generic printed charts with a pencil" width="1440" height="1200" loading="eager" fetchPriority="high" decoding="async" />
-      </picture>
-    </header>
-    <div className="editorial-index-body">
-      <section className="editorial-intro" aria-labelledby="research-intro"><h2 id="research-intro">A claims file, not a claims verdict.</h2><div>
-        <p>Use these briefs to frame an operational question, define the eligible population, preserve provenance, inspect exceptions, and assign remediation. Each brief lists its method, public sources, boundaries, and practical application so another reviewer can challenge the reasoning.</p>
-        <p>The collection does not invent studies or claim outcomes. It synthesizes public guidance into questions that teams can test against their own procedures, systems, jurisdictions, and professional obligations.</p>
-      </div></section>
-      <nav className="taxonomy-nav" aria-label="Browse research topics"><a href="#all-research">All briefs ({researchPosts.length})</a>{clusters.map((cluster) => <a key={cluster} href={`#${anchor(cluster)}`}>{cluster} ({researchPosts.filter((post) => post.cluster === cluster).length})</a>)}</nav>
-      <section id="all-research" className="editorial-card-grid" aria-label="All research briefs">
-        {researchPosts.map((post, index) => <Link className="editorial-card" href={`/research/${post.slug}`} key={post.slug} id={index === researchPosts.findIndex((item) => item.cluster === post.cluster) ? anchor(post.cluster) : undefined}>
-          <img src={post.thumbnail} alt={`${post.title} research file illustration`} loading={index < 3 ? 'eager' : 'lazy'} />
-          <div className="editorial-card-copy"><span className="topic">{post.cluster}</span><h2>{post.title}</h2><p>{post.summary}</p><div className="card-meta"><time dateTime={post.publishedAt}>{post.publishedAt}</time><span>{post.readTime}</span></div></div>
-        </Link>)}
-      </section>
-    </div>
+  const [featured, ...rest] = researchPosts;
+  return <main id="main-content" tabIndex={-1} className="lg-index">
+    <PageHero
+      label="Claims research file"
+      title={<>Evidence before <em style={{ color: 'var(--lg-clay)', fontStyle: 'italic' }}>inference.</em></>}
+      lead="Source-led briefs for leaders building measurable claims support workflows. The library separates observable administrative records from protected judgment, states what a method can support, and keeps uncertainty visible."
+      fileLabel="Research file"
+      fileTitle="A claims file, not a verdict."
+      fileNote="Every brief lists its method, public sources, boundaries, and practical application."
+      actions={<><Link className="lg-btn lg-btn--clay" href="/contact-us">Apply a brief</Link><Link className="lg-btn lg-btn--paper" href="/blog">Read the field notes</Link></>}
+    />
+
+    <section className="lg-section">
+      <div className="lg-container">
+        <div className="lg-toolbar">
+          <p>Use these briefs to frame an operational question, preserve provenance, and inspect exceptions.</p>
+          <span>{researchPosts.length} briefs · {clusters.length} clusters</span>
+        </div>
+
+        <Link className="lg-feature" href={`/research/${featured.slug}`}>
+          <div className="lg-feature-media"><img src={featured.thumbnail} alt={`${featured.title} illustration`} fetchPriority="high" /></div>
+          <div className="lg-feature-copy">
+            <span className="lg-post-meta">Featured brief · {featured.cluster}</span>
+            <h2>{featured.title}</h2>
+            <p>{featured.summary}</p>
+            <span className="lg-post-meta" style={{ color: 'var(--lg-sage)' }}><time dateTime={featured.publishedAt}>{featured.publishedAt}</time> · {featured.readTime || 'Research brief'}</span>
+            <span className="lg-link" style={{ marginTop: 18 }}>Read the brief</span>
+          </div>
+        </Link>
+
+        <div className="lg-card-grid">
+          {rest.map((post, index) => (
+            <Link className="lg-card" href={`/research/${post.slug}`} key={post.slug}>
+              <div className="lg-card-media"><img src={post.thumbnail} alt={`${post.title} illustration`} loading={index < 3 ? 'eager' : 'lazy'} /><span>{post.cluster}</span></div>
+              <div className="lg-card-body">
+                <span className="lg-post-meta"><time dateTime={post.publishedAt}>{post.publishedAt}</time> · {post.readTime || 'Research brief'}</span>
+                <h3>{post.title}</h3>
+                <p>{post.summary}</p>
+                <span className="lg-link">Read the brief</span>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </section>
+    <LedgerCTA />
   </main>;
 }

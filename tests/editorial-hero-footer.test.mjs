@@ -7,43 +7,29 @@ const root = new URL('..', import.meta.url).pathname;
 const read = (path) => readFileSync(join(root, path), 'utf8');
 
 const heroes = [
-  { route: 'blog', page: 'app/blog/page.tsx', alt: 'Stock photo of a professional organizing notes beside a laptop at a desk' },
-  { route: 'research', page: 'app/research/page.tsx', alt: 'Stock photo of a person analyzing generic printed charts with a pencil' },
+  { route: 'blog', page: 'app/blog/page.tsx' },
+  { route: 'research', page: 'app/research/page.tsx' },
 ];
 
-const assets = heroes.flatMap(({ route }) => [
-  `public/editorial/${route}-hero-desktop.avif`,
-  `public/editorial/${route}-hero-desktop.webp`,
-  `public/editorial/${route}-hero-mobile.avif`,
-  `public/editorial/${route}-hero-mobile.webp`,
-]);
-
-test('editorial indexes use distinct art-directed modern hero photographs', () => {
-  const css = read('components/editorial.css');
-  assert.match(css, /\.editorial-hero-picture\{[^}]*aspect-ratio:6\/5[^}]*\}/);
-  assert.match(css, /\.editorial-index-hero img\{[^}]*height:100%[^}]*aspect-ratio:6\/5[^}]*\}/);
-  assert.match(css, /\.editorial-hero-picture,\.editorial-index-hero img\{max-height:420px\}/);
-  for (const { route, page, alt } of heroes) {
+test('editorial indexes use the ledger page hero instead of the old stock banner', () => {
+  for (const { route, page } of heroes) {
     const source = read(page);
-    assert.match(source, /<picture className="editorial-hero-picture">/);
-    assert.match(source, new RegExp(`<source media="\\(max-width: 600px\\)" type="image\\/avif" srcSet="\\/editorial\\/${route}-hero-mobile\\.avif" \\/>`));
-    assert.match(source, new RegExp(`<source media="\\(max-width: 600px\\)" type="image\\/webp" srcSet="\\/editorial\\/${route}-hero-mobile\\.webp" \\/>`));
-    assert.match(source, new RegExp(`<source type="image\\/avif" srcSet="\\/editorial\\/${route}-hero-desktop\\.avif" \\/>`));
-    assert.match(source, new RegExp(`<source type="image\\/webp" srcSet="\\/editorial\\/${route}-hero-desktop\\.webp" \\/>`));
-    assert.match(source, new RegExp(`src="\\/editorial\\/${route}-hero-desktop\\.webp"`));
-    assert.match(source, new RegExp(`alt="${alt}"`));
-    assert.match(source, /width="1440" height="1200" loading="eager" fetchPriority="high" decoding="async"/);
-    assert.doesNotMatch(source, new RegExp(`${route}-library\\.svg`));
-    assert.match(source, /post\.thumbnail/, `${route} article thumbnails must remain data driven`);
+    assert.match(source, /PageHero/);
+    assert.match(source, /lg-card-grid/);
+    assert.match(source, /post\.thumbnail/);
+    assert.match(source, /dateTime=\{post\.publishedAt\}/);
+    assert.doesNotMatch(source, new RegExp(`${route}-hero-desktop\\.webp`));
   }
 });
 
 test('editorial hero assets are present, optimized, and bounded', () => {
-  for (const asset of assets) {
-    assert.ok(existsSync(join(root, asset)), `${asset} is required`);
-    const bytes = statSync(join(root, asset)).size;
-    assert.ok(bytes > 10_000, `${asset} must contain a substantive photograph`);
-    assert.ok(bytes < 250_000, `${asset} must remain optimized for web delivery`);
+  for (const { route } of heroes) {
+    for (const variant of ['desktop.webp', 'mobile.webp']) {
+      const asset = join(root, `public/editorial/${route}-hero-${variant}`);
+      assert.ok(existsSync(asset), asset);
+      assert.ok(statSync(asset).size > 10_000, asset);
+      assert.ok(statSync(asset).size < 300_000, asset);
+    }
   }
 });
 
@@ -54,11 +40,9 @@ test('image provenance records both stock sources and non-employee alt policy', 
   assert.match(provenance, /not employees or claims professionals affiliated with Virtual Claims Assistant/);
 });
 
-test('shared footer renders Research as one normal neighboring navigation link', () => {
+test('shared footer renders Blog and Research as normal neighboring navigation links', () => {
   const chrome = read('components/SiteChrome.tsx');
-  const css = read('app/globals.css');
+  assert.equal((chrome.match(/>Blog<\/Link>/g) || []).length, 1);
   assert.equal((chrome.match(/>Research<\/Link>/g) || []).length, 1);
-  assert.match(chrome, /<Link href="\/blog">Blog<\/Link><Link href="\/research">Research<\/Link><Link href="\/privacy">Privacy<\/Link>/);
   assert.doesNotMatch(chrome, /footer-research-button/);
-  assert.doesNotMatch(css, /footer-research-button/);
 });

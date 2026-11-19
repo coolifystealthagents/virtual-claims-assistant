@@ -9,14 +9,14 @@ const siteSource = read('lib/site.ts');
 const coreSource = read('components/CorePages.tsx');
 const marketingSource = read('components/Marketing.tsx');
 const routeSources = ['app/page.tsx', 'app/about/page.tsx', 'app/services/page.tsx', 'app/services/[slug]/page.tsx'].map(read);
-const slugs = ['fnol-intake-support', 'claims-document-coordination', 'policyholder-status-support', 'adjuster-work-queue-support', 'subrogation-admin-support', 'claims-quality-support'];
-const images = ['about-evidence.svg', 'services-map.svg', 'fnol-intake.svg', 'document-coordination.svg', 'policyholder-status.svg', 'work-queue.svg', 'subrogation-admin.svg', 'quality-support.svg'];
+const slugs = ['fnol-intake-support', 'claims-document-coordination', 'policyholder-status-support', 'adjuster-work-queue-support', 'subrogation-admin-support', 'claims-quality-support', 'claims-correspondence-support', 'vendor-and-expert-coordination'];
+const images = ['about-evidence.svg', 'services-map.svg', 'fnol-intake.svg', 'document-coordination.svg', 'policyholder-status.svg', 'work-queue.svg', 'subrogation-admin.svg', 'quality-support.svg', 'correspondence-support.svg', 'vendor-expert-coordination.svg'];
 
-test('six service records include complete long form fields', () => {
-  assert.equal(slugs.filter((slug) => siteSource.includes(`slug: '${slug}'`)).length, 6);
+test('eight service records include complete long form fields', () => {
+  assert.equal(slugs.filter((slug) => siteSource.includes(`slug: '${slug}'`)).length, 8);
   for (const slug of slugs) assert.match(siteSource, new RegExp(`slug: '${slug}'[\\s\\S]+?audience:[\\s\\S]+?problem:[\\s\\S]+?heroImage:[\\s\\S]+?inputs:[\\s\\S]+?workflow:[\\s\\S]+?scope:[\\s\\S]+?deliverables:[\\s\\S]+?decisionBoundaries:[\\s\\S]+?qualityControls:[\\s\\S]+?scenarios:[\\s\\S]+?faq:[\\s\\S]+?related:`));
-  assert.equal((siteSource.match(/title: '[^']+', situation:/g) || []).length, 12);
-  assert.equal((siteSource.match(/\{ q: '[^']+', a:/g) || []).length, 18);
+  assert.equal((siteSource.match(/title: '[^']+', situation:/g) || []).length, 16);
+  assert.equal((siteSource.match(/\{ q: '[^']+', a:/g) || []).length, 24);
 });
 
 test('core templates expose accessible mains and long form sections', () => {
@@ -34,7 +34,7 @@ test('each core route declares canonical and social metadata', () => {
   }
 });
 
-test('eight distinct route illustrations exist and are substantive', () => {
+test('ten distinct route illustrations exist and are substantive', () => {
   const bodies = images.map((name) => {
     const path = join(root, 'public/claims', name);
     assert.ok(existsSync(path), name);
@@ -51,6 +51,6 @@ test('owned visible copy avoids prohibited dash characters', () => {
   for (const source of sources) {
     assert.doesNotMatch(source, /[–—]/);
     const literals = [...source.matchAll(/(['"`])((?:(?!\1).)*)\1/g)].map((match) => match[2]);
-    for (const literal of literals) assert.doesNotMatch(literal, /--/);
+    for (const literal of literals) assert.doesNotMatch(literal.replace(/--[a-z0-9-]+/gi, ''), /--/);
   }
 });

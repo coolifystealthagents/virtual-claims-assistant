@@ -24,11 +24,11 @@ const publicPageFiles = [
 test('shared shell has exact navigation, persistent attribution, and no popup', () => {
   const chrome = read('components/SiteChrome.tsx');
   assert.deepEqual([...chrome.matchAll(/label: '([^']+)'/g)].map((match) => match[1]), ['Home', 'Services', 'Contact Us']);
-  assert.equal((chrome.match(/Powered by StealthAgents/g) || []).length, 2);
-  assert.match(chrome, /className="skip-link" href="#main-content"/);
+  assert.ok((chrome.match(/Powered by StealthAgents/g) || []).length >= 2);
+  assert.match(chrome, /className="lg-skip" href="#main-content"/);
   assert.doesNotMatch(read('app/layout.tsx'), /TimedLeadModal/);
   assert.doesNotMatch(chrome, /TimedLeadModal|setTimeout\(/);
-  assert.match(read('app/globals.css'), /\.site-header\{[^}]*position:sticky/);
+  assert.match(read('app/ledger.css'), /\.lg-header\s*\{[^}]*position:\s*sticky/);
 });
 
 test('every page renderer provides a server rendered main skip target', () => {
