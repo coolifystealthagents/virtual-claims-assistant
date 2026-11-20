@@ -186,13 +186,10 @@ export function HomePage() {
 
       <section className="lg-quality">
         <div className="lg-quality-grid lg-container">
-          <div className="lg-quality-seal" aria-label="Quality review seal">
-            <div className="lg-quality-seal-copy">
-              <span>Weekly sample</span>
-              <b>Review</b>
-              <span>Evidence checked</span>
-            </div>
-          </div>
+          <figure className="lg-quality-photo">
+            <img src="/claims/photos/claims-quality.jpg" alt="A claims quality reviewer marking a printed claim file beside a laptop" width="1600" height="1067" loading="lazy" />
+            <figcaption><span>Weekly review</span><b>Evidence checked against the source record</b></figcaption>
+          </figure>
           <div className="lg-quality-copy">
             <p className="lg-eyebrow">Quality you can inspect</p>
             <h2>Check the evidence, not the personality.</h2>
