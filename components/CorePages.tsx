@@ -106,6 +106,8 @@ export function ServicesCorePage() {
         fileLabel="Service index"
         fileTitle="Eight focused claims roles."
         fileNote="Each role has distinct inputs, outputs, controls, and decision boundaries."
+        image="/claims/photos/services-hero.jpg"
+        imageAlt="Two claims specialists reviewing printed files and a laptop together in a modern office"
         actions={<Link className="lg-btn lg-btn--clay" href="/contact-us">Plan a support role <ArrowIcon /></Link>}
       />
 
@@ -204,7 +206,7 @@ export function ServiceCorePage({ service }: { service: Service }) {
           </div>
           <figure className="lg-detail-media" data-lg-tilt data-tilt-strength="3">
             <img src={service.heroImage} alt={service.heroAlt} width="1200" height="900" fetchPriority="high" />
-            <figcaption>{service.name} · source linked workflow illustration</figcaption>
+            <figcaption>{service.name} · documented claims support in practice</figcaption>
           </figure>
         </div>
       </section>

@@ -1,11 +1,18 @@
 'use client';
 
 import { useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 
 export default function LedgerMotion() {
+  const pathname = usePathname();
+
   useEffect(() => {
     const root = document.documentElement;
     root.classList.add('lg-js');
+    return () => root.classList.remove('lg-js');
+  }, []);
+
+  useEffect(() => {
 
     const cleanups: Array<() => void> = [];
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -45,7 +52,11 @@ export default function LedgerMotion() {
         },
         { rootMargin: '0px 0px -8% 0px', threshold: 0.08 }
       );
-      revealItems.forEach((item) => observer.observe(item));
+      revealItems.forEach((item) => {
+        const rect = item.getBoundingClientRect();
+        if (rect.top < window.innerHeight * 0.96 && rect.bottom > 0) item.classList.add('is-in');
+        observer.observe(item);
+      });
       cleanups.push(() => observer.disconnect());
     }
 
@@ -120,9 +131,8 @@ export default function LedgerMotion() {
 
     return () => {
       cleanups.forEach((fn) => fn());
-      root.classList.remove('lg-js');
     };
-  }, []);
+  }, [pathname]);
 
   return <div className="lg-progress" aria-hidden="true" />;
 }

@@ -21,7 +21,7 @@ export const site: SiteConfig = {
       short: 'Organize first notice records and route incomplete details for accountable review.',
       audience: 'For intake managers and claims teams receiving loss notices across phone, portal, email, and partner channels.',
       problem: 'First notice details arrive in different formats. Missing dates, contacts, loss descriptions, or attachments can create rework before an adjuster begins review.',
-      heroImage: '/claims/fnol-intake.svg', heroAlt: 'A structured first notice intake form flowing into an exception queue',
+      heroImage: '/claims/photos/fnol-intake.jpg', heroAlt: 'A claims intake specialist wearing a headset while reviewing a first notice record on a laptop',
       socialDescription: 'Remote FNOL support for structured intake, completeness checks, evidence indexing, and controlled escalation.',
       inputs: ['Approved intake forms and channel records', 'Required field rules by claim type', 'Routing table and assigned review owners', 'Secure claim system access at the minimum role level'],
       workflow: [
@@ -51,7 +51,7 @@ export const site: SiteConfig = {
       short: 'Maintain a traceable index of evidence, correspondence, and approved requests.',
       audience: 'For property, casualty, and specialty claims teams managing files from policyholders, vendors, experts, and counsel.',
       problem: 'Evidence can be difficult to retrieve when filenames, versions, receipt dates, and request status are inconsistent across a claim file.',
-      heroImage: '/claims/document-coordination.svg', heroAlt: 'Claim documents organized into a traceable evidence index',
+      heroImage: '/claims/photos/document-coordination.jpg', heroAlt: 'Hands organizing insurance claim folders with colored index tabs on a desk',
       socialDescription: 'Claims document support for naming, indexing, provenance, request tracking, and missing item escalation.',
       inputs: ['Approved document naming standard', 'Claim correspondence and attachments', 'Document request register', 'Retention and access instructions'],
       workflow: [
@@ -81,7 +81,7 @@ export const site: SiteConfig = {
       short: 'Prepare approved updates and keep contact records complete without making claim decisions.',
       audience: 'For claims teams with recurring policyholder status inquiries and documented communication standards.',
       problem: 'Adjusters lose review time when routine status messages require gathering dates, open items, contact history, and approved next steps from several records.',
-      heroImage: '/claims/policyholder-status.svg', heroAlt: 'Approved policyholder status message connected to claim milestones',
+      heroImage: '/claims/photos/policyholder-status.jpg', heroAlt: 'A claims specialist speaking calmly with a policyholder while wearing a headset',
       socialDescription: 'Policyholder status support for approved drafts, contact logs, request tracking, and sensitive message escalation.',
       inputs: ['Approved message library and tone guide', 'Current claim diary and milestone status', 'Contact preferences and authorization rules', 'Complaint and sensitive message escalation matrix'],
       workflow: [
@@ -111,7 +111,7 @@ export const site: SiteConfig = {
       short: 'Keep diaries, ownership, and next actions visible and tied to source records.',
       audience: 'For staff and independent adjusting teams balancing active inventories, diary dates, and supervisor exceptions.',
       problem: 'Aging tasks and unclear ownership hide inside large inventories, forcing adjusters to spend time reconstructing what is due and why.',
-      heroImage: '/claims/work-queue.svg', heroAlt: 'Adjuster work queue grouped by owner, due date, and exception status',
+      heroImage: '/claims/photos/adjuster-queue.jpg', heroAlt: 'A claims specialist reviewing an adjuster work queue on a desktop monitor',
       socialDescription: 'Adjuster queue support for diary hygiene, ownership checks, aging visibility, and evidence linked handoffs.',
       inputs: ['Active claim and diary queue', 'Ownership and backup roster', 'Priority and aging rules', 'Approved task categories and escalation thresholds'],
       workflow: [
@@ -141,7 +141,7 @@ export const site: SiteConfig = {
       short: 'Organize parties, recovery records, and approved follow up for specialist review.',
       audience: 'For recovery units and claims teams that need consistent administrative preparation around potential subrogation files.',
       problem: 'Recovery opportunities lose momentum when party details, notices, supporting records, and follow up dates are scattered or incomplete.',
-      heroImage: '/claims/subrogation-admin.svg', heroAlt: 'Subrogation party records and evidence converging into a recovery review packet',
+      heroImage: '/claims/photos/subrogation-admin.jpg', heroAlt: 'Two claims professionals reviewing recovery documents and a calculator at a desk',
       socialDescription: 'Subrogation administration support for party records, packet preparation, approved requests, and recovery tracking.',
       inputs: ['Claims selected by an authorized recovery owner', 'Party and insurer information', 'Approved recovery checklist and correspondence', 'Payment and evidence records authorized for the packet'],
       workflow: [
@@ -171,7 +171,7 @@ export const site: SiteConfig = {
       short: 'Prepare review samples and evidence based exception records for accountable leaders.',
       audience: 'For claims quality, compliance, and operations leaders who need repeatable file review preparation and trend visibility.',
       problem: 'Quality reviewers spend scarce time assembling samples and locating evidence before they can evaluate handling, coaching needs, or control performance.',
-      heroImage: '/claims/quality-support.svg', heroAlt: 'Claims quality sample moving through evidence checks and an exception dashboard',
+      heroImage: '/claims/photos/claims-quality.jpg', heroAlt: 'A claims quality reviewer marking a printed claim file beside a laptop',
       socialDescription: 'Claims quality support for sample preparation, evidence checks, exception records, and review ready summaries.',
       inputs: ['Approved population and sampling instruction', 'Quality rubric and evidence definitions', 'Authorized claim records', 'Exception ownership and escalation matrix'],
       workflow: [
@@ -201,7 +201,7 @@ export const site: SiteConfig = {
       short: 'Prepare approved claim letters and emails, log every response, and route decision questions to the named owner.',
       audience: 'For claims teams with recurring acknowledgments, document requests, and follow up messages that follow approved templates.',
       problem: 'Routine correspondence slows down when templates, claim facts, contact history, and approval rules sit in different places.',
-      heroImage: '/claims/correspondence-support.svg', heroAlt: 'Approved claim correspondence moving from a template into a sender log and review queue',
+      heroImage: '/claims/photos/claims-correspondence.jpg', heroAlt: 'A claims support professional preparing approved correspondence at a desk',
       socialDescription: 'Claims correspondence support for approved letters, tracked responses, source linked contact logs, and controlled escalation.',
       inputs: ['Approved letter and email templates', 'Current claim facts and communication rules', 'Sender identity and approval matrix', 'Correspondence log fields and retention instructions'],
       workflow: [
@@ -231,7 +231,7 @@ export const site: SiteConfig = {
       short: 'Schedule inspections, track estimates and expert reports, and keep the claim file current without directing professional conclusions.',
       audience: 'For claims teams coordinating adjusters, inspectors, repair vendors, medical reviewers, and other approved experts.',
       problem: 'Inspection dates, revised estimates, expert reports, and invoice details can scatter across email, portals, and claim notes.',
-      heroImage: '/claims/vendor-expert-coordination.svg', heroAlt: 'Inspection, estimate, and expert report tasks linked to one claims coordination record',
+      heroImage: '/claims/photos/vendor-expert.jpg', heroAlt: 'A claims coordinator scheduling an inspection while reviewing a calendar on screen',
       socialDescription: 'Vendor and expert coordination for inspection scheduling, report tracking, version control, and documented escalation.',
       inputs: ['Approved vendor and expert roster', 'Inspection and report request rules', 'Claim contacts, locations, and access notes', 'Report fields, deadlines, and escalation owners'],
       workflow: [
