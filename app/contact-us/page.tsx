@@ -33,6 +33,11 @@ export default function ContactPage() {
         <p className="evidence-tab">Contact Us</p>
         <h1 id="contact-title">Put claims workflow pressure on the record.</h1>
         <p className="contact-deck">Tell us where intake, document control, policyholder updates, or adjuster queues need dependable administrative capacity.</p>
+        <div className="lg-contact-brief">
+          <div><strong>Bring the queue</strong><span>The call type, volume, current owner, and where it slows down.</span></div>
+          <div><strong>Name the record</strong><span>The system of record, required fields, and approved source.</span></div>
+          <div><strong>Draw the boundary</strong><span>The decisions that must stay with a claims professional.</span></div>
+        </div>
       </div>
       <div className="contact-form-card">
         <p className="evidence-tab">Consultation intake</p>

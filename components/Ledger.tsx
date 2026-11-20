@@ -35,7 +35,11 @@ export function PageHero({
           <span>Claim file / working record</span>
           <b>{fileTitle}</b>
           <small>{fileNote}</small>
-          <span className="lg-pagefile-stamp">Filed<br />review</span>
+          <ul className="lg-pagefile-facts">
+            <li><span>Source</span>Approved record</li>
+            <li><span>Route</span>Named owner</li>
+            <li><span>Review</span>Sampled work</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -99,6 +103,11 @@ export function LedgerCTA() {
             <small>Intake · evidence · correspondence · queue</small>
           </div>
         </div>
+      </div>
+      <div className="lg-cta-facts lg-container">
+        <div><b>One workflow</b><span>Start with a queue you can inspect.</span></div>
+        <div><b>Minimum access</b><span>Only the systems the role needs.</span></div>
+        <div><b>Named reviewer</b><span>A professional keeps the decision.</span></div>
       </div>
       <div className="lg-cta-ticker" aria-hidden="true">SOURCE · INDEX · ROUTE · REVIEW · EXCEPTION · OWNER · SOURCE · INDEX · ROUTE · REVIEW</div>
     </section>
