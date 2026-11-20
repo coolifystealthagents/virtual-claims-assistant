@@ -523,7 +523,10 @@ img {
 /* Home hero --------------------------------------------------------------- */
 .lg-hero {
   position: relative;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
+  min-height: calc(100svh - var(--lg-nav-h));
   padding: 30px 0 0;
   background: var(--lg-paper);
 }
@@ -559,8 +562,9 @@ img {
   grid-template-columns: minmax(0, 1.02fr) minmax(0, 0.98fr);
   gap: 40px;
   align-items: center;
-  min-height: 690px;
-  padding: 22px 0 52px;
+  flex: 1;
+  min-height: 0;
+  padding: 20px 0 16px;
 }
 
 .lg-hero-copy {
@@ -885,6 +889,14 @@ img {
 /* Sections ---------------------------------------------------------------- */
 .lg-section {
   padding: 92px 0;
+}
+
+.lg-section--index {
+  padding-top: 28px;
+}
+
+.lg-section--index .lg-head {
+  margin-bottom: 20px;
 }
 
 .lg-section--cream {
@@ -2065,11 +2077,27 @@ img {
 }
 
 .lg-pagehero--compact {
-  padding: 38px 0 42px;
+  padding: 26px 0 28px;
+}
+
+.lg-pagehero--compact .lg-pagehero-grid {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.lg-pagehero--compact .lg-pagefile {
+  display: none;
 }
 
 .lg-pagehero--compact .lg-pagehero-copy h1 {
-  font-size: clamp(40px, 4.8vw, 66px);
+  font-size: clamp(36px, 4vw, 54px);
+}
+
+.lg-pagehero--compact .lg-pagefile {
+  padding: 27px 20px 18px;
+}
+
+.lg-pagehero--compact .lg-pagefile b {
+  font-size: 23px;
 }
 
 .lg-pagefile {
@@ -3709,10 +3737,16 @@ img {
     display: none;
   }
 
+  .lg-hero {
+    display: block;
+    min-height: 0;
+  }
+
   .lg-hero-grid {
     grid-template-columns: 1fr;
     gap: 30px;
     min-height: 0;
+    flex: none;
     padding-bottom: 34px;
   }
 

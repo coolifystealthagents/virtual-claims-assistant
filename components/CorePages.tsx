@@ -99,6 +99,7 @@ export function ServicesCorePage() {
   return (
     <main id="main-content" tabIndex={-1} className="lg-page">
       <PageHero
+        compact
         label="Claims support services"
         title={<>Focused roles for <em style={{ color: 'var(--lg-clay)', fontStyle: 'italic' }}>evidence heavy work.</em></>}
         lead="Choose the workflow where administrative preparation, coordination, and follow through can give accountable claims professionals more room to review and decide."
@@ -108,7 +109,7 @@ export function ServicesCorePage() {
         actions={<Link className="lg-btn lg-btn--clay" href="/contact-us">Plan a support role <ArrowIcon /></Link>}
       />
 
-      <section className="lg-section">
+      <section className="lg-section lg-section--index">
         <div className="lg-container">
           <SectionHead
             label="Role index"
