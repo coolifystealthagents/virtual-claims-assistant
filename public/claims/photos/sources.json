@@ -1,0 +1,83 @@
+[
+  {
+    "asset": "/claims/photos/services-hero.jpg",
+    "kind": "generated editorial photograph",
+    "provider": "Google Gemini 3 Pro Image via reAPI (treg)",
+    "model": "gemini-3-pro-image-preview",
+    "created": "2026-11-20",
+    "prompt": "Two Filipino claims operations specialists reviewing printed claim files and a laptop together at a large table in a modern insurance office, natural window light, candid documentary photography.",
+    "note": "Illustrative photography. The people shown are not identified as Virtual Claims Assistant employees or clients."
+  },
+  {
+    "asset": "/claims/photos/fnol-intake.jpg",
+    "kind": "generated editorial photograph",
+    "provider": "Google Gemini 3 Pro Image via reAPI (treg)",
+    "model": "gemini-3-pro-image-preview",
+    "created": "2026-11-20",
+    "prompt": "A Filipina claims intake specialist wearing a headset, listening to a first notice call while writing notes beside an unbranded laptop in a bright modern office.",
+    "note": "Illustrative photography. The people shown are not identified as Virtual Claims Assistant employees or clients."
+  },
+  {
+    "asset": "/claims/photos/document-coordination.jpg",
+    "kind": "generated editorial photograph",
+    "provider": "Google Gemini 3 Pro Image via reAPI (treg)",
+    "model": "gemini-3-pro-image-preview",
+    "created": "2026-11-20",
+    "prompt": "Hands organizing insurance claim folders with colored index tabs on a wooden desk beside an open laptop and printed documents.",
+    "note": "Illustrative photography. The people shown are not identified as Virtual Claims Assistant employees or clients."
+  },
+  {
+    "asset": "/claims/photos/policyholder-status.jpg",
+    "kind": "generated editorial photograph",
+    "provider": "Google Gemini 3 Pro Image via reAPI (treg)",
+    "model": "gemini-3-pro-image-preview",
+    "created": "2026-11-20",
+    "prompt": "A Filipino claims specialist wearing a headset speaking calmly during a policyholder status call at a modern claims desk with dual monitors and a notebook.",
+    "note": "Illustrative photography. The people shown are not identified as Virtual Claims Assistant employees or clients."
+  },
+  {
+    "asset": "/claims/photos/adjuster-queue.jpg",
+    "kind": "generated editorial photograph",
+    "provider": "Google Gemini 3 Pro Image via reAPI (treg)",
+    "model": "gemini-3-pro-image-preview",
+    "created": "2026-11-20",
+    "prompt": "A Filipina claims support specialist reviewing an adjuster work queue on a wide monitor with a printed priority list and sticky notes on the desk.",
+    "note": "Illustrative photography. The people shown are not identified as Virtual Claims Assistant employees or clients."
+  },
+  {
+    "asset": "/claims/photos/subrogation-admin.jpg",
+    "kind": "generated editorial photograph",
+    "provider": "Google Gemini 3 Pro Image via reAPI (treg)",
+    "model": "gemini-3-pro-image-preview",
+    "created": "2026-11-20",
+    "prompt": "Two Filipino claims professionals reviewing subrogation recovery documents and a calculator at a desk, one explaining a figure while the other listens.",
+    "note": "Illustrative photography. The people shown are not identified as Virtual Claims Assistant employees or clients."
+  },
+  {
+    "asset": "/claims/photos/claims-quality.jpg",
+    "kind": "generated editorial photograph",
+    "provider": "Google Gemini 3 Pro Image via reAPI (treg)",
+    "model": "gemini-3-pro-image-preview",
+    "created": "2026-11-20",
+    "prompt": "A claims quality reviewer marking a printed claim file with a pen beside a highlighter and laptop in a calm modern office.",
+    "note": "Illustrative photography. The people shown are not identified as Virtual Claims Assistant employees or clients."
+  },
+  {
+    "asset": "/claims/photos/claims-correspondence.jpg",
+    "kind": "generated editorial photograph",
+    "provider": "Google Gemini 3 Pro Image via reAPI (treg)",
+    "model": "gemini-3-pro-image-preview",
+    "created": "2026-11-20",
+    "prompt": "A Filipino claims support professional typing approved correspondence at a modern desk with a claim folder and coffee beside a laptop.",
+    "note": "Illustrative photography. The people shown are not identified as Virtual Claims Assistant employees or clients."
+  },
+  {
+    "asset": "/claims/photos/vendor-expert.jpg",
+    "kind": "generated editorial photograph",
+    "provider": "Google Gemini 3 Pro Image via reAPI (treg)",
+    "model": "gemini-3-pro-image-preview",
+    "created": "2026-11-20",
+    "prompt": "A Filipina claims coordinator on the phone scheduling a property inspection with a calendar on an unbranded monitor and an inspection checklist on the desk.",
+    "note": "Illustrative photography. The people shown are not identified as Virtual Claims Assistant employees or clients."
+  }
+]

@@ -105,12 +105,12 @@ export function HomePage() {
               The assistant prepares the file for review. The accountable professional keeps the
               coverage decision.
             </p>
-            <div className="lg-rules">
-              <div><strong>Source first</strong><span>Every fact should be traceable to an approved record.</span></div>
-              <div><strong>Exception visible</strong><span>Missing or conflicting details become a named queue item, never a guess.</span></div>
-              <div><strong>Review owned</strong><span>A professional owns the sample, the correction, and the final decision.</span></div>
-            </div>
           </div>
+        </div>
+        <div className="lg-rules lg-rules--wide lg-container">
+          <div><strong>Source first</strong><span>Every fact should be traceable to an approved record.</span></div>
+          <div><strong>Exception visible</strong><span>Missing or conflicting details become a named queue item, never a guess.</span></div>
+          <div><strong>Review owned</strong><span>A professional owns the sample, the correction, and the final decision.</span></div>
         </div>
       </section>
 
@@ -186,13 +186,10 @@ export function HomePage() {
 
       <section className="lg-quality">
         <div className="lg-quality-grid lg-container">
-          <div className="lg-quality-seal" aria-label="Quality review seal">
-            <div className="lg-quality-seal-copy">
-              <span>Weekly sample</span>
-              <b>Review</b>
-              <span>Evidence checked</span>
-            </div>
-          </div>
+          <figure className="lg-quality-photo">
+            <img src="/claims/photos/claims-quality.jpg" alt="A claims quality reviewer marking a printed claim file beside a laptop" width="1600" height="1067" loading="lazy" />
+            <figcaption><span>Weekly review</span><b>Evidence checked against the source record</b></figcaption>
+          </figure>
           <div className="lg-quality-copy">
             <p className="lg-eyebrow">Quality you can inspect</p>
             <h2>Check the evidence, not the personality.</h2>
@@ -206,6 +203,11 @@ export function HomePage() {
               <div><span>✓</span><p>Every entered fact points to an approved source</p></div>
               <div><span>✓</span><p>Routing and ownership match the written procedure</p></div>
               <div><span>✓</span><p>Exceptions escalated without a coverage or value opinion</p></div>
+            </div>
+            <div className="lg-quality-stats">
+              <div><b>Sample</b><span>Five to ten calls from one workflow</span></div>
+              <div><b>Check</b><span>Record, source, route, and escalation</span></div>
+              <div><b>Coach</b><span>One correction, then review again next week</span></div>
             </div>
             <Link className="lg-link" href="/about" style={{ marginTop: 20 }}>See how the model works</Link>
           </div>
