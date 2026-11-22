@@ -8,6 +8,7 @@ import { november17BlogPosts } from './november17-blog';
 import { november19BlogPosts } from './november19-blog';
 import { november20BlogPosts } from './november20-blog';
 import { november21BlogPosts } from './november21-blog';
+import { november22BlogPosts } from './november22-blog';
 import { november18BlogPosts } from './november18-blog';
 import { november16BlogPosts } from './november16-blog';
 import { november11BlogPosts } from './november11-blog';
@@ -24,6 +25,7 @@ import { november17ResearchPosts } from './november17-research';
 import { november19ResearchPosts } from './november19-research';
 import { november20ResearchPosts } from './november20-research';
 import { november21ResearchPosts } from './november21-research';
+import { november22ResearchPosts } from './november22-research';
 import { november18ResearchPosts } from './november18-research';
 import { november16ResearchPosts } from './november16-research';
 import { november11ResearchPosts } from './november11-research';
@@ -1042,7 +1044,7 @@ function enrichLegacyResearch(post: ResearchPost): ResearchPost {
   };
 }
 
-export const blogPosts: BlogPost[] = [...november21BlogPosts, ...november20BlogPosts, ...november19BlogPosts, ...november18BlogPosts, ...november17BlogPosts, ...november16BlogPosts, ...november11BlogPosts, ...november10BlogPosts, ...november09BlogPosts, ...november08BlogPosts, ...november07BlogPosts, ...november06BlogPosts, ...november05BlogPosts, ...november04BlogPosts, ...november03BlogPosts, ...november01BlogPosts, ...october22BlogPosts, ...october27BlogPosts, ...october12BlogPosts, ...legacyBlogPosts].map((post) => ({
+export const blogPosts: BlogPost[] = [...november22BlogPosts, ...november21BlogPosts, ...november20BlogPosts, ...november19BlogPosts, ...november18BlogPosts, ...november17BlogPosts, ...november16BlogPosts, ...november11BlogPosts, ...november10BlogPosts, ...november09BlogPosts, ...november08BlogPosts, ...november07BlogPosts, ...november06BlogPosts, ...november05BlogPosts, ...november04BlogPosts, ...november03BlogPosts, ...november01BlogPosts, ...october22BlogPosts, ...october27BlogPosts, ...october12BlogPosts, ...legacyBlogPosts].map((post) => ({
   ...post,
   thumbnail: post.thumbnail || workflowImage(post.slug)
 }));
@@ -1050,6 +1052,7 @@ export const researchPosts: ResearchPost[] = [
   ...november17ResearchPosts,
   ...november19ResearchPosts,
   ...november20ResearchPosts,
+  ...november22ResearchPosts,
   ...november21ResearchPosts,
   ...november18ResearchPosts,
   ...november16ResearchPosts,
