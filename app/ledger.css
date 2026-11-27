@@ -860,10 +860,6 @@ img {
   animation: lg-marquee 38s linear infinite;
 }
 
-.lg-marquee:hover .lg-marquee-track {
-  animation-play-state: paused;
-}
-
 .lg-marquee-group {
   display: flex;
   flex: 0 0 auto;

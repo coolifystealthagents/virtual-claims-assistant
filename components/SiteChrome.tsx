@@ -39,7 +39,7 @@ export function Header() {
   return (
     <>
       <a className="lg-skip" href="#main-content">Skip to main content</a>
-      <header className="lg-header">
+      <header data-site-header="sticky" className="lg-header">
         <div className="lg-nav-inner">
           <Link className="lg-brand" href="/" aria-label={`${site.name} home`}>
             <Image src="/logo.svg" alt="" width={38} height={38} priority />
@@ -78,7 +78,7 @@ export function Header() {
 
 export function Footer() {
   return (
-    <footer className="lg-footer">
+    <footer data-site-footer="true" className="lg-footer">
       <div className="lg-footer-grid lg-container">
         <div className="lg-footer-brand">
           <Link className="lg-brand" href="/" aria-label={`${site.name} home`}>
@@ -95,7 +95,7 @@ export function Footer() {
           <Link className="lg-footer-cta" href="/contact-us"><span>Map a claims support role</span><b>↗</b></Link>
         </div>
 
-        <div className="lg-footer-col">
+        <div data-footer-menu="true" className="lg-footer-col">
           <h3>Explore</h3>
           <Link href="/services">Services</Link>
           <Link href="/about">About</Link>
@@ -103,7 +103,7 @@ export function Footer() {
           <Link href="/research">Research</Link>
         </div>
 
-        <div className="lg-footer-col">
+        <div data-footer-menu="true" className="lg-footer-col">
           <h3>Company</h3>
           <Link href="/contact-us">Contact Us</Link>
           <Link href="/privacy">Privacy Policy</Link>
